@@ -1,0 +1,55 @@
+/* === 태블릿 (≤1024px) === */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === 모바일 (≤600px) === */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 56px 16px 48px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .portfolio-section {
+    padding: 36px 16px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .item-card {
+    height: auto;
+    min-height: 280px;
+  }
+
+  .modal__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* === 넓은 화면 여백 처리 === */
+@media (min-width: 1025px) {
+  .portfolio-section {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}

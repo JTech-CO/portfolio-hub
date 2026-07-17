@@ -1,0 +1,17 @@
+{
+  "$schema": "../items.schema.json",
+  "items": [
+    {
+      "id": "chzzk-downloader",
+      "name": "Chzzk Downloader",
+      "shortDescription": "네이버 치지직 VOD 및 클립 원본 화질 다운로더",
+      "fullDescription": "네이버 치지직의 VOD와 클립을 원본 화질로 내려받을 수 있는 브라우저 확장프로그램입니다.",
+      "icon": "portfolio/extensions/icon128.png",
+      "tags": ["브라우저 확장", "다운로더"],
+      "status": "active",
+      "url": "https://chromewebstore.google.com/detail/chzzk-downloader/pglcbbcphnbalglbhjngigjciijhgpih",
+      "actionLabel": "설치하기",
+      "features": ["치지직 VOD 다운로드", "치지직 클립 다운로드", "원본 화질 지원"]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../items.schema.json",
+  "items": [
+    {
+      "id": "mini-jet-2",
+      "name": "Mini Jet 2",
+      "shortDescription": "소형 제트엔진의 전체 작동 과정을 구현한 시뮬레이터",
+      "fullDescription": "소형 제트엔진의 시동, 연소, 압축, 터빈 구동, 배기와 ECU 로직까지 구현한 시뮬레이터입니다.",
+      "icon": "fas fa-jet-fighter-up",
+      "tags": ["제트엔진", "시뮬레이션"],
+      "status": "active",
+      "url": "https://jtech-co.github.io/Minijet-2/",
+      "actionLabel": "실행하기",
+      "features": ["엔진 시동 및 연소", "압축기·터빈 구동", "배기 흐름 구현", "ECU 제어 로직"]
+    }
+  ]
+}

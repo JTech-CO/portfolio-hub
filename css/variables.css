@@ -1,0 +1,25 @@
+:root {
+  --bg-main: #000000;
+  --bg-card: #050505;
+  --accent: #B7F0B1;
+  --accent-dim: rgba(183, 240, 177, 0.12);
+  --accent-glow: rgba(183, 240, 177, 0.2);
+  --border: #333333;
+  --border-hover: #B7F0B1;
+  --text-main: #e0e0e0;
+  --text-muted: #888888;
+  --status-beta: #FFA94D;
+  --status-beta-dim: rgba(255, 169, 77, 0.12);
+  --status-coming: #555555;
+  --status-coming-dim: rgba(85, 85, 85, 0.2);
+
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --transition: 0.2s ease;
+  --transition-modal: 0.3s ease;
+
+  --radius: 2px;
+  --card-padding: 28px;
+  --section-padding: 80px 24px;
+}

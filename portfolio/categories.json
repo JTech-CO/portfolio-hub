@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "key": "extensions",
+      "label": "extensions",
+      "source": "portfolio/extensions/items.json"
+    },
+    {
+      "key": "utilities",
+      "label": "utilities",
+      "source": "portfolio/utilities/items.json"
+    },
+    {
+      "key": "simulations",
+      "label": "simulations",
+      "source": "portfolio/simulations/items.json"
+    },
+    {
+      "key": "others",
+      "label": "others",
+      "source": "portfolio/others/items.json"
+    }
+  ]
+}

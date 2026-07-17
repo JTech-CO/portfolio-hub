@@ -1,0 +1,53 @@
+{
+  "$schema": "../items.schema.json",
+  "items": [
+    {
+      "id": "neat-cable",
+      "name": "Neat Cable",
+      "shortDescription": "서버 케이블을 올바르게 연결하는 웹 게임",
+      "fullDescription": "서버 환경에서 케이블을 올바르게 연결하는 과정을 게임으로 구성한 웹 프로젝트입니다.",
+      "icon": "fas fa-network-wired",
+      "tags": ["게임", "퍼즐"],
+      "status": "active",
+      "url": "https://jtech-co.github.io/Neat-Cable/",
+      "actionLabel": "플레이하기",
+      "features": ["서버 케이블 연결", "연결 퍼즐", "웹 기반 플레이"]
+    },
+    {
+      "id": "grokmate",
+      "name": "Grokmate",
+      "shortDescription": "디스코드에서 사용하는 Grok 4.3",
+      "fullDescription": "디스코드에서 Grok 4.3을 사용할 수 있도록 구성한 프로젝트입니다.",
+      "icon": "fas fa-robot",
+      "tags": ["AI", "Discord"],
+      "status": "active",
+      "url": "https://jtech-co.github.io/Grokmate/",
+      "actionLabel": "자세히 보기",
+      "features": ["Discord 환경 지원", "Grok 4.3 활용", "대화형 AI 구성"]
+    },
+    {
+      "id": "ai-learning-wiki",
+      "name": "AI Learning Wiki",
+      "shortDescription": "AI와 LLM을 근거 중심 문서와 학습 경로로 연결한 한국어 백과사전",
+      "fullDescription": "AI와 LLM의 개념, 기술, 용어를 근거 중심 문서와 단계별 학습 경로로 연결한 한국어 백과사전입니다.",
+      "icon": "fas fa-book-open",
+      "tags": ["AI", "학습"],
+      "status": "active",
+      "url": "https://jtech-co.github.io/AI-Learning-Wiki/",
+      "actionLabel": "학습하기",
+      "features": ["AI·LLM 개념 문서", "근거 중심 기술 설명", "용어 백과사전", "단계별 학습 경로"]
+    },
+    {
+      "id": "worldle",
+      "name": "Worldle",
+      "shortDescription": "거리·방향·근접도 힌트로 나라를 맞히는 일일 지리 퍼즐",
+      "fullDescription": "매일 바뀌는 나라 한 곳을 거리, 방향, 근접도 힌트만으로 여섯 번 안에 맞히는 지리 퍼즐 게임입니다.",
+      "icon": "fas fa-earth-asia",
+      "tags": ["게임", "지리"],
+      "status": "active",
+      "url": "https://www.worldle.kr/",
+      "actionLabel": "플레이하기",
+      "features": ["매일 새로운 나라", "거리·방향 힌트", "근접도 피드백", "6회 도전"]
+    }
+  ]
+}

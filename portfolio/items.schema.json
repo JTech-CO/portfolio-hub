@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jtech-co.github.io/portfolio/items.schema.json",
+  "title": "JTech Portfolio Items",
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "required": ["id", "name", "shortDescription"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shortDescription": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fullDescription": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "status": {
+          "enum": ["active", "beta", "coming-soon"]
+        },
+        "version": {
+          "type": "string"
+        },
+        "url": {
+          "type": ["string", "null"]
+        },
+        "actionLabel": {
+          "type": "string"
+        },
+        "features": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

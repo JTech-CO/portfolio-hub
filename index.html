@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JTech Portfolio Hub</title>
+  <meta name="description" content="JTech이 만든 확장프로그램·유틸리티·시뮬레이션 등 다양한 프로그램을 한곳에서 탐색하세요." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/card.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-logo">
+      <span class="header-logo-text">JTech</span>
+      <span class="header-logo-sep">/</span>
+      <span class="header-logo-sub">Portfolio Hub</span>
+    </div>
+    <nav class="header-nav" aria-label="사이트 탐색">
+      <a href="https://jtech-co.github.io" target="_blank" rel="noopener">JTech Main</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <p class="hero-label">JTech · Portfolio</p>
+    <h1 class="hero-title" id="hero-title">Portfolio<br /><span>Hub</span></h1>
+    <p class="hero-subtitle">JTech이 만든 프로그램들을 한곳에서 탐색하세요.</p>
+    <div class="hero-divider"></div>
+  </section>
+
+  <main class="portfolio-root" id="portfolio-root" aria-label="프로그램 목록" aria-busy="true">
+    <p class="portfolio-state">포트폴리오를 불러오는 중입니다.</p>
+  </main>
+
+  <div
+    class="modal-overlay"
+    id="modal-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="portfolio-modal-title"
+  >
+    <div class="modal"></div>
+  </div>
+
+  <script src="js/catalog.js"></script>
+  <script src="js/card.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
