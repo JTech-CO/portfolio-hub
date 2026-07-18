@@ -8,6 +8,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parent.parent
 CATEGORY_INDEX = ROOT / "portfolio" / "categories.json"
 ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+INVALID_FOLDER_CHARS = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
 VALID_STATUSES = {"active", "beta", "coming-soon"}
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".svg", ".webp"}
 
@@ -29,7 +30,15 @@ def resolve_source(relative_path):
     return source
 
 
-def validate_item(item, context, seen_ids, errors):
+def image_folder_name(name):
+    folder = INVALID_FOLDER_CHARS.sub("-", name.strip())
+    folder = re.sub(r"\s+", "-", folder)
+    folder = re.sub(r"-+", "-", folder)
+    folder = re.sub(r"[.\s]+$", "", folder)
+    return folder or "project"
+
+
+def validate_item(item, context, seen_ids, image_root, seen_image_folders, errors):
     if not isinstance(item, dict):
         errors.append(f"{context}: item must be an object")
         return
@@ -45,6 +54,16 @@ def validate_item(item, context, seen_ids, errors):
     for field in ("name", "shortDescription"):
         if not isinstance(item.get(field), str) or not item[field].strip():
             errors.append(f"{context}: {field} is required")
+
+    name = item.get("name")
+    if isinstance(name, str) and name.strip():
+        folder_name = image_folder_name(name)
+        if folder_name in seen_image_folders:
+            errors.append(f"{context}: duplicate image folder '{folder_name}'")
+        seen_image_folders.add(folder_name)
+        image_directory = image_root / folder_name
+        if not image_directory.is_dir():
+            errors.append(f"{context}: image folder not found: {image_directory.relative_to(ROOT)}")
 
     status = item.get("status", "active")
     if status not in VALID_STATUSES:
@@ -65,7 +84,7 @@ def validate_item(item, context, seen_ids, errors):
     if isinstance(icon, str) and Path(icon.split("?", 1)[0]).suffix.lower() in IMAGE_EXTENSIONS:
         icon_path = resolve_source(icon)
         if not icon_path.is_file():
-            errors.append(f"{context}: icon file not found: {icon}")
+            errors.append(f"{context}: fallback icon file not found: {icon}")
 
 
 def validate():
@@ -107,9 +126,21 @@ def validate():
             errors.append(f"{source_value}: items must be an array")
             continue
 
+        image_root = source.parent / "images"
+        if not image_root.is_dir():
+            errors.append(f"{key}: images folder not found: {image_root.relative_to(ROOT)}")
+
         seen_ids = set()
+        seen_image_folders = set()
         for item_index, item in enumerate(items):
-            validate_item(item, f"{key}[{item_index}]", seen_ids, errors)
+            validate_item(
+                item,
+                f"{key}[{item_index}]",
+                seen_ids,
+                image_root,
+                seen_image_folders,
+                errors,
+            )
         total_items += len(items)
 
     return errors, len(categories), total_items

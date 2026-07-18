@@ -6,7 +6,7 @@
       "name": "Chzzk Downloader",
       "shortDescription": "네이버 치지직 VOD 및 클립 원본 화질 다운로더",
       "fullDescription": "네이버 치지직의 VOD와 클립을 원본 화질로 내려받을 수 있는 브라우저 확장프로그램입니다.",
-      "icon": "portfolio/extensions/icon128.png",
+      "icon": "fas fa-download",
       "tags": ["브라우저 확장", "다운로더"],
       "status": "active",
       "url": "https://chromewebstore.google.com/detail/chzzk-downloader/pglcbbcphnbalglbhjngigjciijhgpih",

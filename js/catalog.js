@@ -26,6 +26,21 @@
       .map(function (entry) { return entry.trim(); });
   }
 
+  function toImageFolder(name) {
+    return name
+      .trim()
+      .replace(/[<>:"/\\|?*\u0000-\u001f]/g, '-')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/[.\s]+$/g, '') || 'project';
+  }
+
+  function getImageUrl(category, name) {
+    var separatorIndex = category.source.lastIndexOf('/');
+    var categoryPath = separatorIndex >= 0 ? category.source.slice(0, separatorIndex + 1) : '';
+    return categoryPath + 'images/' + encodeURIComponent(toImageFolder(name)) + '/icon.png';
+  }
+
   function normalizeUrl(value, issues, context) {
     var rawUrl = toText(value, '');
     if (!rawUrl || rawUrl === '#') return '';
@@ -42,8 +57,8 @@
     }
   }
 
-  function normalizeItem(rawItem, categoryKey, index, seenIds, issues) {
-    var context = categoryKey + '[' + index + ']';
+  function normalizeItem(rawItem, category, index, seenIds, issues) {
+    var context = category.key + '[' + index + ']';
     if (!rawItem || typeof rawItem !== 'object' || Array.isArray(rawItem)) {
       issues.push(context + ': 객체 형식이 아니어서 제외했습니다.');
       return null;
@@ -63,9 +78,7 @@
     seenIds.add(id);
 
     var status = VALID_STATUS.indexOf(rawItem.status) >= 0 ? rawItem.status : 'active';
-    if (status !== rawItem.status) {
-      issues.push(context + ': 알 수 없는 status를 active로 변경했습니다.');
-    }
+    if (status !== rawItem.status) issues.push(context + ': 알 수 없는 status를 active로 변경했습니다.');
 
     return {
       id: id,
@@ -73,6 +86,7 @@
       shortDescription: shortDescription,
       fullDescription: toText(rawItem.fullDescription, shortDescription),
       icon: toText(rawItem.icon, 'fas fa-cube'),
+      imageUrl: getImageUrl(category, name),
       tags: toTextArray(rawItem.tags),
       status: status,
       version: toText(rawItem.version, ''),
@@ -82,12 +96,12 @@
     };
   }
 
-  function normalizeItems(payload, categoryKey, issues) {
+  function normalizeItems(payload, category, issues) {
     var rawItems = Array.isArray(payload) ? payload : payload && payload.items;
-    if (!Array.isArray(rawItems)) throw new Error(categoryKey + ' 데이터에 items 배열이 없습니다.');
+    if (!Array.isArray(rawItems)) throw new Error(category.key + ' 데이터에 items 배열이 없습니다.');
     var seenIds = new Set();
     return rawItems.map(function (item, index) {
-      return normalizeItem(item, categoryKey, index, seenIds, issues);
+      return normalizeItem(item, category, index, seenIds, issues);
     }).filter(Boolean);
   }
 
@@ -112,7 +126,7 @@
       return {
         key: category.key,
         label: category.label,
-        items: normalizeItems(payload, category.key, issues),
+        items: normalizeItems(payload, category, issues),
         issues: issues,
         error: '',
       };

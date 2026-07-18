@@ -41,7 +41,7 @@
     var header = ui.createElement('div', 'modal__header');
     var headerLeft = ui.createElement('div', 'modal__header-left');
     var icon = ui.createElement('div', 'modal__icon');
-    icon.appendChild(ui.createIconElement(config.icon, 40));
+    icon.appendChild(ui.createIconElement(config.icon, 40, config.imageUrl));
     headerLeft.appendChild(icon);
 
     var heading = document.createElement('div');

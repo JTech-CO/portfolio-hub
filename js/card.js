@@ -14,28 +14,29 @@
     return element;
   }
 
-  function createIconElement(icon, size) {
-    var wrapper = document.createDocumentFragment();
-    var isImage = /\.(png|jpe?g|svg|webp)(?:[?#].*)?$/i.test(icon);
-
-    if (isImage) {
-      var image = document.createElement('img');
-      image.src = icon;
-      image.alt = '';
-      image.width = size;
-      image.height = size;
-      image.loading = 'lazy';
-      wrapper.appendChild(image);
-      return wrapper;
-    }
-
+  function createFontIcon(icon) {
     var iconElement = document.createElement('i');
     var safeClasses = icon.split(/\s+/).filter(function (className) {
       return /^[a-z0-9-]+$/i.test(className);
     });
     iconElement.className = safeClasses.length ? safeClasses.join(' ') : 'fas fa-cube';
     iconElement.setAttribute('aria-hidden', 'true');
-    wrapper.appendChild(iconElement);
+    return iconElement;
+  }
+
+  function createIconElement(icon, size, imageUrl) {
+    var wrapper = document.createDocumentFragment();
+    var image = document.createElement('img');
+    image.src = imageUrl;
+    image.alt = '';
+    image.width = size;
+    image.height = size;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.addEventListener('error', function () {
+      image.replaceWith(createFontIcon(icon));
+    }, { once: true });
+    wrapper.appendChild(image);
     return wrapper;
   }
 
@@ -56,7 +57,7 @@
     card.dataset.id = config.id;
 
     var icon = createElement('div', 'item-card__icon');
-    icon.appendChild(createIconElement(config.icon, 36));
+    icon.appendChild(createIconElement(config.icon, 36, config.imageUrl));
     card.appendChild(icon);
     card.appendChild(createElement('h3', 'item-card__name', config.name));
     card.appendChild(createElement('div', 'item-card__divider'));
