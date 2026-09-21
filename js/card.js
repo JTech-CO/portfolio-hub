@@ -1,9 +1,104 @@
-(function(){'use strict';
-var LABEL={active:'활성',beta:'베타','coming-soon':'준비 중'};
-function el(tag,cls,t){var e=document.createElement(tag);if(cls)e.className=cls;if(t!==undefined)e.textContent=t;return e;}
-function fontIcon(icon){var i=document.createElement('i'),safe=icon.split(/\s+/).filter(function(x){return /^[a-z0-9-]+$/i.test(x);});i.className=safe.length?safe.join(' '):'fas fa-cube';i.setAttribute('aria-hidden','true');return i;}
-function tag(t){return el('span','item-card__tag',t);}
-function status(s){return el('span','item-card__status item-card__status--'+s,LABEL[s]||s);}
-function dateText(v){return v?v.replace(/-/g,'.'):'';}
-function card(c,onDetail){var a=el('article','item-card');a.dataset.id=c.id;var top=el('div','item-card__top'),ic=el('div','item-card__icon');ic.appendChild(fontIcon(c.icon));top.appendChild(ic);if(c.featured)top.appendChild(el('span','item-card__badge','Featured'));a.appendChild(top);a.appendChild(el('h3','item-card__name',c.name));a.appendChild(el('div','item-card__divider'));a.appendChild(el('p','item-card__desc',c.shortDescription));var meta=el('div','item-card__meta'),tags=el('div','item-card__tags');c.tags.slice(0,3).forEach(function(t){tags.appendChild(tag(t));});meta.appendChild(tags);meta.appendChild(status(c.status));a.appendChild(meta);if(c.updatedAt||c.version){var sm=el('div','item-card__submeta');sm.appendChild(el('span','',c.updatedAt?'updated '+dateText(c.updatedAt):''));sm.appendChild(el('span','',c.version?'v'+c.version:''));a.appendChild(sm);}var ft=el('div','item-card__footer'),b=el('button','item-card__btn','자세히 보기');b.type='button';b.setAttribute('aria-label',c.name+' 자세히 보기');b.appendChild(fontIcon('fas fa-arrow-right'));b.addEventListener('click',function(){onDetail(c);});ft.appendChild(b);a.appendChild(ft);return a;}
-window.PortfolioUI={el:el,fontIcon:fontIcon,tag:tag,status:status,card:card,dateText:dateText};})();
+(function () {
+  'use strict';
+
+  function el(tag, className, text) {
+    var element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text !== undefined) element.textContent = text;
+    return element;
+  }
+
+  function fontIcon(icon) {
+    var element = document.createElement('i');
+    var safe = icon.split(/\s+/).filter(function (className) { return /^[a-z0-9-]+$/i.test(className); });
+    element.className = safe.length ? safe.join(' ') : 'fas fa-cube';
+    element.setAttribute('aria-hidden', 'true');
+    return element;
+  }
+
+  function language() {
+    return window.PortfolioI18n.getLanguage();
+  }
+
+  function localized(primary, english) {
+    return language() === 'en' ? (english || primary) : primary;
+  }
+
+  function tag(value) {
+    return el('span', 'item-card__tag', value);
+  }
+
+  function status(value) {
+    var keys = {
+      active: 'statusActive',
+      beta: 'statusBeta',
+      'coming-soon': 'statusComingSoon'
+    };
+    return el('span', 'item-card__status item-card__status--' + value, window.PortfolioI18n.t(keys[value] || value));
+  }
+
+  function dateText(value) {
+    return value ? value.replace(/-/g, '.') : '';
+  }
+
+  function createAction(url, label, icon, primary) {
+    var link = el('a', 'item-card__action' + (primary ? ' item-card__action--primary' : ''));
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.appendChild(fontIcon(icon));
+    link.appendChild(document.createTextNode(label));
+    return link;
+  }
+
+  function card(config) {
+    var article = el('article', 'item-card');
+    article.dataset.id = config.id;
+    article.id = 'project-' + config.id;
+
+    var top = el('div', 'item-card__top');
+    var icon = el('div', 'item-card__icon');
+    icon.appendChild(fontIcon(config.icon));
+    top.appendChild(icon);
+    if (config.featured) top.appendChild(el('span', 'item-card__badge', window.PortfolioI18n.t('featured')));
+    article.appendChild(top);
+
+    article.appendChild(el('h3', 'item-card__name', config.name));
+    article.appendChild(el('div', 'item-card__divider'));
+    article.appendChild(el('p', 'item-card__desc', localized(config.shortDescription, config.shortDescriptionEn)));
+
+    var meta = el('div', 'item-card__meta');
+    var tags = el('div', 'item-card__tags');
+    config.tags.slice(0, 3).forEach(function (value) { tags.appendChild(tag(value)); });
+    meta.appendChild(tags);
+    meta.appendChild(status(config.status));
+    article.appendChild(meta);
+
+    if (config.updatedAt || config.version) {
+      var submeta = el('div', 'item-card__submeta');
+      submeta.appendChild(el('span', '', config.updatedAt ? window.PortfolioI18n.t('updated') + ' ' + dateText(config.updatedAt) : ''));
+      submeta.appendChild(el('span', '', config.version ? 'v' + config.version : ''));
+      article.appendChild(submeta);
+    }
+
+    var actions = el('div', 'item-card__actions');
+    if (config.liveUrl) {
+      var liveLabel = localized(config.actionLabel || window.PortfolioI18n.t('openProject'), config.actionLabelEn || window.PortfolioI18n.t('openProject'));
+      actions.appendChild(createAction(config.liveUrl, liveLabel, 'fas fa-arrow-up-right-from-square', true));
+    }
+    if (config.repoUrl) {
+      actions.appendChild(createAction(config.repoUrl, window.PortfolioI18n.t('github'), 'fa-brands fa-github', !config.liveUrl));
+    }
+    if (actions.children.length) article.appendChild(actions);
+
+    return article;
+  }
+
+  window.PortfolioUI = {
+    el: el,
+    fontIcon: fontIcon,
+    card: card,
+    dateText: dateText,
+    localized: localized
+  };
+})();

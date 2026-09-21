@@ -20,7 +20,8 @@
         "10가지 반복 설계 실패 규칙",
         "AI·웹·앱·CLI에 적용 가능한 LITE 지침",
         "문서와 GitHub Pages 소개 페이지"
-      ]
+      ],
+      "shortDescriptionEn": "A lightweight design skill that turns recurring AI-generated interface failures into explicit constraints and review rules."
     },
     {
       "id": "content-templates",
@@ -41,7 +42,8 @@
         "플랫폼별 작성 구조",
         "재사용 가능한 프롬프트 템플릿",
         "콘텐츠 제작 워크플로"
-      ]
+      ],
+      "shortDescriptionEn": "Reusable AI writing templates organized for blogs, Threads, X, reviews, and other platform-specific formats."
     },
     {
       "id": "schema-hub",
@@ -62,7 +64,8 @@
         "재사용 가능한 프롬프트 스키마",
         "에이전트 역할 정의",
         "하네스와 토큰 설계 자료"
-      ]
+      ],
+      "shortDescriptionEn": "An AI design repository that organizes role prompts and agent harnesses into reusable schemas."
     },
     {
       "id": "project-sales-skill",
@@ -85,7 +88,9 @@
         "근거 기반 제품·고객 조사",
         "아웃리치 초안과 답변 분류",
         "플랫폼 중립형 워크플로"
-      ]
+      ],
+      "shortDescriptionEn": "A platform-neutral B2B sales skill that links product research, outreach, and handoff with evidence-first workflows.",
+      "actionLabelEn": "Overview"
     },
     {
       "id": "repo-size",
@@ -106,7 +111,8 @@
         "저장소 크기 사전 확인",
         "대용량 경고",
         "GitHub 페이지 통합"
-      ]
+      ],
+      "shortDescriptionEn": "A Chrome extension that shows the real size of a GitHub repository and warns about large downloads before you clone it."
     },
     {
       "id": "repo-run",
@@ -127,7 +133,8 @@
         "실행 조건 사전 점검",
         "패키지·스크립트 단서 분석",
         "About 사이드바 기반 UI"
-      ]
+      ],
+      "shortDescriptionEn": "A GitHub extension that checks runtime, package manager, build scripts, and environment clues before cloning a repository."
     },
     {
       "id": "repo-delta",
@@ -147,7 +154,8 @@
         "Checkpoint 기반 변경점 비교",
         "변경 파일·커밋 검토",
         "로컬 상태 저장"
-      ]
+      ],
+      "shortDescriptionEn": "A GitHub extension that compares commits and files changed on the default branch since a user-defined checkpoint."
     },
     {
       "id": "tetrio-ai",
@@ -167,7 +175,8 @@
         "BASIC·RAPID·TURBO 모드",
         "CDP 기반 화면 읽기·키 입력",
         "TURBO 500피스 실측 5.323 PPS"
-      ]
+      ],
+      "shortDescriptionEn": "A research autoplay bot that connects to the TETR.IO desktop app through CDP, reads the screen, and calculates placements with a local AI."
     },
     {
       "id": "sloot",
@@ -187,7 +196,8 @@
         "스냅샷 연결형 작업 캡슐",
         "재사용 자격 판단 중심 설계",
         "관찰·결과·증거 추적"
-      ]
+      ],
+      "shortDescriptionEn": "Snapshot-Linked Observations, Outcomes & Traceability. A concept repository for change-aware agent work capsules."
     }
   ]
 }

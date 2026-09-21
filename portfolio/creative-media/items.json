@@ -21,7 +21,8 @@
         "실시간 GLSL 편집·오류 복구",
         "8개 오리지널 셰이더",
         "Windows/macOS 네이티브 어댑터 소스"
-      ]
+      ],
+      "shortDescriptionEn": "A local-first GLSL playground for real-time editing, saving, and exporting, with Windows/macOS wallpaper adapter source."
     },
     {
       "id": "real-moog-1960",
@@ -42,7 +43,8 @@
         "패치 케이블 기반 신호 라우팅",
         "오실레이터·필터·엔벌로프",
         "1960s 모듈러 UI"
-      ]
+      ],
+      "shortDescriptionEn": "An educational 1960s modular Moog web synthesizer where patch cables alter the actual Web Audio graph."
     },
     {
       "id": "retro-video-effector",
@@ -65,7 +67,9 @@
         "30개 효과 파라미터",
         "PNG/JPEG 로컬 내보내기",
         "EN/KR 및 반응형 UI"
-      ]
+      ],
+      "shortDescriptionEn": "A Windows 95-style, local-first still-image editor for VHS and retro video effects.",
+      "actionLabelEn": "Open Editor"
     },
     {
       "id": "infopic",
@@ -87,7 +91,9 @@
         "정보성 카드뉴스 편집",
         "PNG·ZIP 내보내기",
         "KR/EN·라이트/다크 대응"
-      ]
+      ],
+      "shortDescriptionEn": "An informational carousel maker that edits in the browser and exports PNG/ZIP files without accounts, backends, or AI APIs.",
+      "actionLabelEn": "Open App"
     }
   ]
 }

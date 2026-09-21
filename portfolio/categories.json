@@ -4,37 +4,49 @@
       "key": "ai-developer-tools",
       "label": "AI & Developer Tools",
       "description": "AI 스킬, 에이전트 워크플로, GitHub 확장 프로그램과 개발 생산성 도구.",
-      "source": "portfolio/ai-developer-tools/items.json"
+      "source": "portfolio/ai-developer-tools/items.json",
+      "labelEn": "AI & Developer Tools",
+      "descriptionEn": "AI skills, agent workflows, GitHub extensions, and developer productivity tools."
     },
     {
       "key": "engineering-simulation",
       "label": "Engineering & Simulation",
       "description": "자동차·유체·메모리·CNC·수치 시뮬레이션과 인터랙티브 공학 워크벤치.",
-      "source": "portfolio/engineering-simulation/items.json"
+      "source": "portfolio/engineering-simulation/items.json",
+      "labelEn": "Engineering & Simulation",
+      "descriptionEn": "Interactive engineering workbenches for automotive systems, fluids, memory, CNC, and numerical simulation."
     },
     {
       "key": "data-knowledge",
       "label": "Data & Knowledge Systems",
       "description": "기술 자료, 공공데이터와 조사 결과를 검색·학습·비교 가능한 시스템으로 구조화한 프로젝트.",
-      "source": "portfolio/data-knowledge/items.json"
+      "source": "portfolio/data-knowledge/items.json",
+      "labelEn": "Data & Knowledge Systems",
+      "descriptionEn": "Systems that structure technical references, public data, and research into searchable, learnable, and comparable forms."
     },
     {
       "key": "hardware-prototyping",
       "label": "Hardware & Prototyping",
       "description": "센서 융합, 기구 설계와 실제 제작을 염두에 둔 하드웨어 통합 프로젝트.",
-      "source": "portfolio/hardware-prototyping/items.json"
+      "source": "portfolio/hardware-prototyping/items.json",
+      "labelEn": "Hardware & Prototyping",
+      "descriptionEn": "Hardware integration projects focused on sensor fusion, mechanical design, and practical fabrication."
     },
     {
       "key": "creative-media",
       "label": "Creative & Media",
       "description": "오디오, 영상, 셰이더와 시각 효과를 직접 조작하는 local-first 크리에이티브 도구.",
-      "source": "portfolio/creative-media/items.json"
+      "source": "portfolio/creative-media/items.json",
+      "labelEn": "Creative & Media",
+      "descriptionEn": "Local-first tools for directly manipulating audio, video, shaders, and visual effects."
     },
     {
       "key": "services-utilities",
       "label": "Services & Utilities",
       "description": "현재 공개 사용 가능한 웹 서비스와 실용 유틸리티.",
-      "source": "portfolio/services-utilities/items.json"
+      "source": "portfolio/services-utilities/items.json",
+      "labelEn": "Services & Utilities",
+      "descriptionEn": "Practical web services and utilities currently available for direct use."
     }
   ]
 }

@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000000" />
   <title>JTech Portfolio Hub</title>
-  <meta name="description" content="JTech Co.의 AI·개발도구, 공학 시뮬레이션, 데이터 시스템, 하드웨어 프로토타입과 공개 서비스를 한곳에서 탐색하세요." />
+  <meta name="description" content="JTech Co.의 AI·개발도구, 공학 시뮬레이션, 데이터 시스템, 하드웨어 프로토타입과 프로젝트를 한곳에서 탐색하세요." data-i18n-content="metaDescription" />
   <meta property="og:title" content="JTech Portfolio Hub" />
-  <meta property="og:description" content="Build, simulate, verify. JTech Co.의 최신 공개 프로젝트 카탈로그." />
+  <meta property="og:description" content="Build, simulate, verify. JTech Co.의 프로젝트 카탈로그." data-i18n-content="ogDescription" />
   <link rel="icon" href="assets/jtech-mark.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/reset.css" />
@@ -20,37 +20,48 @@
   <link rel="stylesheet" href="css/hero.css" />
   <link rel="stylesheet" href="css/sections.css" />
   <link rel="stylesheet" href="css/card.css" />
-  <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="header-logo" href="#top" aria-label="JTech Portfolio Hub 홈">
+    <a class="header-logo" href="#top" data-i18n-aria-label="homeAria">
       <span class="header-logo-text">JTech</span>
       <span class="header-logo-sep">/</span>
       <span class="header-logo-sub">Portfolio Hub</span>
     </a>
-    <nav class="header-nav" aria-label="사이트 탐색">
-      <a href="#recent-work">Recent</a>
-      <a href="https://github.com/JTech-CO" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://jtech-co.github.io/" target="_blank" rel="noopener">JTech Main</a>
-    </nav>
+
+    <div class="header-actions">
+      <nav class="header-nav" data-i18n-aria-label="navAria">
+        <a href="#recent-work" data-i18n="navRecent">Recent</a>
+        <a href="https://github.com/JTech-CO" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://jtech-co.github.io/" target="_blank" rel="noopener">JTech Main</a>
+      </nav>
+
+      <div class="language-switch" role="group" data-i18n-aria-label="languageAria">
+        <button type="button" class="language-switch__button" data-language="ko" aria-pressed="true">KR</button>
+        <span class="language-switch__divider" aria-hidden="true">/</span>
+        <button type="button" class="language-switch__button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
   </header>
 
   <section class="hero" id="top" aria-labelledby="hero-title">
-    <p class="hero-label">JTech Co. · Portfolio Snapshot</p>
-    <h1 class="hero-title" id="hero-title">Build.<br /><span>Simulate. Verify.</span></h1>
-    <p class="hero-subtitle">기술을 설명하는 데 그치지 않고, 직접 실행하고 조작하며 검증할 수 있는 형태로 만듭니다.</p>
-    <div class="hero-meta" aria-label="포트폴리오 기준 정보">
-      <span><i class="fa-solid fa-code-branch" aria-hidden="true"></i> GitHub Projects</span>
-      <span><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Snapshot 2026.09.22</span>
-      <span><i class="fa-solid fa-location-arrow" aria-hidden="true"></i> KR / JTech Co.</span>
+    <p class="hero-label" data-i18n="heroLabel">JTech Co. · Portfolio Snapshot</p>
+    <h1 class="hero-title" id="hero-title">
+      <span data-i18n="heroBuild">Build.</span><br />
+      <span class="hero-title__accent" data-i18n="heroSimulate">Simulate. Verify.</span>
+    </h1>
+    <p class="hero-subtitle" data-i18n="heroSubtitle">기술을 설명하는 데 그치지 않고, 직접 실행하고 조작하며 검증할 수 있는 형태로 만듭니다.</p>
+    <div class="hero-meta" data-i18n-aria-label="heroMetaAria">
+      <span><i class="fa-solid fa-code-branch" aria-hidden="true"></i><span data-i18n="metaProjects">GitHub Projects</span></span>
+      <span><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i><span data-i18n="metaSnapshot">Snapshot 2026.09.22</span></span>
+      <span><i class="fa-solid fa-language" aria-hidden="true"></i><span data-i18n="metaLanguage">KR / EN</span></span>
     </div>
     <div class="hero-divider"></div>
   </section>
 
-  <main class="portfolio-root" id="portfolio-root" aria-label="프로젝트 목록" aria-busy="true">
-    <p class="portfolio-state">포트폴리오를 불러오는 중입니다.</p>
+  <main class="portfolio-root" id="portfolio-root" data-i18n-aria-label="projectsAria" aria-busy="true">
+    <p class="portfolio-state" data-i18n="loading">포트폴리오를 불러오는 중입니다.</p>
   </main>
 
   <footer class="site-footer">
@@ -58,16 +69,12 @@
       <strong>JTech Co.</strong>
       <span>Ideation &gt; Design &gt; Development</span>
     </div>
-    <a href="https://github.com/JTech-CO/portfolio-hub" target="_blank" rel="noopener">portfolio-hub source</a>
+    <a href="https://github.com/JTech-CO/portfolio-hub" target="_blank" rel="noopener" data-i18n="sourceLink">portfolio-hub source</a>
   </footer>
 
-  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="portfolio-modal-title">
-    <div class="modal"></div>
-  </div>
-
+  <script src="js/i18n.js"></script>
   <script src="js/catalog.js"></script>
   <script src="js/card.js"></script>
-  <script src="js/modal.js"></script>
   <script src="js/portfolio.js"></script>
   <script src="js/main.js"></script>
 </body>

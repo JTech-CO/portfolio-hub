@@ -1,9 +1,22 @@
 :root {
-  --bg-main:#000; --bg-card:#050505; --bg-elevated:#0a0a0a;
-  --accent:#B7F0B1; --accent-dim:rgba(183,240,177,.11); --accent-glow:rgba(183,240,177,.18);
-  --border:#2d2d2d; --border-strong:#454545; --text-main:#e8e8e8; --text-muted:#8e8e8e;
-  --status-beta:#FFA94D; --status-beta-dim:rgba(255,169,77,.11); --status-coming:#8b8b8b;
-  --font-sans:'Inter',sans-serif; --font-mono:'JetBrains Mono',monospace;
-  --transition:.2s ease; --transition-modal:.28s ease; --radius:4px;
-  --max-width:1240px;
+  --bg-main: #000000;
+  --bg-card: #060606;
+  --bg-elevated: #0d0d0d;
+  --accent: #b7f0b1;
+  --accent-strong: #c7ffc2;
+  --accent-dim: rgba(183, 240, 177, 0.12);
+  --accent-glow: rgba(183, 240, 177, 0.22);
+  --border: #3d3d3d;
+  --border-strong: #5a5a5a;
+  --text-main: #f1f1f1;
+  --text-muted: #b7b7b7;
+  --text-subtle: #989898;
+  --status-beta: #ffc078;
+  --status-beta-dim: rgba(255, 192, 120, 0.13);
+  --status-coming: #b6b6b6;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --transition: 0.2s ease;
+  --radius: 5px;
+  --max-width: 1240px;
 }

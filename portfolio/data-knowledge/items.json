@@ -22,7 +22,9 @@
         "근거 중심 AI·LLM 문서",
         "단계별 학습 코스",
         "프롬프트·실험실 연결"
-      ]
+      ],
+      "shortDescriptionEn": "A Korean AI and LLM learning wiki linking more than 1,600 reviewed documents with courses, prompts, and labs.",
+      "actionLabelEn": "Learn"
     },
     {
       "id": "ram-for-local-ai",
@@ -43,7 +45,8 @@
         "RAM·VRAM 기준 모델 선택",
         "양자화와 런타임 가이드",
         "웹 메모리 계산기"
-      ]
+      ],
+      "shortDescriptionEn": "Guides and a calculator for narrowing local AI models, quantization, and runtimes from RAM, VRAM, and unified-memory constraints."
     },
     {
       "id": "ram",
@@ -64,7 +67,8 @@
         "메모리 셀 구조 비교",
         "공정·신뢰성·수율 관점",
         "근거 중심 기술 문서"
-      ]
+      ],
+      "shortDescriptionEn": "A technical document set examining memory from SRAM through HBM, HBF, and NAND across cells, process, reliability, and yield."
     },
     {
       "id": "kr-apartment-market-skill",
@@ -85,7 +89,8 @@
         "공공 실거래 데이터 구조화",
         "시장 지표 계산",
         "AI Skill + MCP 구성"
-      ]
+      ],
+      "shortDescriptionEn": "A Korean real-estate AI Skill + MCP package that structures housing conditions and market indicators from public transaction data."
     }
   ]
 }

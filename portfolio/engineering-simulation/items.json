@@ -20,7 +20,8 @@
         "D2Q9 LBM 유동장",
         "형상 스케치·이미지 입력",
         "Cd·Cl·St 추세 시각화"
-      ]
+      ],
+      "shortDescriptionEn": "A browser aerodynamics workbench that connects sketches or image silhouettes to a D2Q9 LBM flow field and aerodynamic trends."
     },
     {
       "id": "cnc-render",
@@ -41,7 +42,8 @@
         "G-code 파싱과 모달 상태",
         "Toolpath 시각화",
         "점진적 소재 제거 구조"
-      ]
+      ],
+      "shortDescriptionEn": "A browser-based CNC learning and simulation project connecting G-code interpretation, tool motion, and material removal."
     },
     {
       "id": "smart-cart-autonomy-lab",
@@ -65,7 +67,9 @@
         "UWB·LiDAR·ToF 관측",
         "점유맵과 사용자 추종",
         "후륜 구동·Ackermann 조향"
-      ]
+      ],
+      "shortDescriptionEn": "A WebGL 2 user-following smart-cart simulator for testing UWB, LiDAR, ToF observations and driving control in one scene.",
+      "actionLabelEn": "Open Simulator"
     },
     {
       "id": "smart-cart-autonomy-lab-jev",
@@ -88,7 +92,9 @@
         "Off·Shadow·Stub 감독 모드",
         "최대 9개 후보 중 indexed action 선택",
         "기존 제어기 재검증과 보수적 제동"
-      ]
+      ],
+      "shortDescriptionEn": "An indexed-action supervisor experiment that adds a Jev supervisory layer on top of the existing sensor-driven simulator.",
+      "actionLabelEn": "Open Demo"
     },
     {
       "id": "ram-lab",
@@ -110,7 +116,9 @@
         "메모리 구조 3D 시각화",
         "회로 보기와 확대",
         "KR/EN 인터페이스"
-      ]
+      ],
+      "shortDescriptionEn": "An interactive memory lab connecting the structure and operation of SRAM, DRAM, HBM, HBF, and 3D NAND through 3D and circuit views.",
+      "actionLabelEn": "Open Lab"
     },
     {
       "id": "jev-simulink-supervisor",
@@ -130,7 +138,8 @@
         "ODE 상태 요약과 감독 판단",
         "솔버·허용오차 조정 정책",
         "Mock·App Designer·CSV/MAT 로그"
-      ]
+      ],
+      "shortDescriptionEn": "A supervisory tool that summarizes MATLAB numerical simulation state and decides solver, tolerance, or abort actions."
     },
     {
       "id": "mini-jet-2",
@@ -149,7 +158,9 @@
         "엔진 시동 및 연소",
         "압축기·터빈 구동",
         "ECU 제어 로직"
-      ]
+      ],
+      "shortDescriptionEn": "A web simulator implementing startup, combustion, compression, turbine drive, exhaust, and ECU logic for a small jet engine.",
+      "actionLabelEn": "Open Simulator"
     }
   ]
 }

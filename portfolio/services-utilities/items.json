@@ -22,7 +22,9 @@
         "배포·검증 흐름"
       ],
       "liveUrl": "https://chromewebstore.google.com/detail/chzzk-downloader/pglcbbcphnbalglbhjngigjciijhgpih",
-      "actionLabel": "설치하기"
+      "actionLabel": "설치하기",
+      "shortDescriptionEn": "A Chrome extension for saving Naver CHZZK VODs and clips as MP4 files.",
+      "actionLabelEn": "Install"
     },
     {
       "id": "nexusshell",
@@ -41,7 +43,9 @@
         "유튜브 영상·음원 다운로드",
         "사운드클라우드 음원 다운로드",
         "웹 기반 도구"
-      ]
+      ],
+      "shortDescriptionEn": "A downloader for YouTube and SoundCloud video and audio.",
+      "actionLabelEn": "Open"
     },
     {
       "id": "macode",
@@ -60,7 +64,9 @@
         "코드 렌더링",
         "macOS 스타일 프레임",
         "발표 자료 제작"
-      ]
+      ],
+      "shortDescriptionEn": "A web app that renders source code in a macOS-style window for presentations and videos.",
+      "actionLabelEn": "Open"
     },
     {
       "id": "naver-pay-map",
@@ -80,7 +86,9 @@
         "결제 가능 매장 탐색",
         "카테고리 검색",
         "거리순 정렬"
-      ]
+      ],
+      "shortDescriptionEn": "A nationwide map service for browsing Naver Pay-enabled stores by category and distance.",
+      "actionLabelEn": "Open Map"
     },
     {
       "id": "ai-token-monitor",
@@ -101,7 +109,9 @@
         "Claude Code 사용량",
         "Codex CLI 사용량",
         "비용 환산 모니터링"
-      ]
+      ],
+      "shortDescriptionEn": "A monitoring app that analyzes local Claude Code and Codex CLI logs to show token usage and API-equivalent cost.",
+      "actionLabelEn": "Open Docs"
     },
     {
       "id": "worldle",
@@ -120,7 +130,9 @@
         "매일 새로운 나라",
         "거리·방향 힌트",
         "6회 도전"
-      ]
+      ],
+      "shortDescriptionEn": "A daily geography puzzle where you identify a country using distance, direction, and proximity clues.",
+      "actionLabelEn": "Play"
     },
     {
       "id": "neat-cable",
@@ -139,7 +151,9 @@
         "서버 케이블 연결",
         "연결 퍼즐",
         "웹 기반 플레이"
-      ]
+      ],
+      "shortDescriptionEn": "A web game that turns correct server-cable connections into a wiring puzzle.",
+      "actionLabelEn": "Play"
     }
   ]
 }

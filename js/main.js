@@ -1,1 +1,4 @@
-document.addEventListener('DOMContentLoaded',function(){initPortfolio();});
+document.addEventListener('DOMContentLoaded', function () {
+  window.PortfolioI18n.init();
+  window.initPortfolio();
+});

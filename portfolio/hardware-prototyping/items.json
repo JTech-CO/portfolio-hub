@@ -21,7 +21,9 @@
         "STEP·FCStd CAD 산출물",
         "50개 전기 연결·하네스 데이터",
         "WebGL2 + CPU fallback 뷰어"
-      ]
+      ],
+      "shortDescriptionEn": "A 900×600 mm user-following smart-cart prototype model integrating component specifications, wiring, and CAD for physical fabrication.",
+      "actionLabelEn": "Assembly Viewer"
     },
     {
       "id": "motor-bracket",
@@ -41,7 +43,8 @@
         "STEP·FCStd CAD",
         "리브·관통창 경량화",
         "CNC 견적·BOM 문서"
-      ]
+      ],
+      "shortDescriptionEn": "The SCMB Rev A lightweight 6061-T6 top-hung bracket design package for the MY1016Z drive motor."
     }
   ]
 }
