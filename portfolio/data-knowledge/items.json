@@ -1,0 +1,91 @@
+{
+  "$schema": "../items.schema.json",
+  "items": [
+    {
+      "id": "ai-learning-wiki",
+      "name": "AI Learning Wiki",
+      "shortDescription": "1,600여 개 검토 문서와 학습 코스, 프롬프트·실험실을 연결한 한국어 AI·LLM 학습 위키.",
+      "fullDescription": "AI와 LLM의 원리, 용어, 기술을 근거 중심 문서와 단계별 학습 경로로 연결한 한국어 지식 서비스입니다. 프로필 최신 스냅샷 기준 1,676개 검토 문서, 27개 코스, 1,500개 프롬프트와 6개 실험실을 포함합니다.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "AI",
+        "Knowledge",
+        "Astro"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-19",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/AI-Learning-Wiki",
+      "liveUrl": "https://jtech-co.github.io/AI-Learning-Wiki/",
+      "actionLabel": "학습하기",
+      "features": [
+        "근거 중심 AI·LLM 문서",
+        "단계별 학습 코스",
+        "프롬프트·실험실 연결"
+      ]
+    },
+    {
+      "id": "ram-for-local-ai",
+      "name": "RAM for Local AI",
+      "shortDescription": "RAM·VRAM·통합 메모리 조건으로 로컬 AI 모델과 양자화·런타임을 좁히는 가이드와 계산기.",
+      "fullDescription": "시스템 메모리 조건을 기준으로 실행 가능한 로컬 AI 모델, 양자화, 런타임과 운용 방식을 좁히도록 돕는 가이드 및 웹 계산기 프로젝트입니다.",
+      "icon": "fas fa-microchip",
+      "tags": [
+        "Local AI",
+        "RAM",
+        "Guide"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-14",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/RAM-for-Local-AI",
+      "features": [
+        "RAM·VRAM 기준 모델 선택",
+        "양자화와 런타임 가이드",
+        "웹 메모리 계산기"
+      ]
+    },
+    {
+      "id": "ram",
+      "name": "RAM",
+      "shortDescription": "SRAM부터 HBM·HBF·NAND까지 메모리 계층을 셀, 공정, 신뢰성과 수율 관점에서 해부한 기술 문서군.",
+      "fullDescription": "Revealing Anatomy of Memory. SRAM·DRAM·HBM·HBF·NAND를 셀 구조, 공정, 신뢰성, 수율과 시스템 계층 관점에서 근거 중심으로 정리한 메모리 기술 문서군입니다.",
+      "icon": "fas fa-memory",
+      "tags": [
+        "Semiconductor",
+        "Memory",
+        "Research"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-15",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/RAM",
+      "features": [
+        "메모리 셀 구조 비교",
+        "공정·신뢰성·수율 관점",
+        "근거 중심 기술 문서"
+      ]
+    },
+    {
+      "id": "kr-apartment-market-skill",
+      "name": "KR Apartment Market Skill",
+      "shortDescription": "공공 실거래 데이터를 바탕으로 주거 조건과 시장 지표를 구조화하는 한국 부동산 AI Skill + MCP 패키지.",
+      "fullDescription": "국토교통부 등 공공 실거래를 바탕으로 주거 조건을 구조화하고, 신고가·회복률·전세가율·추정 갭 등 시장 지표를 AI에 연결하는 Skill + MCP 패키지입니다.",
+      "icon": "fas fa-building",
+      "tags": [
+        "MCP",
+        "Public Data",
+        "Real Estate"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-27",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/kr-apartment-market-skill",
+      "features": [
+        "공공 실거래 데이터 구조화",
+        "시장 지표 계산",
+        "AI Skill + MCP 구성"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "../items.schema.json",
+  "items": [
+    {
+      "id": "shaderdesk-studio",
+      "name": "ShaderDesk Studio",
+      "shortDescription": "GLSL을 실시간 편집·저장·내보내고 Windows/macOS 월페이퍼 어댑터 소스까지 연결한 local-first 셰이더 플레이그라운드.",
+      "fullDescription": "WebGL2 기반 GLSL 편집기와 8개 셰이더 스터디, 오류 복구, JSON·GLSL·PNG·HTML·웹 월페이퍼 ZIP 내보내기를 제공하며 Windows WorkerW와 macOS window-level 네이티브 어댑터 소스까지 포함합니다. 네이티브 빌드·서명은 아직 검증되지 않은 개발자 소스 릴리스입니다.",
+      "icon": "fas fa-wand-magic-sparkles",
+      "tags": [
+        "GLSL",
+        "WebGL2",
+        "Wallpaper"
+      ],
+      "status": "beta",
+      "version": "0.1.0",
+      "updatedAt": "2026-09-21",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/ShaderDesk-Studio",
+      "features": [
+        "실시간 GLSL 편집·오류 복구",
+        "8개 오리지널 셰이더",
+        "Windows/macOS 네이티브 어댑터 소스"
+      ]
+    },
+    {
+      "id": "real-moog-1960",
+      "name": "Real Moog 1960",
+      "shortDescription": "패치 케이블이 실제 Web Audio 그래프를 바꾸도록 구현한 1960년대 모듈러 Moog 교육용 웹 신디사이저.",
+      "fullDescription": "1960년대 초기 Moog 모듈러 워크플로를 웹에서 재현해 노브와 패치 케이블 조작이 실제 오디오 그래프에 반영되도록 만든 교육용 신디사이저입니다.",
+      "icon": "fas fa-sliders",
+      "tags": [
+        "Web Audio",
+        "Synthesizer",
+        "Education"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-19",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/Real-Moog-1960",
+      "features": [
+        "패치 케이블 기반 신호 라우팅",
+        "오실레이터·필터·엔벌로프",
+        "1960s 모듈러 UI"
+      ]
+    },
+    {
+      "id": "retro-video-effector",
+      "name": "Retro Video Effector",
+      "shortDescription": "Windows 95 스타일의 local-first 스틸 이미지 VHS·레트로 영상 효과 편집기.",
+      "fullDescription": "런타임 AI, 업로드, 백엔드나 빌드 단계 없이 브라우저에서 작동하는 Windows 95 스타일 스틸 이미지 편집기입니다. 30개 효과 파라미터, 4개 프리셋, EN/KR, PNG/JPEG 내보내기를 지원합니다.",
+      "icon": "fas fa-video",
+      "tags": [
+        "Image",
+        "Retro",
+        "Local-first"
+      ],
+      "status": "active",
+      "version": "2.1.0",
+      "updatedAt": "2026-09-15",
+      "repoUrl": "https://github.com/JTech-CO/Retro-Video-Effector",
+      "liveUrl": "https://jtech-co.github.io/Retro-Video-Effector/",
+      "actionLabel": "편집기",
+      "features": [
+        "30개 효과 파라미터",
+        "PNG/JPEG 로컬 내보내기",
+        "EN/KR 및 반응형 UI"
+      ]
+    },
+    {
+      "id": "infopic",
+      "name": "InfoPic",
+      "shortDescription": "계정·백엔드·AI API 없이 브라우저에서 카드뉴스를 편집하고 PNG/ZIP으로 내보내는 정보성 캐러셀 제작기.",
+      "fullDescription": "브라우저에서 바로 정보성 카드뉴스를 구성하고 배경, 텍스트, 이미지와 레이아웃을 편집한 뒤 PNG 또는 ZIP으로 내보내는 local-first 제작 도구입니다.",
+      "icon": "fas fa-images",
+      "tags": [
+        "Carousel",
+        "Editor",
+        "Local-first"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-09",
+      "repoUrl": "https://github.com/JTech-CO/InfoPic",
+      "liveUrl": "https://jtech-co.github.io/InfoPic/",
+      "actionLabel": "실행하기",
+      "features": [
+        "정보성 카드뉴스 편집",
+        "PNG·ZIP 내보내기",
+        "KR/EN·라이트/다크 대응"
+      ]
+    }
+  ]
+}

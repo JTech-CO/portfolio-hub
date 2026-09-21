@@ -1,0 +1,155 @@
+{
+  "$schema": "../items.schema.json",
+  "items": [
+    {
+      "id": "aerosketch",
+      "name": "AeroSketch",
+      "shortDescription": "스케치나 이미지 실루엣을 D2Q9 LBM 유동장과 공력 추세로 연결하는 브라우저 공력 워크벤치.",
+      "fullDescription": "직접 그린 형상이나 이미지 실루엣을 CPU 기반 D2Q9 LBM 유동장과 Cd·Cl·St 공력 추세로 연결하는 브라우저 기반 공력 스케치벤치입니다.",
+      "icon": "fas fa-wind",
+      "tags": [
+        "TypeScript",
+        "LBM",
+        "Aerodynamics"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-12",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/Aerosketch",
+      "features": [
+        "D2Q9 LBM 유동장",
+        "형상 스케치·이미지 입력",
+        "Cd·Cl·St 추세 시각화"
+      ]
+    },
+    {
+      "id": "cnc-render",
+      "name": "CNC-Render",
+      "shortDescription": "G-code 해석, 공구 운동과 소재 제거를 연결하는 브라우저 기반 CNC 가공 학습·시뮬레이션 프로젝트.",
+      "fullDescription": "Rust 기반 G-code 파서, 모달 상태와 Toolpath IR부터 공구 운동, 충돌 검사와 점진적 소재 제거를 WebGPU/WebGL 2 작업실에서 연결하는 CNC 교육·시뮬레이션 프로젝트입니다.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "TypeScript",
+        "Rust/WASM",
+        "WebGPU"
+      ],
+      "status": "beta",
+      "updatedAt": "2026-09-19",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/CNC-Render",
+      "features": [
+        "G-code 파싱과 모달 상태",
+        "Toolpath 시각화",
+        "점진적 소재 제거 구조"
+      ]
+    },
+    {
+      "id": "smart-cart-autonomy-lab",
+      "name": "Smart-Cart-Autonomy-Lab",
+      "shortDescription": "UWB·LiDAR·ToF 관측과 주행 제어를 한 장면에서 시험하는 WebGL 2 기반 사용자 추종 스마트카트 시뮬레이터.",
+      "fullDescription": "UWB, LiDAR, ToF 관측, 점유 맵, 후륜 구동과 Ackermann 조향을 한 장면에서 시험하는 사용자 추종 스마트카트 시뮬레이터입니다.",
+      "icon": "fas fa-cart-shopping",
+      "tags": [
+        "WebGL2",
+        "Robotics",
+        "Sensor Fusion"
+      ],
+      "status": "active",
+      "version": "1.2.0",
+      "updatedAt": "2026-09-20",
+      "featured": true,
+      "repoUrl": "https://github.com/JTech-CO/Smart-Cart-Autonomy-Lab",
+      "liveUrl": "https://jtech-co.github.io/Smart-Cart-Autonomy-Lab/",
+      "actionLabel": "시뮬레이터",
+      "features": [
+        "UWB·LiDAR·ToF 관측",
+        "점유맵과 사용자 추종",
+        "후륜 구동·Ackermann 조향"
+      ]
+    },
+    {
+      "id": "smart-cart-autonomy-lab-jev",
+      "name": "Smart-Cart-Autonomy-Lab × Jev",
+      "shortDescription": "기존 센서 기반 시뮬레이터 위에 Jev 감독 계층을 추가한 indexed-action supervisor 실험.",
+      "fullDescription": "Jev를 센서나 노이즈 필터가 아니라 후보 행동을 선택하는 감독 계층으로 배치한 Smart-Cart-Autonomy-Lab 애드온입니다. 기존 제어기는 후보를 만들고, Jev는 제한된 연산과 인덱스를 선택하며 기존 rollout이 다시 검증합니다.",
+      "icon": "fas fa-brain",
+      "tags": [
+        "Jev",
+        "Supervisor",
+        "Robotics"
+      ],
+      "status": "beta",
+      "version": "0.1.0",
+      "updatedAt": "2026-09-20",
+      "repoUrl": "https://github.com/JTech-CO/Smart-Cart-Autonomy-Lab-Jev",
+      "liveUrl": "https://jtech-co.github.io/Smart-Cart-Autonomy-Lab-Jev/simulator/index.html",
+      "actionLabel": "데모",
+      "features": [
+        "Off·Shadow·Stub 감독 모드",
+        "최대 9개 후보 중 indexed action 선택",
+        "기존 제어기 재검증과 보수적 제동"
+      ]
+    },
+    {
+      "id": "ram-lab",
+      "name": "RAM-LAB",
+      "shortDescription": "SRAM·DRAM·HBM·HBF·3D NAND의 구조와 동작을 3D·회로 뷰로 연결한 인터랙티브 메모리 실험실.",
+      "fullDescription": "메모리 구조와 회로, 동작 단계와 저장 데이터를 3D 및 회로 뷰로 연결해 SRAM부터 3D NAND까지 인터랙티브하게 탐색하는 오프라인 실험실입니다.",
+      "icon": "fas fa-memory",
+      "tags": [
+        "Memory",
+        "3D",
+        "Interactive"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-10",
+      "repoUrl": "https://github.com/JTech-CO/RAM-LAB",
+      "liveUrl": "https://jtech-co.github.io/RAM-LAB/",
+      "actionLabel": "실행하기",
+      "features": [
+        "메모리 구조 3D 시각화",
+        "회로 보기와 확대",
+        "KR/EN 인터페이스"
+      ]
+    },
+    {
+      "id": "jev-simulink-supervisor",
+      "name": "Jev-Simulink Supervisor",
+      "shortDescription": "MATLAB 수치 시뮬레이션 상태를 요약하고 솔버·허용오차·중단을 판단하는 감독 도구.",
+      "fullDescription": "MATLAB이 적분·계산·시각화를 수행하고 Jev의 제안을 신뢰도와 쿨다운 정책에 따라 적용하는 수치 시뮬레이션 감독 도구입니다. 현재 Van der Pol 강성 ODE 데모와 mock·헤드리스 실행·App Designer 대시보드를 제공합니다.",
+      "icon": "fas fa-wave-square",
+      "tags": [
+        "MATLAB",
+        "Jev",
+        "Numerical"
+      ],
+      "status": "beta",
+      "updatedAt": "2026-09-21",
+      "repoUrl": "https://github.com/JTech-CO/Jev-Simulink-Supervisor",
+      "features": [
+        "ODE 상태 요약과 감독 판단",
+        "솔버·허용오차 조정 정책",
+        "Mock·App Designer·CSV/MAT 로그"
+      ]
+    },
+    {
+      "id": "mini-jet-2",
+      "name": "Mini Jet 2",
+      "shortDescription": "소형 제트엔진의 시동, 연소, 압축, 터빈 구동과 ECU 로직을 구현한 웹 시뮬레이터.",
+      "fullDescription": "소형 제트엔진의 시동, 연소, 압축, 터빈 구동, 배기와 ECU 로직까지 구현한 브라우저 시뮬레이터입니다.",
+      "icon": "fas fa-jet-fighter-up",
+      "tags": [
+        "Jet Engine",
+        "Simulation"
+      ],
+      "status": "active",
+      "liveUrl": "https://jtech-co.github.io/Minijet-2/",
+      "actionLabel": "실행하기",
+      "features": [
+        "엔진 시동 및 연소",
+        "압축기·터빈 구동",
+        "ECU 제어 로직"
+      ]
+    }
+  ]
+}

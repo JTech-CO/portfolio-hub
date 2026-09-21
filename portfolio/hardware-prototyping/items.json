@@ -1,0 +1,47 @@
+{
+  "$schema": "../items.schema.json",
+  "items": [
+    {
+      "id": "smart-cart-5",
+      "name": "Smart-Cart-5",
+      "shortDescription": "실제 제작을 전제로 부품 규격·배선·CAD를 통합한 900×600 mm 사용자 추종 스마트카트 프로토타입 모델.",
+      "fullDescription": "구매한 900×600 mm 접이식 평판대차와 부품 규격을 기준으로 두 개의 납축전지, MY1016Z 후륜 구동계, Raspberry Pi 4B 8GB, NC 비상정지 버튼과 SCMB 브라켓을 통합한 제작 지향 모델입니다. 치수 측정·구조 검증·통전은 아직 보류 상태입니다.",
+      "icon": "fas fa-cart-flatbed",
+      "tags": [
+        "Prototype",
+        "CAD",
+        "Raspberry Pi"
+      ],
+      "status": "beta",
+      "updatedAt": "2026-09-20",
+      "repoUrl": "https://github.com/JTech-CO/Smart-Cart-5",
+      "liveUrl": "https://jtech-co.github.io/Smart-Cart-5/",
+      "actionLabel": "Assembly Viewer",
+      "features": [
+        "STEP·FCStd CAD 산출물",
+        "50개 전기 연결·하네스 데이터",
+        "WebGL2 + CPU fallback 뷰어"
+      ]
+    },
+    {
+      "id": "motor-bracket",
+      "name": "Smart Cart Motor Bracket",
+      "shortDescription": "MY1016Z 구동 모터용 경량 6061-T6 상부 행잉 브라켓 SCMB Rev A 설계 패키지.",
+      "fullDescription": "모터 도면을 기준으로 생성한 경량·리브 구조의 SCMB Rev A 브라켓입니다. 6061-T6를 기본 소재로 하며 STEP·FCStd, 도면, 1:1 홀 템플릿과 제한적 하중 검토 자료를 포함합니다. 제조 승인 전 엔지니어링 검토용입니다.",
+      "icon": "fas fa-screwdriver-wrench",
+      "tags": [
+        "CAD",
+        "6061-T6",
+        "CNC"
+      ],
+      "status": "beta",
+      "updatedAt": "2026-09-20",
+      "repoUrl": "https://github.com/JTech-CO/Motor-Bracket",
+      "features": [
+        "STEP·FCStd CAD",
+        "리브·관통창 경량화",
+        "CNC 견적·BOM 문서"
+      ]
+    }
+  ]
+}

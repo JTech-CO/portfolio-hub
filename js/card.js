@@ -1,0 +1,9 @@
+(function(){'use strict';
+var LABEL={active:'활성',beta:'베타','coming-soon':'준비 중'};
+function el(tag,cls,t){var e=document.createElement(tag);if(cls)e.className=cls;if(t!==undefined)e.textContent=t;return e;}
+function fontIcon(icon){var i=document.createElement('i'),safe=icon.split(/\s+/).filter(function(x){return /^[a-z0-9-]+$/i.test(x);});i.className=safe.length?safe.join(' '):'fas fa-cube';i.setAttribute('aria-hidden','true');return i;}
+function tag(t){return el('span','item-card__tag',t);}
+function status(s){return el('span','item-card__status item-card__status--'+s,LABEL[s]||s);}
+function dateText(v){return v?v.replace(/-/g,'.'):'';}
+function card(c,onDetail){var a=el('article','item-card');a.dataset.id=c.id;var top=el('div','item-card__top'),ic=el('div','item-card__icon');ic.appendChild(fontIcon(c.icon));top.appendChild(ic);if(c.featured)top.appendChild(el('span','item-card__badge','Featured'));a.appendChild(top);a.appendChild(el('h3','item-card__name',c.name));a.appendChild(el('div','item-card__divider'));a.appendChild(el('p','item-card__desc',c.shortDescription));var meta=el('div','item-card__meta'),tags=el('div','item-card__tags');c.tags.slice(0,3).forEach(function(t){tags.appendChild(tag(t));});meta.appendChild(tags);meta.appendChild(status(c.status));a.appendChild(meta);if(c.updatedAt||c.version){var sm=el('div','item-card__submeta');sm.appendChild(el('span','',c.updatedAt?'updated '+dateText(c.updatedAt):''));sm.appendChild(el('span','',c.version?'v'+c.version:''));a.appendChild(sm);}var ft=el('div','item-card__footer'),b=el('button','item-card__btn','자세히 보기');b.type='button';b.setAttribute('aria-label',c.name+' 자세히 보기');b.appendChild(fontIcon('fas fa-arrow-right'));b.addEventListener('click',function(){onDetail(c);});ft.appendChild(b);a.appendChild(ft);return a;}
+window.PortfolioUI={el:el,fontIcon:fontIcon,tag:tag,status:status,card:card,dateText:dateText};})();

@@ -1,0 +1,9 @@
+:root {
+  --bg-main:#000; --bg-card:#050505; --bg-elevated:#0a0a0a;
+  --accent:#B7F0B1; --accent-dim:rgba(183,240,177,.11); --accent-glow:rgba(183,240,177,.18);
+  --border:#2d2d2d; --border-strong:#454545; --text-main:#e8e8e8; --text-muted:#8e8e8e;
+  --status-beta:#FFA94D; --status-beta-dim:rgba(255,169,77,.11); --status-coming:#8b8b8b;
+  --font-sans:'Inter',sans-serif; --font-mono:'JetBrains Mono',monospace;
+  --transition:.2s ease; --transition-modal:.28s ease; --radius:4px;
+  --max-width:1240px;
+}
