@@ -71,9 +71,57 @@
     });
   }
 
-  function animateScrollTo(targetY, duration) {
-    var startY = window.scrollY || window.pageYOffset || 0;
-    var distance = targetY - startY;
+  function getScroller() {
+    return document.scrollingElement || document.documentElement;
+  }
+
+  function currentScrollY() {
+    var scroller = getScroller();
+    return scroller ? scroller.scrollTop : (window.scrollY || window.pageYOffset || 0);
+  }
+
+  function setScrollY(value) {
+    var scroller = getScroller();
+    var next = Math.max(0, Math.round(value));
+    if (scroller) {
+      scroller.scrollTop = next;
+      return;
+    }
+    window.scrollTo(0, next);
+  }
+
+  function getDocumentBottom() {
+    var scroller = getScroller();
+    var root = document.documentElement;
+    var body = document.body;
+    var stage = document.getElementById('site-stage');
+    var footer = document.querySelector('.site-footer');
+    var scrollY = currentScrollY();
+
+    var absoluteStageBottom = stage ? stage.getBoundingClientRect().bottom + scrollY : 0;
+    var absoluteFooterBottom = footer ? footer.getBoundingClientRect().bottom + scrollY : 0;
+    var fullHeight = Math.max(
+      scroller ? scroller.scrollHeight : 0,
+      root ? root.scrollHeight : 0,
+      body ? body.scrollHeight : 0,
+      absoluteStageBottom,
+      absoluteFooterBottom
+    );
+
+    var viewportHeight = scroller && scroller.clientHeight ? scroller.clientHeight : window.innerHeight;
+    return Math.max(0, Math.ceil(fullHeight - viewportHeight));
+  }
+
+  function nextPaint() {
+    return new Promise(function (resolve) {
+      window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(resolve);
+      });
+    });
+  }
+
+  function animateScrollTo(target, duration) {
+    var startY = currentScrollY();
     var startTime = performance.now();
 
     return new Promise(function (resolve) {
@@ -83,10 +131,14 @@
 
       function frame(now) {
         var progress = Math.min(1, (now - startTime) / duration);
-        window.scrollTo(0, startY + distance * easeInOutCubic(progress));
+        var targetY = typeof target === 'function' ? target() : target;
+        var distance = targetY - startY;
+        setScrollY(startY + distance * easeInOutCubic(progress));
+
         if (progress < 1) {
           window.requestAnimationFrame(frame);
         } else {
+          setScrollY(targetY);
           resolve();
         }
       }
@@ -221,6 +273,7 @@
     var overlay = makeOverlay();
 
     document.body.classList.add('easter-sequence-running');
+    document.documentElement.classList.add('easter-scroll-direct');
     lockInteraction();
 
     try {
@@ -228,11 +281,18 @@
       await waitForAnimation(stage, 1100);
       stage.classList.remove('easter-stage-bounce');
 
-      window.scrollTo(0, 0);
-      await sleep(60);
-      var bottom = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-      await animateScrollTo(bottom, 2000);
+      // Wait for the stage transform to be fully removed before measuring the document.
+      await nextPaint();
+      setScrollY(0);
+      await nextPaint();
+
+      // Recompute the real document bottom while scrolling so late font/layout shifts
+      // cannot shorten the trip. The footer must be reached before returning upward.
+      await animateScrollTo(getDocumentBottom, 2000);
+      setScrollY(getDocumentBottom());
+      await nextPaint();
       await animateScrollTo(0, 2000);
+      setScrollY(0);
 
       await pulseScreenWhite(overlay);
       overlay.getAnimations().forEach(function (animation) { animation.cancel(); });
@@ -250,6 +310,7 @@
       window.location.assign(latest.repoUrl);
     } finally {
       unlockInteraction();
+      document.documentElement.classList.remove('easter-scroll-direct');
       document.body.classList.remove('easter-sequence-running');
       if (document.body.contains(overlay) && !overlay.querySelector('.easter-feature-card')) overlay.remove();
       running = false;

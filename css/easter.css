@@ -1,3 +1,7 @@
+
+html.easter-scroll-direct {
+  scroll-behavior: auto !important;
+}
 .site-stage {
   transform-origin: top center;
   will-change: transform;

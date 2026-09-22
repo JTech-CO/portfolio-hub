@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-22 - Easter egg full-document scroll fix
+
+- Easter egg scroll now writes directly to `document.scrollingElement.scrollTop` instead of repeatedly invoking native smooth `window.scrollTo()`.
+- Native `scroll-behavior: smooth` is temporarily disabled only while the sequence runs.
+- The bottom target is recalculated from the document, stage, and footer after the scale animation settles, so the sequence reaches the actual footer before returning to the top.
+
 ## 2026-09-22 - Easter egg & fixed Korean UI
 
 - KR/EN 전환 버튼과 `i18n.js`를 제거하고 UI를 한국어 기준으로 고정했습니다.
