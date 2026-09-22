@@ -36,7 +36,7 @@ def main():
         if not ID.fullmatch(key):
             errors.append(f'categories[{category_index}] invalid key')
 
-        for field in ('label', 'labelEn', 'description', 'descriptionEn'):
+        for field in ('label', 'description'):
             if not isinstance(category.get(field), str) or not category[field].strip():
                 errors.append(f'categories[{category_index}] missing {field}')
 
@@ -71,7 +71,7 @@ def main():
                 errors.append(f'{context}: duplicate id {identifier}')
             ids.add(identifier)
 
-            for field in ('name', 'shortDescription', 'shortDescriptionEn'):
+            for field in ('name', 'shortDescription'):
                 if not isinstance(item.get(field), str) or not item[field].strip():
                     errors.append(f'{context}: missing {field}')
 
@@ -100,7 +100,7 @@ def main():
             print('- ' + error)
         return 1
 
-    print(f'Catalog valid: {len(categories)} categories, {total} unique projects, KR/EN descriptions complete')
+    print(f'Catalog valid: {len(categories)} categories, {total} unique projects')
     return 0
 
 

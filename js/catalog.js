@@ -55,7 +55,6 @@
       id: id,
       name: name,
       shortDescription: shortDescription,
-      shortDescriptionEn: text(raw.shortDescriptionEn, shortDescription),
       icon: text(raw.icon, 'fas fa-cube'),
       tags: array(raw.tags),
       status: VALID.indexOf(raw.status) >= 0 ? raw.status : 'active',
@@ -65,10 +64,8 @@
       repoUrl: normalizeUrl(raw.repoUrl, issues, context),
       liveUrl: normalizeUrl(raw.liveUrl, issues, context),
       actionLabel: text(raw.actionLabel, ''),
-      actionLabelEn: text(raw.actionLabelEn, ''),
       categoryKey: category.key,
-      categoryLabel: category.label,
-      categoryLabelEn: category.labelEn
+      categoryLabel: category.label
     };
   }
 
@@ -83,9 +80,7 @@
       return {
         key: key,
         label: text(raw.label, key),
-        labelEn: text(raw.labelEn, text(raw.label, key)),
         description: text(raw.description, ''),
-        descriptionEn: text(raw.descriptionEn, text(raw.description, '')),
         source: source
       };
     });
@@ -100,9 +95,7 @@
       return {
         key: category.key,
         label: category.label,
-        labelEn: category.labelEn,
         description: category.description,
-        descriptionEn: category.descriptionEn,
         items: raw.map(function (entry, index) {
           return normalizeItem(entry, category, index, seen, issues);
         }).filter(Boolean),
@@ -113,9 +106,7 @@
       return {
         key: category.key,
         label: category.label,
-        labelEn: category.labelEn,
         description: category.description,
-        descriptionEn: category.descriptionEn,
         items: [],
         issues: issues,
         error: error.message

@@ -1,6 +1,12 @@
 (function () {
   'use strict';
 
+  var STATUS_LABELS = {
+    active: '활성',
+    beta: '베타',
+    'coming-soon': '준비 중'
+  };
+
   function el(tag, className, text) {
     var element = document.createElement(tag);
     if (className) element.className = className;
@@ -16,25 +22,12 @@
     return element;
   }
 
-  function language() {
-    return window.PortfolioI18n.getLanguage();
-  }
-
-  function localized(primary, english) {
-    return language() === 'en' ? (english || primary) : primary;
-  }
-
   function tag(value) {
     return el('span', 'item-card__tag', value);
   }
 
   function status(value) {
-    var keys = {
-      active: 'statusActive',
-      beta: 'statusBeta',
-      'coming-soon': 'statusComingSoon'
-    };
-    return el('span', 'item-card__status item-card__status--' + value, window.PortfolioI18n.t(keys[value] || value));
+    return el('span', 'item-card__status item-card__status--' + value, STATUS_LABELS[value] || value);
   }
 
   function dateText(value) {
@@ -60,12 +53,12 @@
     var icon = el('div', 'item-card__icon');
     icon.appendChild(fontIcon(config.icon));
     top.appendChild(icon);
-    if (config.featured) top.appendChild(el('span', 'item-card__badge', window.PortfolioI18n.t('featured')));
+    if (config.featured) top.appendChild(el('span', 'item-card__badge', '대표작'));
     article.appendChild(top);
 
     article.appendChild(el('h3', 'item-card__name', config.name));
     article.appendChild(el('div', 'item-card__divider'));
-    article.appendChild(el('p', 'item-card__desc', localized(config.shortDescription, config.shortDescriptionEn)));
+    article.appendChild(el('p', 'item-card__desc', config.shortDescription));
 
     var meta = el('div', 'item-card__meta');
     var tags = el('div', 'item-card__tags');
@@ -76,18 +69,17 @@
 
     if (config.updatedAt || config.version) {
       var submeta = el('div', 'item-card__submeta');
-      submeta.appendChild(el('span', '', config.updatedAt ? window.PortfolioI18n.t('updated') + ' ' + dateText(config.updatedAt) : ''));
+      submeta.appendChild(el('span', '', config.updatedAt ? '업데이트 ' + dateText(config.updatedAt) : ''));
       submeta.appendChild(el('span', '', config.version ? 'v' + config.version : ''));
       article.appendChild(submeta);
     }
 
     var actions = el('div', 'item-card__actions');
     if (config.liveUrl) {
-      var liveLabel = localized(config.actionLabel || window.PortfolioI18n.t('openProject'), config.actionLabelEn || window.PortfolioI18n.t('openProject'));
-      actions.appendChild(createAction(config.liveUrl, liveLabel, 'fas fa-arrow-up-right-from-square', true));
+      actions.appendChild(createAction(config.liveUrl, config.actionLabel || '열기', 'fas fa-arrow-up-right-from-square', true));
     }
     if (config.repoUrl) {
-      actions.appendChild(createAction(config.repoUrl, window.PortfolioI18n.t('github'), 'fa-brands fa-github', !config.liveUrl));
+      actions.appendChild(createAction(config.repoUrl, 'GitHub', 'fa-brands fa-github', !config.liveUrl));
     }
     if (actions.children.length) article.appendChild(actions);
 
@@ -98,7 +90,6 @@
     el: el,
     fontIcon: fontIcon,
     card: card,
-    dateText: dateText,
-    localized: localized
+    dateText: dateText
   };
 })();

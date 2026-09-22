@@ -8,11 +8,6 @@
     return window.PortfolioUI.el('p', 'portfolio-state' + (isError ? ' portfolio-state--error' : ''), message);
   }
 
-  function localizedCategory(category, field) {
-    var englishField = field + 'En';
-    return window.PortfolioUI.localized(category[field], category[englishField]);
-  }
-
   function recent(categories) {
     var all = [];
     categories.forEach(function (category) {
@@ -24,6 +19,15 @@
       return b.updatedAt.localeCompare(a.updatedAt) || a.name.localeCompare(b.name);
     });
     return all.slice(0, 8);
+  }
+
+  function allItems() {
+    var items = [];
+    if (!cachedCategories) return items;
+    cachedCategories.forEach(function (category) {
+      category.items.forEach(function (item) { items.push(item); });
+    });
+    return items;
   }
 
   function flashProject(itemId) {
@@ -48,24 +52,24 @@
 
     var header = ui.el('div', 'section-header recent-section__header');
     var titleWrap = ui.el('div', 'section-title-wrap');
-    titleWrap.appendChild(ui.el('span', 'section-kicker', window.PortfolioI18n.t('recentKicker')));
-    titleWrap.appendChild(ui.el('h2', 'section-title', window.PortfolioI18n.t('recentTitle')));
-    titleWrap.appendChild(ui.el('p', 'section-description', window.PortfolioI18n.t('recentDescription')));
+    titleWrap.appendChild(ui.el('span', 'section-kicker', 'Latest repository activity'));
+    titleWrap.appendChild(ui.el('h2', 'section-title', '// Recent Work'));
+    titleWrap.appendChild(ui.el('p', 'section-description', '최근 작업 8개를 최신순으로 표시합니다. 카드를 누르면 아래의 해당 프로젝트 카드로 이동합니다.'));
     header.appendChild(titleWrap);
 
     var controls = ui.el('div', 'recent-controls');
     var count = ui.el('span', 'section-count');
     count.appendChild(ui.el('span', '', String(items.length)));
-    count.appendChild(document.createTextNode(' ' + window.PortfolioI18n.t('recentCount')));
+    count.appendChild(document.createTextNode(' 최근 작업'));
     controls.appendChild(count);
 
     var toggle = ui.el('button', 'recent-toggle');
     toggle.type = 'button';
     toggle.setAttribute('aria-controls', 'recent-work-grid');
     toggle.setAttribute('aria-expanded', recentCollapsed ? 'false' : 'true');
-    toggle.setAttribute('aria-label', window.PortfolioI18n.t(recentCollapsed ? 'expandAria' : 'collapseAria'));
+    toggle.setAttribute('aria-label', recentCollapsed ? 'Recent Work 펼치기' : 'Recent Work 접기');
     toggle.appendChild(ui.fontIcon(recentCollapsed ? 'fas fa-chevron-down' : 'fas fa-chevron-up'));
-    toggle.appendChild(document.createTextNode(window.PortfolioI18n.t(recentCollapsed ? 'expand' : 'collapse')));
+    toggle.appendChild(document.createTextNode(recentCollapsed ? '펼치기' : '접기'));
     controls.appendChild(toggle);
     header.appendChild(controls);
     section.appendChild(header);
@@ -77,18 +81,18 @@
     items.forEach(function (item) {
       var button = ui.el('button', 'recent-card');
       button.type = 'button';
-      button.setAttribute('aria-label', window.PortfolioI18n.t('recentJumpAria') + ' ' + item.name);
+      button.setAttribute('aria-label', '프로젝트 카드로 이동: ' + item.name);
 
       var top = ui.el('div', 'recent-card__top');
       top.appendChild(ui.el('span', 'recent-card__date', ui.dateText(item.updatedAt)));
-      top.appendChild(ui.el('span', 'recent-card__category', ui.localized(item.categoryLabel, item.categoryLabelEn)));
+      top.appendChild(ui.el('span', 'recent-card__category', item.categoryLabel));
       button.appendChild(top);
       button.appendChild(ui.el('h3', 'recent-card__name', item.name));
-      button.appendChild(ui.el('p', 'recent-card__desc', ui.localized(item.shortDescription, item.shortDescriptionEn)));
+      button.appendChild(ui.el('p', 'recent-card__desc', item.shortDescription));
 
       var jump = ui.el('span', 'recent-card__jump');
       jump.appendChild(ui.fontIcon('fas fa-arrow-down'));
-      jump.appendChild(document.createTextNode(window.PortfolioI18n.getLanguage() === 'en' ? 'View card' : '카드로 이동'));
+      jump.appendChild(document.createTextNode('카드로 이동'));
       button.appendChild(jump);
 
       button.addEventListener('click', function () { flashProject(item.id); });
@@ -99,10 +103,10 @@
       recentCollapsed = !recentCollapsed;
       grid.hidden = recentCollapsed;
       toggle.setAttribute('aria-expanded', recentCollapsed ? 'false' : 'true');
-      toggle.setAttribute('aria-label', window.PortfolioI18n.t(recentCollapsed ? 'expandAria' : 'collapseAria'));
+      toggle.setAttribute('aria-label', recentCollapsed ? 'Recent Work 펼치기' : 'Recent Work 접기');
       toggle.replaceChildren(
         ui.fontIcon(recentCollapsed ? 'fas fa-chevron-down' : 'fas fa-chevron-up'),
-        document.createTextNode(window.PortfolioI18n.t(recentCollapsed ? 'expand' : 'collapse'))
+        document.createTextNode(recentCollapsed ? '펼치기' : '접기')
       );
     });
 
@@ -117,20 +121,19 @@
 
     var header = ui.el('div', 'section-header');
     var titleWrap = ui.el('div', 'section-title-wrap');
-    titleWrap.appendChild(ui.el('span', 'section-kicker', window.PortfolioI18n.t('categoryKicker')));
-    titleWrap.appendChild(ui.el('h2', 'section-title', '// ' + localizedCategory(category, 'label')));
-    var description = localizedCategory(category, 'description');
-    if (description) titleWrap.appendChild(ui.el('p', 'section-description', description));
+    titleWrap.appendChild(ui.el('span', 'section-kicker', 'JTech project category'));
+    titleWrap.appendChild(ui.el('h2', 'section-title', '// ' + category.label));
+    if (category.description) titleWrap.appendChild(ui.el('p', 'section-description', category.description));
     header.appendChild(titleWrap);
 
     var count = ui.el('span', 'section-count');
     count.appendChild(ui.el('span', '', String(category.items.length)));
-    count.appendChild(document.createTextNode(' ' + window.PortfolioI18n.t('projectsCount')));
+    count.appendChild(document.createTextNode(' 프로젝트'));
     header.appendChild(count);
     section.appendChild(header);
 
     if (category.error) {
-      section.appendChild(state(window.PortfolioI18n.t('loadError') + ' ' + category.error, true));
+      section.appendChild(state('데이터를 불러오지 못했습니다: ' + category.error, true));
       return section;
     }
 
@@ -140,7 +143,7 @@
     });
 
     if (!items.length) {
-      section.appendChild(state(window.PortfolioI18n.t('empty')));
+      section.appendChild(state('등록된 프로젝트가 없습니다.'));
       return section;
     }
 
@@ -166,18 +169,21 @@
     if (!root) return Promise.resolve();
 
     root.setAttribute('aria-busy', 'true');
-    document.addEventListener('portfolio:languagechange', function () { render(root); });
-
     return window.PortfolioCatalog.load().then(function (categories) {
       cachedCategories = categories;
       render(root);
+      document.dispatchEvent(new CustomEvent('portfolio:loaded'));
     }).catch(function (error) {
-      root.replaceChildren(state(window.PortfolioI18n.t('portfolioLoadError') + ' ' + error.message, true));
+      root.replaceChildren(state('포트폴리오를 불러오지 못했습니다: ' + error.message, true));
       console.error(error);
     }).finally(function () {
       root.setAttribute('aria-busy', 'false');
     });
   }
 
+  window.PortfolioRuntime = {
+    getItems: allItems,
+    flashProject: flashProject
+  };
   window.initPortfolio = init;
 })();

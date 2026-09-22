@@ -8,7 +8,6 @@ JTech Co. 프로젝트를 한 화면에서 확인하기 위한 **개인용 포�
 - 상단 `Recent Work`는 `updatedAt` 기준 최신 8개 프로젝트를 4열 × 2행으로 표시합니다.
 - `Recent Work` 타일을 누르면 아래의 해당 프로젝트 카드로 스크롤한 뒤 카드가 한 번 강조됩니다.
 - `Recent Work`는 접기/펼치기가 가능합니다.
-- 상단 `KR / EN` 버튼으로 한국어와 영어 UI를 전환합니다. 선택 언어는 브라우저 저장소가 허용되는 경우 유지됩니다.
 - 본문은 6개 카테고리와 JSON 카탈로그로 구성됩니다.
 
 ## Local run
@@ -25,7 +24,7 @@ python -m http.server 8080
 ## Add or update a project
 
 1. 적절한 `portfolio/<category>/items.json`을 수정합니다.
-2. 한국어 `shortDescription`과 영어 `shortDescriptionEn`을 함께 작성합니다.
+2. 카드에 표시할 `shortDescription`을 작성합니다.
 3. `updatedAt`을 `YYYY-MM-DD`로 넣으면 `Recent Work` 후보가 됩니다.
 4. 대표작이면 `featured: true`를 지정합니다.
 5. 실제 페이지가 있으면 `liveUrl`, 저장소가 있으면 `repoUrl`을 지정합니다.
@@ -36,7 +35,6 @@ python -m http.server 8080
   "id": "example-project",
   "name": "Example Project",
   "shortDescription": "한국어 카드 설명",
-  "shortDescriptionEn": "English card description.",
   "icon": "fas fa-cube",
   "tags": ["Web", "Tool"],
   "status": "active",
@@ -47,17 +45,20 @@ python -m http.server 8080
 }
 ```
 
+기존 카탈로그의 `shortDescriptionEn`, `actionLabelEn`, `labelEn`, `descriptionEn` 필드는 호환성을 위해 남아 있을 수 있지만 현재 UI에서는 사용하지 않습니다.
+
 ## Structure
 
 ```text
 index.html
 assets/
 css/
+  easter.css
 js/
-  i18n.js
   catalog.js
   card.js
   portfolio.js
+  easter-egg.js
   main.js
 portfolio/
   categories.json

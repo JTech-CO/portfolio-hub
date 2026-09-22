@@ -1,0 +1,72 @@
+.site-stage {
+  transform-origin: top center;
+  will-change: transform;
+}
+
+.site-stage.easter-stage-bounce {
+  animation: easter-stage-bounce 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@keyframes easter-stage-bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.5); }
+  100% { transform: scale(1); }
+}
+
+.easter-sequence-running {
+  cursor: wait;
+}
+
+.easter-sequence-running .site-header,
+.easter-sequence-running .site-stage {
+  user-select: none;
+}
+
+.easter-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.easter-overlay.is-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.easter-feature-card {
+  width: min(430px, calc(100vw - 40px));
+  opacity: 0;
+  transform-origin: center;
+}
+
+.easter-feature-card__card {
+  width: 100%;
+  min-height: 0;
+  max-height: min(76vh, 620px);
+  overflow: hidden;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(6, 6, 6, 0.98);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.72);
+}
+
+.easter-feature-card__card:hover {
+  transform: none;
+}
+
+@media (max-width: 620px) {
+  .easter-overlay {
+    padding: 20px;
+  }
+
+  .easter-feature-card {
+    width: min(390px, calc(100vw - 28px));
+  }
+}
