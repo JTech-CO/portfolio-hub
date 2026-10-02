@@ -37,7 +37,7 @@
       .filter(function (item) { return item.repoUrl; })
       .slice()
       .sort(function (a, b) {
-        return (b.updatedAt || '').localeCompare(a.updatedAt || '') || a.name.localeCompare(b.name);
+        return (b.pushedAt || b.updatedAt || '').localeCompare(a.pushedAt || a.updatedAt || '') || a.name.localeCompare(b.name);
       })[0] || null;
   }
 

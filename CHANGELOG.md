@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-02 - Original repository snapshot refresh
+
+- GitHub 공개 저장소 311개를 전수 확인하고 Fork 157개를 제외했습니다.
+- 원본 154개 중 Smart Cart 캡스톤 저장소 8개와 관련 Motor-Bracket을 제외해 145개 프로젝트를 수록했습니다.
+- 기존 관련 카드 4개를 제거하고 원본 프로젝트 116개를 추가했으며, 6개 카테고리를 유지했습니다.
+- 상단 Snapshot을 2026.10.02 KST로 갱신하고 모든 카드에 실제 push 시각과 한국 시간 기준 업데이트 날짜를 반영했습니다.
+- Recent Work와 날짜 기반 이스터에그 폴백이 같은 날에도 push 시각으로 정렬되도록 변경했습니다.
+- Tetrio-AI, RepoDelta, Chzzk Downloader와 RAM 관련 최신 README 정보·버전·계산기 링크를 반영했습니다.
+- 한국어 UI에서 사용하지 않는 영문 설명 필드를 스키마 선택 항목으로 정리했습니다.
+- 스냅샷 대조 검증을 추가해 원본 저장소 누락·중복, 캡스톤 재유입, 날짜 불일치와 안전하지 않은 링크를 확인합니다.
+
 ## 2026-09-22 - Easter egg full-document scroll fix
 
 - Easter egg scroll now writes directly to `document.scrollingElement.scrollTop` instead of repeatedly invoking native smooth `window.scrollTo()`.

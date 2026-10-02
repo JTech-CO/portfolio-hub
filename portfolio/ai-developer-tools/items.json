@@ -13,7 +13,7 @@
         "Guideline"
       ],
       "status": "active",
-      "updatedAt": "2026-09-15",
+      "updatedAt": "2026-09-16",
       "featured": true,
       "repoUrl": "https://github.com/JTech-CO/SANE",
       "features": [
@@ -21,7 +21,8 @@
         "AI·웹·앱·CLI에 적용 가능한 LITE 지침",
         "문서와 GitHub Pages 소개 페이지"
       ],
-      "shortDescriptionEn": "A lightweight design skill that turns recurring AI-generated interface failures into explicit constraints and review rules."
+      "shortDescriptionEn": "A lightweight design skill that turns recurring AI-generated interface failures into explicit constraints and review rules.",
+      "pushedAt": "2026-09-15T19:47:12Z"
     },
     {
       "id": "content-templates",
@@ -35,7 +36,7 @@
         "Template"
       ],
       "status": "active",
-      "updatedAt": "2026-08-30",
+      "updatedAt": "2026-08-31",
       "featured": true,
       "repoUrl": "https://github.com/JTech-CO/Content-Templates",
       "features": [
@@ -43,7 +44,8 @@
         "재사용 가능한 프롬프트 템플릿",
         "콘텐츠 제작 워크플로"
       ],
-      "shortDescriptionEn": "Reusable AI writing templates organized for blogs, Threads, X, reviews, and other platform-specific formats."
+      "shortDescriptionEn": "Reusable AI writing templates organized for blogs, Threads, X, reviews, and other platform-specific formats.",
+      "pushedAt": "2026-08-30T15:56:37Z"
     },
     {
       "id": "schema-hub",
@@ -65,7 +67,8 @@
         "에이전트 역할 정의",
         "하네스와 토큰 설계 자료"
       ],
-      "shortDescriptionEn": "An AI design repository that organizes role prompts and agent harnesses into reusable schemas."
+      "shortDescriptionEn": "An AI design repository that organizes role prompts and agent harnesses into reusable schemas.",
+      "pushedAt": "2026-07-13T09:28:10Z"
     },
     {
       "id": "project-sales-skill",
@@ -79,7 +82,7 @@
         "Sales"
       ],
       "status": "active",
-      "updatedAt": "2026-09-16",
+      "updatedAt": "2026-09-17",
       "featured": true,
       "repoUrl": "https://github.com/JTech-CO/Project-Sales-Skill",
       "liveUrl": "https://jtech-co.github.io/Project-Sales-Skill/",
@@ -90,7 +93,8 @@
         "플랫폼 중립형 워크플로"
       ],
       "shortDescriptionEn": "A platform-neutral B2B sales skill that links product research, outreach, and handoff with evidence-first workflows.",
-      "actionLabelEn": "Overview"
+      "actionLabelEn": "Overview",
+      "pushedAt": "2026-09-16T18:07:55Z"
     },
     {
       "id": "repo-size",
@@ -112,7 +116,8 @@
         "대용량 경고",
         "GitHub 페이지 통합"
       ],
-      "shortDescriptionEn": "A Chrome extension that shows the real size of a GitHub repository and warns about large downloads before you clone it."
+      "shortDescriptionEn": "A Chrome extension that shows the real size of a GitHub repository and warns about large downloads before you clone it.",
+      "pushedAt": "2026-08-18T14:04:28Z"
     },
     {
       "id": "repo-run",
@@ -134,7 +139,8 @@
         "패키지·스크립트 단서 분석",
         "About 사이드바 기반 UI"
       ],
-      "shortDescriptionEn": "A GitHub extension that checks runtime, package manager, build scripts, and environment clues before cloning a repository."
+      "shortDescriptionEn": "A GitHub extension that checks runtime, package manager, build scripts, and environment clues before cloning a repository.",
+      "pushedAt": "2026-09-19T13:59:19Z"
     },
     {
       "id": "repo-delta",
@@ -148,20 +154,22 @@
         "Diff"
       ],
       "status": "active",
-      "updatedAt": "2026-09-18",
+      "updatedAt": "2026-09-27",
       "repoUrl": "https://github.com/JTech-CO/RepoDelta",
       "features": [
         "Checkpoint 기반 변경점 비교",
         "변경 파일·커밋 검토",
         "로컬 상태 저장"
       ],
-      "shortDescriptionEn": "A GitHub extension that compares commits and files changed on the default branch since a user-defined checkpoint."
+      "shortDescriptionEn": "A GitHub extension that compares commits and files changed on the default branch since a user-defined checkpoint.",
+      "pushedAt": "2026-09-27T01:10:23Z",
+      "version": "1.0.6"
     },
     {
       "id": "tetrio-ai",
       "name": "Tetrio-AI",
       "shortDescription": "TETR.IO 데스크톱 앱에 CDP로 연결해 화면을 읽고 로컬 AI로 배치를 계산하는 자동 플레이 연구 봇.",
-      "fullDescription": "Windows용 TETR.IO 데스크톱 앱에 CDP로 연결해 화면 픽셀을 읽고, 로컬 AI로 배치를 계산해 키를 입력하는 ZEN 연구·실험용 봇입니다. TURBO 모드는 보정된 입력과 최대 2피스 예측 실행으로 500피스 실측 5.323 PPS를 기록했습니다.",
+      "fullDescription": "Windows용 TETR.IO ZEN 화면을 CDP로 읽고, 머신러닝 없이 로컬 휴리스틱 평가기로 배치와 키 입력을 결정하는 연구용 봇입니다. BASIC·RAPID·TURBO 속도와 SINGLE·QUAD 전략을 지원하며, README의 2026-09-28 속도 작업 기준 TURBO 실측은 약 5.9–7.0 PPS입니다.",
       "icon": "fas fa-border-all",
       "tags": [
         "AI",
@@ -169,14 +177,15 @@
         "TETR.IO"
       ],
       "status": "active",
-      "updatedAt": "2026-09-21",
+      "updatedAt": "2026-09-28",
       "repoUrl": "https://github.com/JTech-CO/Tetrio-AI",
       "features": [
-        "BASIC·RAPID·TURBO 모드",
-        "CDP 기반 화면 읽기·키 입력",
-        "TURBO 500피스 실측 5.323 PPS"
+        "BASIC·RAPID·TURBO 속도 모드",
+        "SINGLE·QUAD 라인 클리어 전략",
+        "로컬 휴리스틱 평가·CDP 화면 입력"
       ],
-      "shortDescriptionEn": "A research autoplay bot that connects to the TETR.IO desktop app through CDP, reads the screen, and calculates placements with a local AI."
+      "shortDescriptionEn": "A research autoplay bot that connects to the TETR.IO desktop app through CDP, reads the screen, and calculates placements with a local AI.",
+      "pushedAt": "2026-09-28T13:40:01Z"
     },
     {
       "id": "sloot",
@@ -197,7 +206,280 @@
         "재사용 자격 판단 중심 설계",
         "관찰·결과·증거 추적"
       ],
-      "shortDescriptionEn": "Snapshot-Linked Observations, Outcomes & Traceability. A concept repository for change-aware agent work capsules."
+      "shortDescriptionEn": "Snapshot-Linked Observations, Outcomes & Traceability. A concept repository for change-aware agent work capsules.",
+      "pushedAt": "2026-09-17T01:54:52Z"
+    },
+    {
+      "id": "discord-bot-builder",
+      "name": "Discord-Bot-Builder",
+      "shortDescription": "노드로 설계한 디스코드 봇 흐름을 검증하고 프롬프트로 컴파일해 discord.js·TypeScript 코드 생성과 내보내기로 연결하는 도구.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-28",
+      "pushedAt": "2026-09-28T05:30:19Z",
+      "repoUrl": "https://github.com/JTech-CO/Discord-Bot-Builder"
+    },
+    {
+      "id": "rmc",
+      "name": "RMC",
+      "shortDescription": "입력 내용을 실시간으로 마크다운 문서로 구성하는 웹 생성기.",
+      "icon": "fas fa-code",
+      "tags": [
+        "Markdown",
+        "Editor"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-06",
+      "pushedAt": "2026-09-06T09:50:22Z",
+      "repoUrl": "https://github.com/JTech-CO/RMC",
+      "liveUrl": "https://jtech-co.github.io/RMC/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "devharbor",
+      "name": "DevHarbor",
+      "shortDescription": "Windows 개발·로컬 AI 환경의 저장소 관리를 위한 기획과 안전성 검증 프로토타입. 실제 제품 삭제 기능은 아직 비활성 상태.",
+      "icon": "fas fa-code",
+      "tags": [
+        "Windows",
+        ".NET",
+        "Prototype"
+      ],
+      "status": "coming-soon",
+      "updatedAt": "2026-09-27",
+      "pushedAt": "2026-09-27T13:23:31Z",
+      "repoUrl": "https://github.com/JTech-CO/DevHarbor"
+    },
+    {
+      "id": "vibe-security-first",
+      "name": "vibe-security-first",
+      "shortDescription": "보안 취약점, 개인정보, 동의와 운영 기준을 AI 코딩 과정에 적용하는 스킬 팩.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-22",
+      "pushedAt": "2026-09-22T04:26:27Z",
+      "repoUrl": "https://github.com/JTech-CO/vibe-security-first",
+      "featured": true
+    },
+    {
+      "id": "howsheet",
+      "name": "HowSheet",
+      "shortDescription": "누구나 따라 할 수 있도록 단일 페이지 웹사이트 제작 과정을 단계별로 정리한 가이드.",
+      "icon": "fas fa-code",
+      "tags": [
+        "Guide",
+        "Web"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-16",
+      "pushedAt": "2026-09-16T10:22:33Z",
+      "repoUrl": "https://github.com/JTech-CO/HowSheet"
+    },
+    {
+      "id": "asmflow",
+      "name": "AsmFlow",
+      "shortDescription": "어셈블리 언어 기반의 AI 오케스트레이션을 실험하는 뉴트로 프로젝트.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-14",
+      "pushedAt": "2026-09-13T18:03:45Z",
+      "repoUrl": "https://github.com/JTech-CO/AsmFlow"
+    },
+    {
+      "id": "article-prompt-pack",
+      "name": "article-prompt-pack",
+      "shortDescription": "블로그·Threads·X·GeekNews의 작성 규격을 하나의 URL로 재사용하는 플랫폼별 아티클 프롬프트 팩.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-07",
+      "pushedAt": "2026-09-07T14:34:27Z",
+      "repoUrl": "https://github.com/JTech-CO/article-prompt-pack"
+    },
+    {
+      "id": "grokmate",
+      "name": "Grokmate",
+      "shortDescription": "Discord에서 Grok 모델과 대화할 수 있도록 연결하는 AI 챗봇 프로젝트.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-04",
+      "pushedAt": "2026-09-04T09:50:13Z",
+      "repoUrl": "https://github.com/JTech-CO/Grokmate"
+    },
+    {
+      "id": "engineering-science-skill",
+      "name": "Engineering-Science-Skill",
+      "shortDescription": "공학적 설계와 과학적 탐구 과정을 AI 작업에 적용하는 스킬.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-31",
+      "pushedAt": "2026-08-31T13:32:19Z",
+      "repoUrl": "https://github.com/JTech-CO/Engineering-Science-Skill"
+    },
+    {
+      "id": "ml-code-arena",
+      "name": "ML-Code-Arena",
+      "shortDescription": "AI·머신러닝 알고리즘을 라이브러리 없이 직접 구현하도록 채점하는 온라인 저지. Phase 1 구현을 완료하고 서버 배포를 준비 중.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "beta",
+      "updatedAt": "2026-08-22",
+      "pushedAt": "2026-08-21T17:54:52Z",
+      "repoUrl": "https://github.com/JTech-CO/ML-Code-Arena"
+    },
+    {
+      "id": "repoview",
+      "name": "RepoView",
+      "shortDescription": "GitHub 저장소의 Watch·Fork·Star 수를 한 번에 확인하는 브라우저 확장 프로그램.",
+      "icon": "fas fa-code",
+      "tags": [
+        "GitHub",
+        "Chrome"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-05",
+      "pushedAt": "2026-08-05T13:23:01Z",
+      "repoUrl": "https://github.com/JTech-CO/RepoView"
+    },
+    {
+      "id": "minesweeper-ai",
+      "name": "Minesweeper-AI",
+      "shortDescription": "지뢰찾기에서 빠른 문제 해결과 타임어택을 연구하는 AI 프로젝트.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-26",
+      "pushedAt": "2026-07-26T11:31:45Z",
+      "repoUrl": "https://github.com/JTech-CO/Minesweeper-AI"
+    },
+    {
+      "id": "studyforge",
+      "name": "StudyForge",
+      "shortDescription": "강의·문서·영상·음성에서 노트, 마인드맵, 퀴즈, 플래시카드와 팟캐스트를 만드는 BYOK 학습 자료 생성기.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-14",
+      "pushedAt": "2026-07-13T16:10:10Z",
+      "repoUrl": "https://github.com/JTech-CO/StudyForge"
+    },
+    {
+      "id": "opable",
+      "name": "Opable",
+      "shortDescription": "Claude의 응답 능력을 확장하기 위한 AI 하네스 실험 프로젝트.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-09",
+      "pushedAt": "2026-07-08T17:34:13Z",
+      "repoUrl": "https://github.com/JTech-CO/Opable",
+      "liveUrl": "https://jtech-co.github.io/Opable/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "repoquest",
+      "name": "repoquest",
+      "shortDescription": "브라우저에서 Git 객체 모델을 체험하는 비공식 GitHub 학습용 에뮬레이터.",
+      "icon": "fas fa-code",
+      "tags": [
+        "Git",
+        "Education"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-12",
+      "pushedAt": "2026-07-11T22:58:13Z",
+      "repoUrl": "https://github.com/JTech-CO/repoquest"
+    },
+    {
+      "id": "non-ai-design-skill-pack",
+      "name": "non-ai-design-skill-pack",
+      "shortDescription": "제품에 맞는 정보 구조, 접근성과 디자인 토큰을 AI 코딩 에이전트에 적용하는 휴대형 디자인 스킬 팩.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-05-18",
+      "pushedAt": "2026-05-17T20:07:31Z",
+      "repoUrl": "https://github.com/JTech-CO/non-ai-design-skill-pack"
+    },
+    {
+      "id": "hallucinator-troll",
+      "name": "Hallucinator-Troll",
+      "shortDescription": "초기 ChatGPT의 자신감 있는 장문 응답에 과장된 환각을 결합한 실험용 AI 챗봇.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-21",
+      "pushedAt": "2026-03-21T14:03:03Z",
+      "repoUrl": "https://github.com/JTech-CO/Hallucinator-Troll"
+    },
+    {
+      "id": "hallucinator-real",
+      "name": "Hallucinator-Real",
+      "shortDescription": "초기 ChatGPT의 자신감 있는 장문 응답 스타일을 재현하는 레트로 AI 챗봇.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-21",
+      "pushedAt": "2026-03-21T14:02:05Z",
+      "repoUrl": "https://github.com/JTech-CO/Hallucinator-Real"
+    },
+    {
+      "id": "claude-code",
+      "name": "claude_code",
+      "shortDescription": "Claude Code 실행과 활용을 위한 작업 저장소.",
+      "icon": "fas fa-code",
+      "tags": [
+        "AI",
+        "Developer Tools"
+      ],
+      "status": "active",
+      "updatedAt": "2026-02-17",
+      "pushedAt": "2026-02-17T05:35:33Z",
+      "repoUrl": "https://github.com/JTech-CO/claude_code"
     }
   ]
 }

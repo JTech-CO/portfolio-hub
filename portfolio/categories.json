@@ -27,10 +27,10 @@
     {
       "key": "hardware-prototyping",
       "label": "Hardware & Prototyping",
-      "description": "센서 융합, 기구 설계와 실제 제작을 염두에 둔 하드웨어 통합 프로젝트.",
+      "description": "Raspberry Pi 클러스터링과 손동작 인식을 다루는 하드웨어·프로토타입 프로젝트.",
       "source": "portfolio/hardware-prototyping/items.json",
       "labelEn": "Hardware & Prototyping",
-      "descriptionEn": "Hardware integration projects focused on sensor fusion, mechanical design, and practical fabrication."
+      "descriptionEn": "Hardware and prototype projects exploring Raspberry Pi clustering and hand gesture recognition."
     },
     {
       "key": "creative-media",
@@ -43,10 +43,10 @@
     {
       "key": "services-utilities",
       "label": "Services & Utilities",
-      "description": "현재 공개 사용 가능한 웹 서비스와 실용 유틸리티.",
+      "description": "웹 서비스, 브라우저 확장 프로그램, 게임과 실용 유틸리티.",
       "source": "portfolio/services-utilities/items.json",
       "labelEn": "Services & Utilities",
-      "descriptionEn": "Practical web services and utilities currently available for direct use."
+      "descriptionEn": "Web services, browser extensions, games, and practical utilities."
     }
   ]
 }

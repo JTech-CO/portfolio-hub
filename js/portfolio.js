@@ -16,7 +16,7 @@
       });
     });
     all.sort(function (a, b) {
-      return b.updatedAt.localeCompare(a.updatedAt) || a.name.localeCompare(b.name);
+      return (b.pushedAt || b.updatedAt).localeCompare(a.pushedAt || a.updatedAt) || a.name.localeCompare(b.name);
     });
     return all.slice(0, 8);
   }
@@ -139,7 +139,7 @@
 
     var items = category.items.slice().sort(function (a, b) {
       if (a.featured !== b.featured) return a.featured ? -1 : 1;
-      return (b.updatedAt || '').localeCompare(a.updatedAt || '');
+      return (b.pushedAt || b.updatedAt || '').localeCompare(a.pushedAt || a.updatedAt || '');
     });
 
     if (!items.length) {

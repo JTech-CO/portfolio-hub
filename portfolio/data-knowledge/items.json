@@ -24,7 +24,8 @@
         "프롬프트·실험실 연결"
       ],
       "shortDescriptionEn": "A Korean AI and LLM learning wiki linking more than 1,600 reviewed documents with courses, prompts, and labs.",
-      "actionLabelEn": "Learn"
+      "actionLabelEn": "Learn",
+      "pushedAt": "2026-09-19T13:05:26Z"
     },
     {
       "id": "ram-for-local-ai",
@@ -38,15 +39,19 @@
         "Guide"
       ],
       "status": "active",
-      "updatedAt": "2026-09-14",
+      "updatedAt": "2026-09-26",
       "featured": true,
       "repoUrl": "https://github.com/JTech-CO/RAM-for-Local-AI",
       "features": [
-        "RAM·VRAM 기준 모델 선택",
-        "양자화와 런타임 가이드",
-        "웹 메모리 계산기"
+        "11개 작업·운영 가이드",
+        "7개 분야·24개 작업·73개 모델 프리셋",
+        "추론·RAG·서빙·파인튜닝 용량 계획"
       ],
-      "shortDescriptionEn": "Guides and a calculator for narrowing local AI models, quantization, and runtimes from RAM, VRAM, and unified-memory constraints."
+      "shortDescriptionEn": "Guides and a calculator for narrowing local AI models, quantization, and runtimes from RAM, VRAM, and unified-memory constraints.",
+      "pushedAt": "2026-09-25T23:24:01Z",
+      "liveUrl": "https://jtech-co.github.io/RAM-for-Local-AI/tools/memory-calculator/",
+      "actionLabel": "메모리 계산기",
+      "actionLabelEn": "Memory Calculator"
     },
     {
       "id": "ram",
@@ -60,7 +65,7 @@
         "Research"
       ],
       "status": "active",
-      "updatedAt": "2026-09-15",
+      "updatedAt": "2026-09-26",
       "featured": true,
       "repoUrl": "https://github.com/JTech-CO/RAM",
       "features": [
@@ -68,7 +73,11 @@
         "공정·신뢰성·수율 관점",
         "근거 중심 기술 문서"
       ],
-      "shortDescriptionEn": "A technical document set examining memory from SRAM through HBM, HBF, and NAND across cells, process, reliability, and yield."
+      "shortDescriptionEn": "A technical document set examining memory from SRAM through HBM, HBF, and NAND across cells, process, reliability, and yield.",
+      "pushedAt": "2026-09-25T22:21:07Z",
+      "liveUrl": "https://jtech-co.github.io/RAM/",
+      "actionLabel": "소개 페이지",
+      "actionLabelEn": "Overview"
     },
     {
       "id": "kr-apartment-market-skill",
@@ -90,7 +99,466 @@
         "시장 지표 계산",
         "AI Skill + MCP 구성"
       ],
-      "shortDescriptionEn": "A Korean real-estate AI Skill + MCP package that structures housing conditions and market indicators from public transaction data."
+      "shortDescriptionEn": "A Korean real-estate AI Skill + MCP package that structures housing conditions and market indicators from public transaction data.",
+      "pushedAt": "2026-08-27T09:20:14Z"
+    },
+    {
+      "id": "seam",
+      "name": "SEAM",
+      "shortDescription": "TradingView의 16종 차트 패턴을 봉마감 기준으로 확정하고 Telegram 알림으로 연결하는 패턴 엔진.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-10-01",
+      "pushedAt": "2026-10-01T12:17:26Z",
+      "repoUrl": "https://github.com/JTech-CO/SEAM",
+      "featured": true,
+      "liveUrl": "https://jtech-co.github.io/SEAM/",
+      "actionLabel": "데모"
+    },
+    {
+      "id": "daily-digest",
+      "name": "daily-digest",
+      "shortDescription": "기술·과학 소스 5곳에서 하루 한 편씩 골라 한국어 번역·요약과 원문 링크를 제공하는 데일리 다이제스트.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-10-01",
+      "pushedAt": "2026-10-01T02:40:37Z",
+      "repoUrl": "https://github.com/JTech-CO/daily-digest",
+      "featured": true,
+      "liveUrl": "https://jtech-co.github.io/daily-digest/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "youtube-stats",
+      "name": "Youtube-Stats",
+      "shortDescription": "유튜브 채널의 구독자·조회수·시청 시간 변화를 일·주·월 단위 그래프로 재생하는 성장 기록 시각화.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-30",
+      "pushedAt": "2026-09-30T13:00:30Z",
+      "repoUrl": "https://github.com/JTech-CO/Youtube-Stats",
+      "liveUrl": "https://jtech-co.github.io/Youtube-Stats/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "digital-signal-notes",
+      "name": "digital-signal-notes",
+      "shortDescription": "정현파·주파수·위상·에너지·전력·RMS를 Markdown, SVG 그래프와 MATLAB 예제로 정리한 디지털신호처리 노트.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-29",
+      "pushedAt": "2026-09-29T00:50:38Z",
+      "repoUrl": "https://github.com/JTech-CO/digital-signal-notes"
+    },
+    {
+      "id": "btc-legend",
+      "name": "BTC-Legend",
+      "shortDescription": "제공된 거래·지갑 내보내기 자료를 바탕으로 체결, 손익과 위험을 재현·분석한 연구 저장소.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-23",
+      "pushedAt": "2026-09-23T07:25:12Z",
+      "repoUrl": "https://github.com/JTech-CO/BTC-Legend"
+    },
+    {
+      "id": "data-efficient-bio-neuro-research",
+      "name": "Data-Efficient-Bio-Neuro-Research",
+      "shortDescription": "문헌과 소규모 합성 실험으로 관측·모델 가정·다음 측정을 분리해 데이터 효율성과 식별 한계를 검토하는 생명·뇌과학 AI 연구.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-23",
+      "pushedAt": "2026-09-23T00:35:11Z",
+      "repoUrl": "https://github.com/JTech-CO/Data-Efficient-Bio-Neuro-Research"
+    },
+    {
+      "id": "jtech-co",
+      "name": "jtech-co",
+      "shortDescription": "JTech의 기술 역량, 대표 프로젝트와 개발 방향을 정리한 GitHub 프로필 저장소.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-22",
+      "pushedAt": "2026-09-22T03:06:56Z",
+      "repoUrl": "https://github.com/JTech-CO/jtech-co"
+    },
+    {
+      "id": "vulnerability",
+      "name": "Vulnerability",
+      "shortDescription": "보안 취약점을 지식 문서, 시각화와 실습으로 연결한 학습 플랫폼.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-20",
+      "pushedAt": "2026-09-19T16:07:54Z",
+      "repoUrl": "https://github.com/JTech-CO/Vulnerability"
+    },
+    {
+      "id": "ev-battery-research",
+      "name": "EV-Battery-Research",
+      "shortDescription": "전기차 배터리 기술을 조사하고 정리한 연구 저장소.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-10",
+      "pushedAt": "2026-09-10T14:50:20Z",
+      "repoUrl": "https://github.com/JTech-CO/EV-Battery-Research"
+    },
+    {
+      "id": "superconductor-data-research",
+      "name": "Superconductor-Data-Research",
+      "shortDescription": "초전도체 관련 데이터와 기술 자료를 조사한 연구 저장소.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-10",
+      "pushedAt": "2026-09-10T08:38:08Z",
+      "repoUrl": "https://github.com/JTech-CO/Superconductor-Data-Research"
+    },
+    {
+      "id": "ccmc",
+      "name": "CCMC",
+      "shortDescription": "Claude Code 활용을 체계적으로 학습하기 위한 마스터 클래스 자료.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-09",
+      "pushedAt": "2026-09-09T05:07:33Z",
+      "repoUrl": "https://github.com/JTech-CO/CCMC"
+    },
+    {
+      "id": "discord-account-recovery",
+      "name": "discord-account-recovery",
+      "shortDescription": "디스코드 계정 복구 방법과 절차를 정리한 안내 자료.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-29",
+      "pushedAt": "2026-08-29T13:53:10Z",
+      "repoUrl": "https://github.com/JTech-CO/discord-account-recovery"
+    },
+    {
+      "id": "tea",
+      "name": "TEA",
+      "shortDescription": "AI 에이전트 토큰 최적화 스킬을 벤치마크로 평가하고 채택 불가 결론과 재현 자료를 남긴 종결 연구.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-20",
+      "pushedAt": "2026-08-19T15:01:03Z",
+      "repoUrl": "https://github.com/JTech-CO/TEA"
+    },
+    {
+      "id": "random-reincarnation-test",
+      "name": "Random-reincarnation-test",
+      "shortDescription": "국가별 무작위 환생 테스트 사이트의 실제 확률 분포를 조사한 자료.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19",
+      "pushedAt": "2026-08-19T13:03:01Z",
+      "repoUrl": "https://github.com/JTech-CO/Random-reincarnation-test"
+    },
+    {
+      "id": "minecraft-seed-atlas",
+      "name": "Minecraft-Seed-Atlas",
+      "shortDescription": "독특한 바이옴과 지형을 가진 마인크래프트 시드 251개를 정리한 자료.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-09",
+      "pushedAt": "2026-08-08T18:37:15Z",
+      "repoUrl": "https://github.com/JTech-CO/Minecraft-Seed-Atlas"
+    },
+    {
+      "id": "claude-opus-5-analysis",
+      "name": "claude-opus-5-analysis",
+      "shortDescription": "Claude Opus 5를 주제로 분석 자료를 정리한 저장소.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-25",
+      "pushedAt": "2026-07-24T23:58:11Z",
+      "repoUrl": "https://github.com/JTech-CO/claude-opus-5-analysis"
+    },
+    {
+      "id": "baek-haeryong-drug-gate",
+      "name": "baek-haeryong-drug-gate",
+      "shortDescription": "백해룡 수사관의 마약 밀수 사건 관련 조사 기록을 Markdown으로 정리한 아카이브.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-25",
+      "pushedAt": "2026-07-24T18:53:28Z",
+      "repoUrl": "https://github.com/JTech-CO/baek-haeryong-drug-gate"
+    },
+    {
+      "id": "useful-gpt-5-6",
+      "name": "USEFUL-GPT-5_6",
+      "shortDescription": "일반 작업부터 Codex까지 GPT-5.6 활용법을 정리한 한국어 프롬프트 가이드.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-12",
+      "pushedAt": "2026-07-11T22:26:40Z",
+      "repoUrl": "https://github.com/JTech-CO/USEFUL-GPT-5_6"
+    },
+    {
+      "id": "gpt-5-6-benchmark",
+      "name": "GPT-5.6_Benchmark",
+      "shortDescription": "GPT-5.6 모델 3종의 벤치마크를 블로그용 웹페이지로 구성한 프로젝트.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-10",
+      "pushedAt": "2026-07-10T14:21:18Z",
+      "repoUrl": "https://github.com/JTech-CO/GPT-5.6_Benchmark"
+    },
+    {
+      "id": "bioinsight-workbench",
+      "name": "BioInsight-Workbench",
+      "shortDescription": "비임상 생명과학 연구팀을 위한 오믹스·표현형 데이터 분석 워크벤치 기획 문서.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-09",
+      "pushedAt": "2026-07-08T18:00:48Z",
+      "repoUrl": "https://github.com/JTech-CO/BioInsight-Workbench"
+    },
+    {
+      "id": "matlab-sundries",
+      "name": "MATLAB-Sundries",
+      "shortDescription": "여러 주제의 MATLAB 코드와 실험을 모은 자료.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-08",
+      "pushedAt": "2026-07-07T17:39:45Z",
+      "repoUrl": "https://github.com/JTech-CO/MATLAB-Sundries"
+    },
+    {
+      "id": "ggmw",
+      "name": "GGMW",
+      "shortDescription": "괴산 지역 지하수 관측정을 주제로 구성한 모니터링 프로젝트.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-03",
+      "pushedAt": "2026-07-03T14:34:58Z",
+      "repoUrl": "https://github.com/JTech-CO/GGMW"
+    },
+    {
+      "id": "ramen-db",
+      "name": "Ramen-DB",
+      "shortDescription": "전국의 라면 정보를 모아 탐색할 수 있도록 구성한 데이터베이스.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-24",
+      "pushedAt": "2026-06-24T14:55:46Z",
+      "repoUrl": "https://github.com/JTech-CO/Ramen-DB"
+    },
+    {
+      "id": "itsdong-course-indexer",
+      "name": "itsdong-course-indexer",
+      "shortDescription": "아이티동스쿨의 전체 강좌 목록을 모아 탐색하도록 구성한 인덱스.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-10",
+      "pushedAt": "2026-06-09T21:44:24Z",
+      "repoUrl": "https://github.com/JTech-CO/itsdong-course-indexer"
+    },
+    {
+      "id": "vibe-coding-manual",
+      "name": "vibe-coding-manual",
+      "shortDescription": "바이브코딩의 실전 작업 방법과 문제 해결을 정리한 매뉴얼.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-06",
+      "pushedAt": "2026-06-05T18:19:57Z",
+      "repoUrl": "https://github.com/JTech-CO/vibe-coding-manual"
+    },
+    {
+      "id": "space-exploration-timeline",
+      "name": "space-exploration-timeline",
+      "shortDescription": "아래에서 위로 스크롤하며 우주 탐사 역사를 따라가는 한국어·영어·일본어 인터랙티브 타임라인.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-01",
+      "pushedAt": "2026-05-31T23:08:55Z",
+      "repoUrl": "https://github.com/JTech-CO/space-exploration-timeline",
+      "liveUrl": "https://jtech-co.github.io/space-exploration-timeline/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "csat-2027",
+      "name": "CSAT-2027",
+      "shortDescription": "2027 수능특강 PDF 자료를 모아둔 저장소.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-04-03",
+      "pushedAt": "2026-04-03T08:36:51Z",
+      "repoUrl": "https://github.com/JTech-CO/CSAT-2027"
+    },
+    {
+      "id": "word-order-comparator",
+      "name": "Word-Order-Comparator",
+      "shortDescription": "문장 어순을 비교하도록 구성한 도구.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-17",
+      "pushedAt": "2026-03-17T08:33:56Z",
+      "repoUrl": "https://github.com/JTech-CO/Word-Order-Comparator"
+    },
+    {
+      "id": "stocknavi",
+      "name": "StockNavi",
+      "shortDescription": "주식투자 기초 학습에 필요한 링크를 정리한 북마크 사이트.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2026-02-13",
+      "pushedAt": "2026-02-13T12:33:20Z",
+      "repoUrl": "https://github.com/JTech-CO/StockNavi"
+    },
+    {
+      "id": "scamalert",
+      "name": "ScamAlert",
+      "shortDescription": "사기 사이트 정보를 모아둔 자료.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2025-12-28",
+      "pushedAt": "2025-12-28T06:27:47Z",
+      "repoUrl": "https://github.com/JTech-CO/ScamAlert"
+    },
+    {
+      "id": "daejeon-restaurant-list",
+      "name": "Daejeon-Restaurant-List",
+      "shortDescription": "대전 지역 음식점 정보를 정리한 목록.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2025-12-27",
+      "pushedAt": "2025-12-27T12:33:22Z",
+      "repoUrl": "https://github.com/JTech-CO/Daejeon-Restaurant-List"
+    },
+    {
+      "id": "matlab-book1-example-code",
+      "name": "MATLAB-Book1-Example-Code",
+      "shortDescription": "『처음 배우는 MATLAB』 실습 입문 가이드의 예제 코드 모음.",
+      "icon": "fas fa-book-open",
+      "tags": [
+        "Data",
+        "Knowledge"
+      ],
+      "status": "active",
+      "updatedAt": "2025-08-31",
+      "pushedAt": "2025-08-31T13:01:58Z",
+      "repoUrl": "https://github.com/JTech-CO/MATLAB-Book1-Example-Code"
     }
   ]
 }

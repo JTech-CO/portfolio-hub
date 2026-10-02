@@ -60,6 +60,7 @@
       status: VALID.indexOf(raw.status) >= 0 ? raw.status : 'active',
       version: text(raw.version, ''),
       updatedAt: text(raw.updatedAt, ''),
+      pushedAt: text(raw.pushedAt, ''),
       featured: raw.featured === true,
       repoUrl: normalizeUrl(raw.repoUrl, issues, context),
       liveUrl: normalizeUrl(raw.liveUrl, issues, context),

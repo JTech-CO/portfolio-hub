@@ -1,68 +1,1289 @@
 {
-  "snapshotDate": "2026-09-22",
+  "snapshotDate": "2026-10-02",
+  "timezone": "Asia/Seoul",
   "profileSource": "https://github.com/JTech-CO/JTech-CO/blob/main/README.md",
   "repositoriesSource": "https://github.com/JTech-CO?tab=repositories",
-  "notes": "Featured descriptions are synchronized with the current JTech-CO profile README. Recent Work uses repository pushed-at metadata collected during the 2026-09-22 snapshot.",
-  "recentRepositoryPushes": [
+  "metadataSource": "https://api.github.com/users/JTech-CO/repos?per_page=100&sort=updated",
+  "selectionPolicy": {
+    "owner": "JTech-CO",
+    "publicOnly": true,
+    "excludeForks": true,
+    "excludedNamePrefixes": [
+      "Smart-Cart"
+    ],
+    "excludedNames": [
+      "Motor-Bracket"
+    ],
+    "reason": "Smart Cart capstone work is outside the owner's direct personal portfolio."
+  },
+  "repositoryCounts": {
+    "public": 311,
+    "forks": 157,
+    "original": 154,
+    "excludedSmartCart": 9,
+    "included": 145
+  },
+  "notes": "All public non-fork repositories are included except Smart Cart capstone repositories and Motor-Bracket. Catalog updatedAt is the repository pushed_at converted to Asia/Seoul; the snapshot date records the catalog refresh, not a new push to every project. Descriptions use repository metadata and README files; live links use documented project URLs.",
+  "excludedRepositories": [
     {
-      "name": "ShaderDesk-Studio",
-      "pushedAt": "2026-09-21T02:31:26Z"
-    },
-    {
-      "name": "Tetrio-AI",
-      "pushedAt": "2026-09-21T02:08:24Z"
-    },
-    {
-      "name": "Jev-Simulink-Supervisor",
-      "pushedAt": "2026-09-21T01:54:08Z"
+      "name": "Motor-Bracket",
+      "reason": "Smart Cart capstone project"
     },
     {
       "name": "Smart-Cart-5",
-      "pushedAt": "2026-09-20T23:27:35Z"
-    },
-    {
-      "name": "Motor-Bracket",
-      "pushedAt": "2026-09-20T19:32:29Z"
+      "reason": "Smart Cart capstone project"
     },
     {
       "name": "Smart-Cart-Autonomy-Lab-Jev",
-      "pushedAt": "2026-09-20T18:43:09Z"
+      "reason": "Smart Cart capstone project"
     },
     {
       "name": "Smart-Cart-Autonomy-Lab",
-      "pushedAt": "2026-09-20T18:41:41Z"
+      "reason": "Smart Cart capstone project"
     },
     {
-      "name": "chzzk-downloader",
-      "pushedAt": "2026-09-20T09:31:55Z"
+      "name": "Smart-Cart-4",
+      "reason": "Smart Cart capstone project"
     },
     {
-      "name": "CNC-Render",
-      "pushedAt": "2026-09-19T16:02:20Z"
+      "name": "Smart-Cart-2",
+      "reason": "Smart Cart capstone project"
     },
     {
-      "name": "RepoRun",
-      "pushedAt": "2026-09-19T13:59:19Z"
+      "name": "Smart-Cart-BOM",
+      "reason": "Smart Cart capstone project"
     },
     {
-      "name": "AI-Learning-Wiki",
-      "pushedAt": "2026-09-19T13:05:26Z"
+      "name": "Smart-Cart-Wiring",
+      "reason": "Smart Cart capstone project"
     },
     {
-      "name": "Real-Moog-1960",
-      "pushedAt": "2026-09-19T13:02:28Z"
+      "name": "Smart-Cart",
+      "reason": "Smart Cart capstone project"
+    }
+  ],
+  "recentRepositoryPushes": [
+    {
+      "name": "Loopfield-Studio",
+      "pushedAt": "2026-10-01T23:22:38Z"
+    },
+    {
+      "name": "SEAM",
+      "pushedAt": "2026-10-01T12:17:26Z"
+    },
+    {
+      "name": "Motiongraphic",
+      "pushedAt": "2026-10-01T09:50:19Z"
+    },
+    {
+      "name": "daily-digest",
+      "pushedAt": "2026-10-01T02:40:37Z"
+    },
+    {
+      "name": "Youtube-Stats",
+      "pushedAt": "2026-09-30T13:00:30Z"
+    },
+    {
+      "name": "digital-signal-notes",
+      "pushedAt": "2026-09-29T00:50:38Z"
+    },
+    {
+      "name": "Tetrio-AI",
+      "pushedAt": "2026-09-28T13:40:01Z"
+    },
+    {
+      "name": "Discord-Bot-Builder",
+      "pushedAt": "2026-09-28T05:30:19Z"
+    },
+    {
+      "name": "DevHarbor",
+      "pushedAt": "2026-09-27T13:23:31Z"
     },
     {
       "name": "RepoDelta",
-      "pushedAt": "2026-09-18T22:22:23Z"
+      "pushedAt": "2026-09-27T01:10:23Z"
+    },
+    {
+      "name": "chzzk-downloader",
+      "pushedAt": "2026-09-27T00:03:42Z"
+    },
+    {
+      "name": "RAM-for-Local-AI",
+      "pushedAt": "2026-09-25T23:24:01Z"
+    },
+    {
+      "name": "RAM",
+      "pushedAt": "2026-09-25T22:21:07Z"
+    },
+    {
+      "name": "Escalator-Ending",
+      "pushedAt": "2026-09-24T20:31:04Z"
+    },
+    {
+      "name": "Autopixel-Aleph",
+      "pushedAt": "2026-09-24T17:03:58Z"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "Loopfield-Studio",
+      "repoUrl": "https://github.com/JTech-CO/Loopfield-Studio",
+      "fork": false,
+      "pushedAt": "2026-10-01T23:22:38Z",
+      "updatedAt": "2026-10-01T23:22:43Z",
+      "homepage": "https://jtech-co.github.io/Loopfield-Studio/"
+    },
+    {
+      "name": "SEAM",
+      "repoUrl": "https://github.com/JTech-CO/SEAM",
+      "fork": false,
+      "pushedAt": "2026-10-01T12:17:26Z",
+      "updatedAt": "2026-10-01T12:17:31Z",
+      "homepage": null
+    },
+    {
+      "name": "Motiongraphic",
+      "repoUrl": "https://github.com/JTech-CO/Motiongraphic",
+      "fork": false,
+      "pushedAt": "2026-10-01T09:50:19Z",
+      "updatedAt": "2026-10-01T09:50:24Z",
+      "homepage": null
+    },
+    {
+      "name": "daily-digest",
+      "repoUrl": "https://github.com/JTech-CO/daily-digest",
+      "fork": false,
+      "pushedAt": "2026-10-01T02:40:37Z",
+      "updatedAt": "2026-10-01T02:40:41Z",
+      "homepage": "https://jtech-co.github.io/daily-digest/"
+    },
+    {
+      "name": "Youtube-Stats",
+      "repoUrl": "https://github.com/JTech-CO/Youtube-Stats",
+      "fork": false,
+      "pushedAt": "2026-09-30T13:00:30Z",
+      "updatedAt": "2026-09-30T13:01:02Z",
+      "homepage": "https://jtech-co.github.io/Youtube-Stats/"
+    },
+    {
+      "name": "digital-signal-notes",
+      "repoUrl": "https://github.com/JTech-CO/digital-signal-notes",
+      "fork": false,
+      "pushedAt": "2026-09-29T00:50:38Z",
+      "updatedAt": "2026-09-29T00:50:41Z",
+      "homepage": null
+    },
+    {
+      "name": "Tetrio-AI",
+      "repoUrl": "https://github.com/JTech-CO/Tetrio-AI",
+      "fork": false,
+      "pushedAt": "2026-09-28T13:40:01Z",
+      "updatedAt": "2026-09-28T13:40:06Z",
+      "homepage": null
+    },
+    {
+      "name": "Discord-Bot-Builder",
+      "repoUrl": "https://github.com/JTech-CO/Discord-Bot-Builder",
+      "fork": false,
+      "pushedAt": "2026-09-28T05:30:19Z",
+      "updatedAt": "2026-09-28T05:29:15Z",
+      "homepage": null
+    },
+    {
+      "name": "RMC",
+      "repoUrl": "https://github.com/JTech-CO/RMC",
+      "fork": false,
+      "pushedAt": "2026-09-06T09:50:22Z",
+      "updatedAt": "2026-09-27T07:47:31Z",
+      "homepage": "https://jtech-co.github.io/RMC/"
+    },
+    {
+      "name": "RepoDelta",
+      "repoUrl": "https://github.com/JTech-CO/RepoDelta",
+      "fork": false,
+      "pushedAt": "2026-09-27T01:10:23Z",
+      "updatedAt": "2026-09-27T01:10:27Z",
+      "homepage": null
+    },
+    {
+      "name": "chzzk-downloader",
+      "repoUrl": "https://github.com/JTech-CO/chzzk-downloader",
+      "fork": false,
+      "pushedAt": "2026-09-27T00:03:42Z",
+      "updatedAt": "2026-09-27T00:03:45Z",
+      "homepage": null
+    },
+    {
+      "name": "RAM-for-Local-AI",
+      "repoUrl": "https://github.com/JTech-CO/RAM-for-Local-AI",
+      "fork": false,
+      "pushedAt": "2026-09-25T23:24:01Z",
+      "updatedAt": "2026-09-25T23:24:06Z",
+      "homepage": null
+    },
+    {
+      "name": "RAM",
+      "repoUrl": "https://github.com/JTech-CO/RAM",
+      "fork": false,
+      "pushedAt": "2026-09-25T22:21:07Z",
+      "updatedAt": "2026-09-25T22:21:11Z",
+      "homepage": null
+    },
+    {
+      "name": "DevHarbor",
+      "repoUrl": "https://github.com/JTech-CO/DevHarbor",
+      "fork": false,
+      "pushedAt": "2026-09-27T13:23:31Z",
+      "updatedAt": "2026-09-25T04:32:53Z",
+      "homepage": null
+    },
+    {
+      "name": "Escalator-Ending",
+      "repoUrl": "https://github.com/JTech-CO/Escalator-Ending",
+      "fork": false,
+      "pushedAt": "2026-09-24T20:31:04Z",
+      "updatedAt": "2026-09-24T20:32:16Z",
+      "homepage": null
+    },
+    {
+      "name": "Autopixel-Aleph",
+      "repoUrl": "https://github.com/JTech-CO/Autopixel-Aleph",
+      "fork": false,
+      "pushedAt": "2026-09-24T17:03:58Z",
+      "updatedAt": "2026-09-24T17:04:03Z",
+      "homepage": null
+    },
+    {
+      "name": "ASMlab",
+      "repoUrl": "https://github.com/JTech-CO/ASMlab",
+      "fork": false,
+      "pushedAt": "2026-09-24T01:14:53Z",
+      "updatedAt": "2026-09-24T01:14:57Z",
+      "homepage": null
+    },
+    {
+      "name": "BTC-Legend",
+      "repoUrl": "https://github.com/JTech-CO/BTC-Legend",
+      "fork": false,
+      "pushedAt": "2026-09-23T07:25:12Z",
+      "updatedAt": "2026-09-23T07:25:16Z",
+      "homepage": null
+    },
+    {
+      "name": "X-Hub",
+      "repoUrl": "https://github.com/JTech-CO/X-Hub",
+      "fork": false,
+      "pushedAt": "2026-09-23T04:07:35Z",
+      "updatedAt": "2026-09-23T04:07:39Z",
+      "homepage": "https://jtech-co.github.io/X-Hub/"
+    },
+    {
+      "name": "Ubuntu-AI-Desktop",
+      "repoUrl": "https://github.com/JTech-CO/Ubuntu-AI-Desktop",
+      "fork": false,
+      "pushedAt": "2026-09-23T00:53:20Z",
+      "updatedAt": "2026-09-23T01:03:53Z",
+      "homepage": "https://jtech-co.github.io/Ubuntu-AI-Desktop/"
+    },
+    {
+      "name": "Data-Efficient-Bio-Neuro-Research",
+      "repoUrl": "https://github.com/JTech-CO/Data-Efficient-Bio-Neuro-Research",
+      "fork": false,
+      "pushedAt": "2026-09-23T00:35:11Z",
+      "updatedAt": "2026-09-23T00:35:21Z",
+      "homepage": null
+    },
+    {
+      "name": "vibe-security-first",
+      "repoUrl": "https://github.com/JTech-CO/vibe-security-first",
+      "fork": false,
+      "pushedAt": "2026-09-22T04:26:27Z",
+      "updatedAt": "2026-09-22T04:26:31Z",
+      "homepage": null
+    },
+    {
+      "name": "portfolio-hub",
+      "repoUrl": "https://github.com/JTech-CO/portfolio-hub",
+      "fork": false,
+      "pushedAt": "2026-09-22T03:37:27Z",
+      "updatedAt": "2026-09-22T03:37:31Z",
+      "homepage": null
+    },
+    {
+      "name": "jtech-co",
+      "repoUrl": "https://github.com/JTech-CO/jtech-co",
+      "fork": false,
+      "pushedAt": "2026-09-22T03:06:56Z",
+      "updatedAt": "2026-09-22T03:06:59Z",
+      "homepage": null
+    },
+    {
+      "name": "ShaderDesk-Studio",
+      "repoUrl": "https://github.com/JTech-CO/ShaderDesk-Studio",
+      "fork": false,
+      "pushedAt": "2026-09-21T02:31:26Z",
+      "updatedAt": "2026-09-21T02:31:30Z",
+      "homepage": null
+    },
+    {
+      "name": "Jev-Simulink-Supervisor",
+      "repoUrl": "https://github.com/JTech-CO/Jev-Simulink-Supervisor",
+      "fork": false,
+      "pushedAt": "2026-09-21T01:54:08Z",
+      "updatedAt": "2026-09-21T01:54:11Z",
+      "homepage": null
+    },
+    {
+      "name": "Vulnerability",
+      "repoUrl": "https://github.com/JTech-CO/Vulnerability",
+      "fork": false,
+      "pushedAt": "2026-09-19T16:07:54Z",
+      "updatedAt": "2026-09-19T16:07:08Z",
+      "homepage": null
+    },
+    {
+      "name": "CNC-Render",
+      "repoUrl": "https://github.com/JTech-CO/CNC-Render",
+      "fork": false,
+      "pushedAt": "2026-09-24T00:14:34Z",
+      "updatedAt": "2026-09-19T15:43:08Z",
+      "homepage": null
+    },
+    {
+      "name": "RepoRun",
+      "repoUrl": "https://github.com/JTech-CO/RepoRun",
+      "fork": false,
+      "pushedAt": "2026-09-19T13:59:19Z",
+      "updatedAt": "2026-09-19T13:59:23Z",
+      "homepage": null
+    },
+    {
+      "name": "AI-Learning-Wiki",
+      "repoUrl": "https://github.com/JTech-CO/AI-Learning-Wiki",
+      "fork": false,
+      "pushedAt": "2026-09-19T13:05:26Z",
+      "updatedAt": "2026-09-19T13:05:32Z",
+      "homepage": "https://jtech-co.github.io/AI-Learning-Wiki/"
+    },
+    {
+      "name": "Real-Moog-1960",
+      "repoUrl": "https://github.com/JTech-CO/Real-Moog-1960",
+      "fork": false,
+      "pushedAt": "2026-09-19T13:02:28Z",
+      "updatedAt": "2026-09-19T13:02:32Z",
+      "homepage": null
+    },
+    {
+      "name": "SANE",
+      "repoUrl": "https://github.com/JTech-CO/SANE",
+      "fork": false,
+      "pushedAt": "2026-09-15T19:47:12Z",
+      "updatedAt": "2026-09-18T07:14:25Z",
+      "homepage": null
     },
     {
       "name": "SLOOT",
-      "pushedAt": "2026-09-17T01:54:52Z"
+      "repoUrl": "https://github.com/JTech-CO/SLOOT",
+      "fork": false,
+      "pushedAt": "2026-09-17T01:54:52Z",
+      "updatedAt": "2026-09-17T01:54:56Z",
+      "homepage": null
     },
     {
       "name": "Project-Sales-Skill",
-      "pushedAt": "2026-09-16T18:07:55Z"
+      "repoUrl": "https://github.com/JTech-CO/Project-Sales-Skill",
+      "fork": false,
+      "pushedAt": "2026-09-16T18:07:55Z",
+      "updatedAt": "2026-09-16T18:08:00Z",
+      "homepage": null
+    },
+    {
+      "name": "HowSheet",
+      "repoUrl": "https://github.com/JTech-CO/HowSheet",
+      "fork": false,
+      "pushedAt": "2026-09-16T10:22:33Z",
+      "updatedAt": "2026-09-16T10:22:39Z",
+      "homepage": null
+    },
+    {
+      "name": "Retro-Video-Effector",
+      "repoUrl": "https://github.com/JTech-CO/Retro-Video-Effector",
+      "fork": false,
+      "pushedAt": "2026-09-15T16:29:48Z",
+      "updatedAt": "2026-09-15T16:29:52Z",
+      "homepage": null
+    },
+    {
+      "name": "Content-Templates",
+      "repoUrl": "https://github.com/JTech-CO/Content-Templates",
+      "fork": false,
+      "pushedAt": "2026-08-30T15:56:37Z",
+      "updatedAt": "2026-09-15T10:28:39Z",
+      "homepage": null
+    },
+    {
+      "name": "OpenTCAD",
+      "repoUrl": "https://github.com/JTech-CO/OpenTCAD",
+      "fork": false,
+      "pushedAt": "2026-09-12T12:51:08Z",
+      "updatedAt": "2026-09-12T12:51:11Z",
+      "homepage": "https://jtech-co.github.io/OpenTCAD/"
+    },
+    {
+      "name": "Mold-Press",
+      "repoUrl": "https://github.com/JTech-CO/Mold-Press",
+      "fork": false,
+      "pushedAt": "2026-09-12T12:32:51Z",
+      "updatedAt": "2026-09-12T12:32:55Z",
+      "homepage": null
+    },
+    {
+      "name": "AsmFlow",
+      "repoUrl": "https://github.com/JTech-CO/AsmFlow",
+      "fork": false,
+      "pushedAt": "2026-09-13T18:03:45Z",
+      "updatedAt": "2026-09-12T10:25:43Z",
+      "homepage": null
+    },
+    {
+      "name": "EV-Battery-Sim",
+      "repoUrl": "https://github.com/JTech-CO/EV-Battery-Sim",
+      "fork": false,
+      "pushedAt": "2026-09-10T19:27:19Z",
+      "updatedAt": "2026-09-10T19:27:23Z",
+      "homepage": null
+    },
+    {
+      "name": "RAM-LAB",
+      "repoUrl": "https://github.com/JTech-CO/RAM-LAB",
+      "fork": false,
+      "pushedAt": "2026-09-10T06:58:12Z",
+      "updatedAt": "2026-09-10T19:17:31Z",
+      "homepage": null
+    },
+    {
+      "name": "Superconductor-Sim",
+      "repoUrl": "https://github.com/JTech-CO/Superconductor-Sim",
+      "fork": false,
+      "pushedAt": "2026-09-10T15:47:17Z",
+      "updatedAt": "2026-09-10T15:52:21Z",
+      "homepage": null
+    },
+    {
+      "name": "EV-Battery-Research",
+      "repoUrl": "https://github.com/JTech-CO/EV-Battery-Research",
+      "fork": false,
+      "pushedAt": "2026-09-10T14:50:20Z",
+      "updatedAt": "2026-09-10T14:51:26Z",
+      "homepage": null
+    },
+    {
+      "name": "Superconductor-Data-Research",
+      "repoUrl": "https://github.com/JTech-CO/Superconductor-Data-Research",
+      "fork": false,
+      "pushedAt": "2026-09-10T08:38:08Z",
+      "updatedAt": "2026-09-10T08:38:48Z",
+      "homepage": null
+    },
+    {
+      "name": "InfoPic",
+      "repoUrl": "https://github.com/JTech-CO/InfoPic",
+      "fork": false,
+      "pushedAt": "2026-09-09T08:39:19Z",
+      "updatedAt": "2026-09-09T15:43:36Z",
+      "homepage": null
+    },
+    {
+      "name": "CCMC",
+      "repoUrl": "https://github.com/JTech-CO/CCMC",
+      "fork": false,
+      "pushedAt": "2026-09-09T05:07:33Z",
+      "updatedAt": "2026-09-09T05:07:40Z",
+      "homepage": null
+    },
+    {
+      "name": "article-prompt-pack",
+      "repoUrl": "https://github.com/JTech-CO/article-prompt-pack",
+      "fork": false,
+      "pushedAt": "2026-09-07T14:34:27Z",
+      "updatedAt": "2026-09-07T14:35:17Z",
+      "homepage": null
+    },
+    {
+      "name": "Tupper-Formula",
+      "repoUrl": "https://github.com/JTech-CO/Tupper-Formula",
+      "fork": false,
+      "pushedAt": "2026-09-06T09:39:39Z",
+      "updatedAt": "2026-09-06T09:39:45Z",
+      "homepage": null
+    },
+    {
+      "name": "Grokmate",
+      "repoUrl": "https://github.com/JTech-CO/Grokmate",
+      "fork": false,
+      "pushedAt": "2026-09-04T09:50:13Z",
+      "updatedAt": "2026-09-04T09:51:01Z",
+      "homepage": null
+    },
+    {
+      "name": "NexusShell",
+      "repoUrl": "https://github.com/JTech-CO/NexusShell",
+      "fork": false,
+      "pushedAt": "2026-09-03T12:42:44Z",
+      "updatedAt": "2026-09-03T12:43:28Z",
+      "homepage": "https://nexusshell.kr"
+    },
+    {
+      "name": "Engineering-Science-Skill",
+      "repoUrl": "https://github.com/JTech-CO/Engineering-Science-Skill",
+      "fork": false,
+      "pushedAt": "2026-08-31T13:32:19Z",
+      "updatedAt": "2026-08-31T13:40:52Z",
+      "homepage": null
+    },
+    {
+      "name": "discord-account-recovery",
+      "repoUrl": "https://github.com/JTech-CO/discord-account-recovery",
+      "fork": false,
+      "pushedAt": "2026-08-29T13:53:10Z",
+      "updatedAt": "2026-08-29T13:55:43Z",
+      "homepage": null
+    },
+    {
+      "name": "axis-shift",
+      "repoUrl": "https://github.com/JTech-CO/axis-shift",
+      "fork": false,
+      "pushedAt": "2026-08-30T11:54:39Z",
+      "updatedAt": "2026-08-28T20:17:37Z",
+      "homepage": null
+    },
+    {
+      "name": "kr-apartment-market-skill",
+      "repoUrl": "https://github.com/JTech-CO/kr-apartment-market-skill",
+      "fork": false,
+      "pushedAt": "2026-08-27T09:20:14Z",
+      "updatedAt": "2026-08-27T09:25:57Z",
+      "homepage": null
+    },
+    {
+      "name": "MoonTel",
+      "repoUrl": "https://github.com/JTech-CO/MoonTel",
+      "fork": false,
+      "pushedAt": "2026-08-31T15:53:22Z",
+      "updatedAt": "2026-08-26T22:32:40Z",
+      "homepage": null
+    },
+    {
+      "name": "Tokenizer-Structure",
+      "repoUrl": "https://github.com/JTech-CO/Tokenizer-Structure",
+      "fork": false,
+      "pushedAt": "2026-08-25T03:25:25Z",
+      "updatedAt": "2026-08-25T03:25:42Z",
+      "homepage": null
+    },
+    {
+      "name": "Moth-in-the-Machine",
+      "repoUrl": "https://github.com/JTech-CO/Moth-in-the-Machine",
+      "fork": false,
+      "pushedAt": "2026-08-21T12:07:59Z",
+      "updatedAt": "2026-08-24T04:21:44Z",
+      "homepage": null
+    },
+    {
+      "name": "Evolab",
+      "repoUrl": "https://github.com/JTech-CO/Evolab",
+      "fork": false,
+      "pushedAt": "2026-08-21T17:59:31Z",
+      "updatedAt": "2026-08-21T17:59:54Z",
+      "homepage": null
+    },
+    {
+      "name": "ML-Code-Arena",
+      "repoUrl": "https://github.com/JTech-CO/ML-Code-Arena",
+      "fork": false,
+      "pushedAt": "2026-08-21T17:54:52Z",
+      "updatedAt": "2026-08-21T17:55:03Z",
+      "homepage": null
+    },
+    {
+      "name": "TEA",
+      "repoUrl": "https://github.com/JTech-CO/TEA",
+      "fork": false,
+      "pushedAt": "2026-08-19T15:01:03Z",
+      "updatedAt": "2026-08-19T15:32:50Z",
+      "homepage": null
+    },
+    {
+      "name": "Random-reincarnation-test",
+      "repoUrl": "https://github.com/JTech-CO/Random-reincarnation-test",
+      "fork": false,
+      "pushedAt": "2026-08-19T13:03:01Z",
+      "updatedAt": "2026-08-19T13:05:44Z",
+      "homepage": null
+    },
+    {
+      "name": "RepoSize",
+      "repoUrl": "https://github.com/JTech-CO/RepoSize",
+      "fork": false,
+      "pushedAt": "2026-08-18T14:04:28Z",
+      "updatedAt": "2026-08-18T14:11:46Z",
+      "homepage": null
+    },
+    {
+      "name": "NewbieFinder",
+      "repoUrl": "https://github.com/JTech-CO/NewbieFinder",
+      "fork": false,
+      "pushedAt": "2026-08-14T17:59:49Z",
+      "updatedAt": "2026-08-14T18:01:32Z",
+      "homepage": null
+    },
+    {
+      "name": "CSS-Design-Atlas",
+      "repoUrl": "https://github.com/JTech-CO/CSS-Design-Atlas",
+      "fork": false,
+      "pushedAt": "2026-08-09T16:49:37Z",
+      "updatedAt": "2026-08-09T16:49:54Z",
+      "homepage": "https://jtech-co.github.io/CSS-Design-Atlas/"
+    },
+    {
+      "name": "Minecraft-Seed-Atlas",
+      "repoUrl": "https://github.com/JTech-CO/Minecraft-Seed-Atlas",
+      "fork": false,
+      "pushedAt": "2026-08-08T18:37:15Z",
+      "updatedAt": "2026-08-08T18:37:18Z",
+      "homepage": null
+    },
+    {
+      "name": "my-website",
+      "repoUrl": "https://github.com/JTech-CO/my-website",
+      "fork": false,
+      "pushedAt": "2026-08-08T13:08:15Z",
+      "updatedAt": "2026-08-08T13:08:18Z",
+      "homepage": null
+    },
+    {
+      "name": "RepoView",
+      "repoUrl": "https://github.com/JTech-CO/RepoView",
+      "fork": false,
+      "pushedAt": "2026-08-05T13:23:01Z",
+      "updatedAt": "2026-08-05T13:25:33Z",
+      "homepage": null
+    },
+    {
+      "name": "AI-Token-Monitor",
+      "repoUrl": "https://github.com/JTech-CO/AI-Token-Monitor",
+      "fork": false,
+      "pushedAt": "2026-07-15T21:23:04Z",
+      "updatedAt": "2026-07-26T15:13:50Z",
+      "homepage": null
+    },
+    {
+      "name": "Barycenter",
+      "repoUrl": "https://github.com/JTech-CO/Barycenter",
+      "fork": false,
+      "pushedAt": "2026-07-26T10:33:32Z",
+      "updatedAt": "2026-07-26T10:33:40Z",
+      "homepage": null
+    },
+    {
+      "name": "claude-opus-5-analysis",
+      "repoUrl": "https://github.com/JTech-CO/claude-opus-5-analysis",
+      "fork": false,
+      "pushedAt": "2026-07-24T23:58:11Z",
+      "updatedAt": "2026-07-24T23:58:14Z",
+      "homepage": null
+    },
+    {
+      "name": "baek-haeryong-drug-gate",
+      "repoUrl": "https://github.com/JTech-CO/baek-haeryong-drug-gate",
+      "fork": false,
+      "pushedAt": "2026-07-24T18:53:28Z",
+      "updatedAt": "2026-07-24T18:54:02Z",
+      "homepage": null
+    },
+    {
+      "name": "just-ledger",
+      "repoUrl": "https://github.com/JTech-CO/just-ledger",
+      "fork": false,
+      "pushedAt": "2026-07-24T10:33:16Z",
+      "updatedAt": "2026-07-24T10:35:15Z",
+      "homepage": null
+    },
+    {
+      "name": "jtech-co.github.io",
+      "repoUrl": "https://github.com/JTech-CO/jtech-co.github.io",
+      "fork": false,
+      "pushedAt": "2026-07-17T23:35:56Z",
+      "updatedAt": "2026-07-17T23:35:59Z",
+      "homepage": "https://jtech-co.github.io/"
+    },
+    {
+      "name": "Minesweeper-AI",
+      "repoUrl": "https://github.com/JTech-CO/Minesweeper-AI",
+      "fork": false,
+      "pushedAt": "2026-07-26T11:31:45Z",
+      "updatedAt": "2026-07-15T12:03:56Z",
+      "homepage": null
+    },
+    {
+      "name": "naver-pay-map",
+      "repoUrl": "https://github.com/JTech-CO/naver-pay-map",
+      "fork": false,
+      "pushedAt": "2026-07-14T17:49:03Z",
+      "updatedAt": "2026-07-14T17:50:24Z",
+      "homepage": "https://naver-pay-map.vercel.app"
+    },
+    {
+      "name": "MaCode",
+      "repoUrl": "https://github.com/JTech-CO/MaCode",
+      "fork": false,
+      "pushedAt": "2026-07-14T02:50:48Z",
+      "updatedAt": "2026-07-14T02:50:52Z",
+      "homepage": null
+    },
+    {
+      "name": "StudyForge",
+      "repoUrl": "https://github.com/JTech-CO/StudyForge",
+      "fork": false,
+      "pushedAt": "2026-07-13T16:10:10Z",
+      "updatedAt": "2026-07-13T16:10:53Z",
+      "homepage": null
+    },
+    {
+      "name": "Schema-Hub",
+      "repoUrl": "https://github.com/JTech-CO/Schema-Hub",
+      "fork": false,
+      "pushedAt": "2026-07-13T09:28:10Z",
+      "updatedAt": "2026-07-13T09:28:23Z",
+      "homepage": null
+    },
+    {
+      "name": "Aerosketch",
+      "repoUrl": "https://github.com/JTech-CO/Aerosketch",
+      "fork": false,
+      "pushedAt": "2026-07-12T00:46:59Z",
+      "updatedAt": "2026-07-12T00:47:02Z",
+      "homepage": null
+    },
+    {
+      "name": "USEFUL-GPT-5_6",
+      "repoUrl": "https://github.com/JTech-CO/USEFUL-GPT-5_6",
+      "fork": false,
+      "pushedAt": "2026-07-11T22:26:40Z",
+      "updatedAt": "2026-07-11T22:26:45Z",
+      "homepage": null
+    },
+    {
+      "name": "SSR-ChatGPT",
+      "repoUrl": "https://github.com/JTech-CO/SSR-ChatGPT",
+      "fork": false,
+      "pushedAt": "2026-07-11T22:08:26Z",
+      "updatedAt": "2026-07-11T22:08:30Z",
+      "homepage": null
+    },
+    {
+      "name": "Neat-Cable",
+      "repoUrl": "https://github.com/JTech-CO/Neat-Cable",
+      "fork": false,
+      "pushedAt": "2026-07-11T00:11:27Z",
+      "updatedAt": "2026-07-11T00:11:30Z",
+      "homepage": null
+    },
+    {
+      "name": "GPT-5.6_Benchmark",
+      "repoUrl": "https://github.com/JTech-CO/GPT-5.6_Benchmark",
+      "fork": false,
+      "pushedAt": "2026-07-10T14:21:18Z",
+      "updatedAt": "2026-07-10T14:22:59Z",
+      "homepage": null
+    },
+    {
+      "name": "Opable",
+      "repoUrl": "https://github.com/JTech-CO/Opable",
+      "fork": false,
+      "pushedAt": "2026-07-08T17:34:13Z",
+      "updatedAt": "2026-07-08T19:50:34Z",
+      "homepage": "https://jtech-co.github.io/Opable/"
+    },
+    {
+      "name": "BioInsight-Workbench",
+      "repoUrl": "https://github.com/JTech-CO/BioInsight-Workbench",
+      "fork": false,
+      "pushedAt": "2026-07-08T18:00:48Z",
+      "updatedAt": "2026-07-08T18:01:16Z",
+      "homepage": null
+    },
+    {
+      "name": "MATLAB-Sundries",
+      "repoUrl": "https://github.com/JTech-CO/MATLAB-Sundries",
+      "fork": false,
+      "pushedAt": "2026-07-07T17:39:45Z",
+      "updatedAt": "2026-07-07T17:43:42Z",
+      "homepage": null
+    },
+    {
+      "name": "Webcat",
+      "repoUrl": "https://github.com/JTech-CO/Webcat",
+      "fork": false,
+      "pushedAt": "2026-07-06T15:14:15Z",
+      "updatedAt": "2026-07-06T15:18:21Z",
+      "homepage": null
+    },
+    {
+      "name": "Minijet-2",
+      "repoUrl": "https://github.com/JTech-CO/Minijet-2",
+      "fork": false,
+      "pushedAt": "2026-07-04T22:41:02Z",
+      "updatedAt": "2026-07-04T22:41:05Z",
+      "homepage": null
+    },
+    {
+      "name": "GGMW",
+      "repoUrl": "https://github.com/JTech-CO/GGMW",
+      "fork": false,
+      "pushedAt": "2026-07-03T14:34:58Z",
+      "updatedAt": "2026-07-03T14:35:01Z",
+      "homepage": null
+    },
+    {
+      "name": "TLR-SIM",
+      "repoUrl": "https://github.com/JTech-CO/TLR-SIM",
+      "fork": false,
+      "pushedAt": "2026-06-30T20:35:41Z",
+      "updatedAt": "2026-06-30T20:35:46Z",
+      "homepage": null
+    },
+    {
+      "name": "worldle",
+      "repoUrl": "https://github.com/JTech-CO/worldle",
+      "fork": false,
+      "pushedAt": "2026-06-28T09:22:14Z",
+      "updatedAt": "2026-06-28T09:22:17Z",
+      "homepage": "https://worldle-livid.vercel.app"
+    },
+    {
+      "name": "Ramen-DB",
+      "repoUrl": "https://github.com/JTech-CO/Ramen-DB",
+      "fork": false,
+      "pushedAt": "2026-06-24T14:55:46Z",
+      "updatedAt": "2026-06-24T14:55:53Z",
+      "homepage": null
+    },
+    {
+      "name": "Tessellated-Reckoner",
+      "repoUrl": "https://github.com/JTech-CO/Tessellated-Reckoner",
+      "fork": false,
+      "pushedAt": "2026-06-18T02:36:56Z",
+      "updatedAt": "2026-06-18T02:37:00Z",
+      "homepage": null
+    },
+    {
+      "name": "lounge-pro",
+      "repoUrl": "https://github.com/JTech-CO/lounge-pro",
+      "fork": false,
+      "pushedAt": "2026-06-15T09:59:15Z",
+      "updatedAt": "2026-06-15T09:59:20Z",
+      "homepage": null
+    },
+    {
+      "name": "AutoPixel",
+      "repoUrl": "https://github.com/JTech-CO/AutoPixel",
+      "fork": false,
+      "pushedAt": "2026-06-15T09:51:29Z",
+      "updatedAt": "2026-06-15T09:51:33Z",
+      "homepage": null
+    },
+    {
+      "name": "itsdong-course-indexer",
+      "repoUrl": "https://github.com/JTech-CO/itsdong-course-indexer",
+      "fork": false,
+      "pushedAt": "2026-06-09T21:44:24Z",
+      "updatedAt": "2026-06-09T21:44:28Z",
+      "homepage": null
+    },
+    {
+      "name": "wplace-2click",
+      "repoUrl": "https://github.com/JTech-CO/wplace-2click",
+      "fork": false,
+      "pushedAt": "2026-06-06T14:27:07Z",
+      "updatedAt": "2026-06-06T14:27:11Z",
+      "homepage": null
+    },
+    {
+      "name": "vibe-coding-manual",
+      "repoUrl": "https://github.com/JTech-CO/vibe-coding-manual",
+      "fork": false,
+      "pushedAt": "2026-06-05T18:19:57Z",
+      "updatedAt": "2026-06-05T18:20:01Z",
+      "homepage": null
+    },
+    {
+      "name": "copy-link-first",
+      "repoUrl": "https://github.com/JTech-CO/copy-link-first",
+      "fork": false,
+      "pushedAt": "2026-06-02T12:50:35Z",
+      "updatedAt": "2026-06-02T12:50:40Z",
+      "homepage": null
+    },
+    {
+      "name": "repoquest",
+      "repoUrl": "https://github.com/JTech-CO/repoquest",
+      "fork": false,
+      "pushedAt": "2026-07-11T22:58:13Z",
+      "updatedAt": "2026-06-02T02:33:30Z",
+      "homepage": null
+    },
+    {
+      "name": "BWEK-Pro",
+      "repoUrl": "https://github.com/JTech-CO/BWEK-Pro",
+      "fork": false,
+      "pushedAt": "2026-05-31T23:18:33Z",
+      "updatedAt": "2026-05-31T23:18:37Z",
+      "homepage": null
+    },
+    {
+      "name": "space-exploration-timeline",
+      "repoUrl": "https://github.com/JTech-CO/space-exploration-timeline",
+      "fork": false,
+      "pushedAt": "2026-05-31T23:08:55Z",
+      "updatedAt": "2026-05-31T23:08:59Z",
+      "homepage": null
+    },
+    {
+      "name": "Wplace-Pixel-Blueprint",
+      "repoUrl": "https://github.com/JTech-CO/Wplace-Pixel-Blueprint",
+      "fork": false,
+      "pushedAt": "2026-05-28T18:17:30Z",
+      "updatedAt": "2026-05-28T18:17:45Z",
+      "homepage": null
+    },
+    {
+      "name": "3D-Moskstraumen",
+      "repoUrl": "https://github.com/JTech-CO/3D-Moskstraumen",
+      "fork": false,
+      "pushedAt": "2026-05-18T10:51:41Z",
+      "updatedAt": "2026-05-18T10:51:45Z",
+      "homepage": null
+    },
+    {
+      "name": "non-ai-design-skill-pack",
+      "repoUrl": "https://github.com/JTech-CO/non-ai-design-skill-pack",
+      "fork": false,
+      "pushedAt": "2026-05-17T20:07:31Z",
+      "updatedAt": "2026-05-17T20:07:35Z",
+      "homepage": null
+    },
+    {
+      "name": "JTech-Extension-Hub",
+      "repoUrl": "https://github.com/JTech-CO/JTech-Extension-Hub",
+      "fork": false,
+      "pushedAt": "2026-05-15T18:36:05Z",
+      "updatedAt": "2026-05-15T18:36:09Z",
+      "homepage": null
+    },
+    {
+      "name": "ezXSave",
+      "repoUrl": "https://github.com/JTech-CO/ezXSave",
+      "fork": false,
+      "pushedAt": "2026-05-13T03:31:38Z",
+      "updatedAt": "2026-05-13T03:31:41Z",
+      "homepage": null
+    },
+    {
+      "name": "Black-Hole-Benchmark",
+      "repoUrl": "https://github.com/JTech-CO/Black-Hole-Benchmark",
+      "fork": false,
+      "pushedAt": "2026-04-17T23:26:21Z",
+      "updatedAt": "2026-04-17T23:26:26Z",
+      "homepage": null
+    },
+    {
+      "name": "CSAT-2027",
+      "repoUrl": "https://github.com/JTech-CO/CSAT-2027",
+      "fork": false,
+      "pushedAt": "2026-04-03T08:36:51Z",
+      "updatedAt": "2026-04-03T08:36:54Z",
+      "homepage": null
+    },
+    {
+      "name": "X-Filter-Pro",
+      "repoUrl": "https://github.com/JTech-CO/X-Filter-Pro",
+      "fork": false,
+      "pushedAt": "2026-03-29T06:51:25Z",
+      "updatedAt": "2026-03-29T06:51:28Z",
+      "homepage": null
+    },
+    {
+      "name": "lounge-block",
+      "repoUrl": "https://github.com/JTech-CO/lounge-block",
+      "fork": false,
+      "pushedAt": "2026-03-24T23:02:24Z",
+      "updatedAt": "2026-03-24T23:02:28Z",
+      "homepage": null
+    },
+    {
+      "name": "lounge-profile-stats",
+      "repoUrl": "https://github.com/JTech-CO/lounge-profile-stats",
+      "fork": false,
+      "pushedAt": "2026-03-24T22:08:04Z",
+      "updatedAt": "2026-03-24T22:08:08Z",
+      "homepage": null
+    },
+    {
+      "name": "tteokguk",
+      "repoUrl": "https://github.com/JTech-CO/tteokguk",
+      "fork": false,
+      "pushedAt": "2026-03-21T16:28:12Z",
+      "updatedAt": "2026-03-21T16:28:15Z",
+      "homepage": null
+    },
+    {
+      "name": "Hallucinator-Troll",
+      "repoUrl": "https://github.com/JTech-CO/Hallucinator-Troll",
+      "fork": false,
+      "pushedAt": "2026-03-21T14:03:03Z",
+      "updatedAt": "2026-03-21T14:03:06Z",
+      "homepage": null
+    },
+    {
+      "name": "Hallucinator-Real",
+      "repoUrl": "https://github.com/JTech-CO/Hallucinator-Real",
+      "fork": false,
+      "pushedAt": "2026-03-21T14:02:05Z",
+      "updatedAt": "2026-03-21T14:02:08Z",
+      "homepage": null
+    },
+    {
+      "name": "BTS",
+      "repoUrl": "https://github.com/JTech-CO/BTS",
+      "fork": false,
+      "pushedAt": "2026-03-21T13:55:34Z",
+      "updatedAt": "2026-03-21T13:55:37Z",
+      "homepage": null
+    },
+    {
+      "name": "Word-Order-Comparator",
+      "repoUrl": "https://github.com/JTech-CO/Word-Order-Comparator",
+      "fork": false,
+      "pushedAt": "2026-03-17T08:33:56Z",
+      "updatedAt": "2026-03-17T08:33:59Z",
+      "homepage": null
+    },
+    {
+      "name": "Clawberry-Pi",
+      "repoUrl": "https://github.com/JTech-CO/Clawberry-Pi",
+      "fork": false,
+      "pushedAt": "2026-03-16T04:05:24Z",
+      "updatedAt": "2026-03-16T04:05:27Z",
+      "homepage": null
+    },
+    {
+      "name": "DevMemes",
+      "repoUrl": "https://github.com/JTech-CO/DevMemes",
+      "fork": false,
+      "pushedAt": "2026-03-14T23:48:14Z",
+      "updatedAt": "2026-03-14T23:48:17Z",
+      "homepage": null
+    },
+    {
+      "name": "Moon-Emoji-Generator",
+      "repoUrl": "https://github.com/JTech-CO/Moon-Emoji-Generator",
+      "fork": false,
+      "pushedAt": "2026-03-13T08:51:00Z",
+      "updatedAt": "2026-03-13T08:51:03Z",
+      "homepage": null
+    },
+    {
+      "name": "Mini-Jet-Engine-Sim",
+      "repoUrl": "https://github.com/JTech-CO/Mini-Jet-Engine-Sim",
+      "fork": false,
+      "pushedAt": "2026-01-04T23:07:17Z",
+      "updatedAt": "2026-03-12T18:25:03Z",
+      "homepage": null
+    },
+    {
+      "name": "Saju",
+      "repoUrl": "https://github.com/JTech-CO/Saju",
+      "fork": false,
+      "pushedAt": "2026-03-11T17:34:57Z",
+      "updatedAt": "2026-03-11T17:35:02Z",
+      "homepage": null
+    },
+    {
+      "name": "Shadowban-Checker",
+      "repoUrl": "https://github.com/JTech-CO/Shadowban-Checker",
+      "fork": false,
+      "pushedAt": "2026-02-27T05:04:07Z",
+      "updatedAt": "2026-02-27T05:04:10Z",
+      "homepage": null
+    },
+    {
+      "name": "claude_code",
+      "repoUrl": "https://github.com/JTech-CO/claude_code",
+      "fork": false,
+      "pushedAt": "2026-02-17T05:35:33Z",
+      "updatedAt": "2026-02-17T05:35:37Z",
+      "homepage": null
+    },
+    {
+      "name": "StockNavi",
+      "repoUrl": "https://github.com/JTech-CO/StockNavi",
+      "fork": false,
+      "pushedAt": "2026-02-13T12:33:20Z",
+      "updatedAt": "2026-02-13T12:33:24Z",
+      "homepage": null
+    },
+    {
+      "name": "IP-Master",
+      "repoUrl": "https://github.com/JTech-CO/IP-Master",
+      "fork": false,
+      "pushedAt": "2026-02-10T03:31:09Z",
+      "updatedAt": "2026-02-10T03:31:13Z",
+      "homepage": null
+    },
+    {
+      "name": "Friday13",
+      "repoUrl": "https://github.com/JTech-CO/Friday13",
+      "fork": false,
+      "pushedAt": "2026-02-03T04:38:12Z",
+      "updatedAt": "2026-02-03T04:38:15Z",
+      "homepage": null
+    },
+    {
+      "name": "Easy-Forensics-Basic",
+      "repoUrl": "https://github.com/JTech-CO/Easy-Forensics-Basic",
+      "fork": false,
+      "pushedAt": "2026-01-26T14:25:55Z",
+      "updatedAt": "2026-01-26T14:27:09Z",
+      "homepage": null
+    },
+    {
+      "name": "Easy-Forensics-Pro",
+      "repoUrl": "https://github.com/JTech-CO/Easy-Forensics-Pro",
+      "fork": false,
+      "pushedAt": "2026-01-26T14:26:18Z",
+      "updatedAt": "2026-01-26T14:26:22Z",
+      "homepage": null
+    },
+    {
+      "name": "TIE-Fighter",
+      "repoUrl": "https://github.com/JTech-CO/TIE-Fighter",
+      "fork": false,
+      "pushedAt": "2026-01-20T14:21:46Z",
+      "updatedAt": "2026-01-20T14:22:19Z",
+      "homepage": null
+    },
+    {
+      "name": "Graph-Searcher",
+      "repoUrl": "https://github.com/JTech-CO/Graph-Searcher",
+      "fork": false,
+      "pushedAt": "2026-01-15T15:01:46Z",
+      "updatedAt": "2026-01-15T15:02:01Z",
+      "homepage": null
+    },
+    {
+      "name": "Live-Graph-Crawler",
+      "repoUrl": "https://github.com/JTech-CO/Live-Graph-Crawler",
+      "fork": false,
+      "pushedAt": "2026-01-15T02:48:59Z",
+      "updatedAt": "2026-01-15T02:49:02Z",
+      "homepage": null
+    },
+    {
+      "name": "Retro-Dither-Cam",
+      "repoUrl": "https://github.com/JTech-CO/Retro-Dither-Cam",
+      "fork": false,
+      "pushedAt": "2026-01-10T10:17:24Z",
+      "updatedAt": "2026-01-10T10:17:28Z",
+      "homepage": null
+    },
+    {
+      "name": "BottleNeckSim",
+      "repoUrl": "https://github.com/JTech-CO/BottleNeckSim",
+      "fork": false,
+      "pushedAt": "2026-01-10T10:10:17Z",
+      "updatedAt": "2026-01-10T10:10:21Z",
+      "homepage": null
+    },
+    {
+      "name": "ScamAlert",
+      "repoUrl": "https://github.com/JTech-CO/ScamAlert",
+      "fork": false,
+      "pushedAt": "2025-12-28T06:27:47Z",
+      "updatedAt": "2025-12-28T06:27:50Z",
+      "homepage": null
+    },
+    {
+      "name": "Daejeon-Restaurant-List",
+      "repoUrl": "https://github.com/JTech-CO/Daejeon-Restaurant-List",
+      "fork": false,
+      "pushedAt": "2025-12-27T12:33:22Z",
+      "updatedAt": "2025-12-27T12:33:26Z",
+      "homepage": null
+    },
+    {
+      "name": "img2video",
+      "repoUrl": "https://github.com/JTech-CO/img2video",
+      "fork": false,
+      "pushedAt": "2025-12-25T22:44:59Z",
+      "updatedAt": "2025-12-25T22:45:02Z",
+      "homepage": null
+    },
+    {
+      "name": "SolarSystemSim",
+      "repoUrl": "https://github.com/JTech-CO/SolarSystemSim",
+      "fork": false,
+      "pushedAt": "2025-12-25T18:22:57Z",
+      "updatedAt": "2025-12-25T18:23:00Z",
+      "homepage": null
+    },
+    {
+      "name": "BunkerBusterSim",
+      "repoUrl": "https://github.com/JTech-CO/BunkerBusterSim",
+      "fork": false,
+      "pushedAt": "2025-12-19T02:12:06Z",
+      "updatedAt": "2025-12-19T02:12:10Z",
+      "homepage": null
+    },
+    {
+      "name": "UIUX-Toolbox",
+      "repoUrl": "https://github.com/JTech-CO/UIUX-Toolbox",
+      "fork": false,
+      "pushedAt": "2025-12-17T23:53:28Z",
+      "updatedAt": "2025-12-17T23:53:32Z",
+      "homepage": null
+    },
+    {
+      "name": "Gem3LAB",
+      "repoUrl": "https://github.com/JTech-CO/Gem3LAB",
+      "fork": false,
+      "pushedAt": "2025-11-19T02:28:42Z",
+      "updatedAt": "2025-11-19T02:28:45Z",
+      "homepage": null
+    },
+    {
+      "name": "Wplace-Text-to-Pixel",
+      "repoUrl": "https://github.com/JTech-CO/Wplace-Text-to-Pixel",
+      "fork": false,
+      "pushedAt": "2025-11-02T10:47:32Z",
+      "updatedAt": "2025-11-02T10:47:35Z",
+      "homepage": null
+    },
+    {
+      "name": "MATLAB-Book1-Example-Code",
+      "repoUrl": "https://github.com/JTech-CO/MATLAB-Book1-Example-Code",
+      "fork": false,
+      "pushedAt": "2025-08-31T13:01:58Z",
+      "updatedAt": "2025-08-31T13:02:01Z",
+      "homepage": null
+    },
+    {
+      "name": "Audio-Converter",
+      "repoUrl": "https://github.com/JTech-CO/Audio-Converter",
+      "fork": false,
+      "pushedAt": "2025-07-22T16:05:44Z",
+      "updatedAt": "2025-07-22T16:05:48Z",
+      "homepage": null
     }
   ]
 }

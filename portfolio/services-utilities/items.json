@@ -13,18 +13,20 @@
         "CHZZK"
       ],
       "status": "active",
-      "updatedAt": "2026-09-20",
+      "updatedAt": "2026-09-27",
       "featured": true,
       "repoUrl": "https://github.com/JTech-CO/chzzk-downloader",
       "features": [
         "VOD·클립 MP4 저장",
-        "브라우저 확장 형태",
-        "배포·검증 흐름"
+        "재생 정보 CORS·일시적 사전 확인 실패 보완",
+        "Chrome 확장·배포 ZIP"
       ],
       "liveUrl": "https://chromewebstore.google.com/detail/chzzk-downloader/pglcbbcphnbalglbhjngigjciijhgpih",
       "actionLabel": "설치하기",
       "shortDescriptionEn": "A Chrome extension for saving Naver CHZZK VODs and clips as MP4 files.",
-      "actionLabelEn": "Install"
+      "actionLabelEn": "Install",
+      "pushedAt": "2026-09-27T00:03:42Z",
+      "version": "2.3.3"
     },
     {
       "id": "nexusshell",
@@ -45,7 +47,10 @@
         "웹 기반 도구"
       ],
       "shortDescriptionEn": "A downloader for YouTube and SoundCloud video and audio.",
-      "actionLabelEn": "Open"
+      "actionLabelEn": "Open",
+      "repoUrl": "https://github.com/JTech-CO/NexusShell",
+      "pushedAt": "2026-09-03T12:42:44Z",
+      "updatedAt": "2026-09-03"
     },
     {
       "id": "macode",
@@ -66,7 +71,10 @@
         "발표 자료 제작"
       ],
       "shortDescriptionEn": "A web app that renders source code in a macOS-style window for presentations and videos.",
-      "actionLabelEn": "Open"
+      "actionLabelEn": "Open",
+      "repoUrl": "https://github.com/JTech-CO/MaCode",
+      "pushedAt": "2026-07-14T02:50:48Z",
+      "updatedAt": "2026-07-14"
     },
     {
       "id": "naver-pay-map",
@@ -88,7 +96,10 @@
         "거리순 정렬"
       ],
       "shortDescriptionEn": "A nationwide map service for browsing Naver Pay-enabled stores by category and distance.",
-      "actionLabelEn": "Open Map"
+      "actionLabelEn": "Open Map",
+      "repoUrl": "https://github.com/JTech-CO/naver-pay-map",
+      "pushedAt": "2026-07-14T17:49:03Z",
+      "updatedAt": "2026-07-15"
     },
     {
       "id": "ai-token-monitor",
@@ -111,7 +122,9 @@
         "비용 환산 모니터링"
       ],
       "shortDescriptionEn": "A monitoring app that analyzes local Claude Code and Codex CLI logs to show token usage and API-equivalent cost.",
-      "actionLabelEn": "Open Docs"
+      "actionLabelEn": "Open Docs",
+      "pushedAt": "2026-07-15T21:23:04Z",
+      "updatedAt": "2026-07-16"
     },
     {
       "id": "worldle",
@@ -132,7 +145,10 @@
         "6회 도전"
       ],
       "shortDescriptionEn": "A daily geography puzzle where you identify a country using distance, direction, and proximity clues.",
-      "actionLabelEn": "Play"
+      "actionLabelEn": "Play",
+      "repoUrl": "https://github.com/JTech-CO/worldle",
+      "pushedAt": "2026-06-28T09:22:14Z",
+      "updatedAt": "2026-06-28"
     },
     {
       "id": "neat-cable",
@@ -153,7 +169,436 @@
         "웹 기반 플레이"
       ],
       "shortDescriptionEn": "A web game that turns correct server-cable connections into a wiring puzzle.",
-      "actionLabelEn": "Play"
+      "actionLabelEn": "Play",
+      "repoUrl": "https://github.com/JTech-CO/Neat-Cable",
+      "pushedAt": "2026-07-11T00:11:27Z",
+      "updatedAt": "2026-07-11"
+    },
+    {
+      "id": "escalator-ending",
+      "name": "Escalator-Ending",
+      "shortDescription": "달리기 버튼을 누르고 피로가 쌓일수록 더 빠르게 탭하며 버티는 작은 웹 생존 게임.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-25",
+      "pushedAt": "2026-09-24T20:31:04Z",
+      "repoUrl": "https://github.com/JTech-CO/Escalator-Ending"
+    },
+    {
+      "id": "autopixel-aleph",
+      "name": "Autopixel-Aleph",
+      "shortDescription": "공식 템플릿 비교와 유연한 영역 선택을 제공하는 픽셀 페인팅 Chrome 확장 프로그램.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-25",
+      "pushedAt": "2026-09-24T17:03:58Z",
+      "repoUrl": "https://github.com/JTech-CO/Autopixel-Aleph",
+      "version": "2.2.1"
+    },
+    {
+      "id": "x-hub",
+      "name": "X-Hub",
+      "shortDescription": "X의 추첨, 팔로우 관계 관리, 게시물 필터와 최대 8개 멀티 타임라인을 제공하는 Chrome 확장 프로그램.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-23",
+      "pushedAt": "2026-09-23T04:07:35Z",
+      "repoUrl": "https://github.com/JTech-CO/X-Hub",
+      "liveUrl": "https://jtech-co.github.io/X-Hub/",
+      "actionLabel": "열기",
+      "version": "3.3.1"
+    },
+    {
+      "id": "ubuntu-ai-desktop",
+      "name": "Ubuntu-AI-Desktop",
+      "shortDescription": "브라우저에서 Bash 셸, 공유 가상 파일시스템과 앱을 체험하는 빌드 없는 Ubuntu 데스크톱 에뮬레이터.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-23",
+      "pushedAt": "2026-09-23T00:53:20Z",
+      "repoUrl": "https://github.com/JTech-CO/Ubuntu-AI-Desktop",
+      "liveUrl": "https://jtech-co.github.io/Ubuntu-AI-Desktop/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "portfolio-hub",
+      "name": "portfolio-hub",
+      "shortDescription": "JTech의 원본 저장소를 카테고리와 최근 작업 카드로 탐색하는 개인 포트폴리오 허브.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-22",
+      "pushedAt": "2026-09-22T03:37:27Z",
+      "repoUrl": "https://github.com/JTech-CO/portfolio-hub"
+    },
+    {
+      "id": "axis-shift",
+      "name": "axis-shift",
+      "shortDescription": "텐서와 이진 행렬의 연산 원리를 짧은 조작형 웹 퍼즐로 구성한 게임.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-30",
+      "pushedAt": "2026-08-30T11:54:39Z",
+      "repoUrl": "https://github.com/JTech-CO/axis-shift"
+    },
+    {
+      "id": "moontel",
+      "name": "MoonTel",
+      "shortDescription": "MoonBit으로 1990년대 PC통신 채널을 재현하는 뉴트로 프로젝트.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-01",
+      "pushedAt": "2026-08-31T15:53:22Z",
+      "repoUrl": "https://github.com/JTech-CO/MoonTel"
+    },
+    {
+      "id": "moth-in-the-machine",
+      "name": "Moth-in-the-Machine",
+      "shortDescription": "1947년 하버드 Mark II의 나방 버그 일화를 모티브로 만든 웹 3D 캐주얼 게임.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-21",
+      "pushedAt": "2026-08-21T12:07:59Z",
+      "repoUrl": "https://github.com/JTech-CO/Moth-in-the-Machine"
+    },
+    {
+      "id": "newbiefinder",
+      "name": "NewbieFinder",
+      "shortDescription": "치지직에서 현재 방송 중인 소규모 스트리머를 찾는 탐색 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-15",
+      "pushedAt": "2026-08-14T17:59:49Z",
+      "repoUrl": "https://github.com/JTech-CO/NewbieFinder"
+    },
+    {
+      "id": "my-website",
+      "name": "my-website",
+      "shortDescription": "게임, 변환기, 시각화와 설명 페이지 등 JTech의 초기 웹 작업물을 모은 저장소.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-08",
+      "pushedAt": "2026-08-08T13:08:15Z",
+      "repoUrl": "https://github.com/JTech-CO/my-website"
+    },
+    {
+      "id": "just-ledger",
+      "name": "just-ledger",
+      "shortDescription": "복식부기와 정수 금액 계산을 중심으로 만든 셀프호스팅 개인 원장. 공개 데모와 오프라인 PWA는 UI 계층을 제공합니다.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-24",
+      "pushedAt": "2026-07-24T10:33:16Z",
+      "repoUrl": "https://github.com/JTech-CO/just-ledger",
+      "liveUrl": "https://jtech-co.github.io/just-ledger/",
+      "actionLabel": "UI 데모"
+    },
+    {
+      "id": "jtech-co-github-io",
+      "name": "jtech-co.github.io",
+      "shortDescription": "JTech의 프로젝트와 활동으로 연결하는 공식 메인 페이지.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-18",
+      "pushedAt": "2026-07-17T23:35:56Z",
+      "repoUrl": "https://github.com/JTech-CO/jtech-co.github.io",
+      "liveUrl": "https://jtech-co.github.io/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "webcat",
+      "name": "Webcat",
+      "shortDescription": "컴퓨터 화면에서 고양이를 만나는 웹 프로젝트.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-07",
+      "pushedAt": "2026-07-06T15:14:15Z",
+      "repoUrl": "https://github.com/JTech-CO/Webcat"
+    },
+    {
+      "id": "lounge-pro",
+      "name": "lounge-pro",
+      "shortDescription": "네이버 라운지의 사용자 차단과 프로필 통계를 통합한 확장 프로그램.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-15",
+      "pushedAt": "2026-06-15T09:59:15Z",
+      "repoUrl": "https://github.com/JTech-CO/lounge-pro"
+    },
+    {
+      "id": "autopixel",
+      "name": "AutoPixel",
+      "shortDescription": "wplace.live에서 픽셀아트를 직선과 사각형으로 그리는 작업을 자동화하는 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-15",
+      "pushedAt": "2026-06-15T09:51:29Z",
+      "repoUrl": "https://github.com/JTech-CO/AutoPixel"
+    },
+    {
+      "id": "wplace-2click",
+      "name": "wplace-2click",
+      "shortDescription": "wplace.live에서 단축키 한 번으로 마우스 위치를 두 번 클릭하는 Chrome 확장 프로그램.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-06",
+      "pushedAt": "2026-06-06T14:27:07Z",
+      "repoUrl": "https://github.com/JTech-CO/wplace-2click"
+    },
+    {
+      "id": "copy-link-first",
+      "name": "copy-link-first",
+      "shortDescription": "X 게시물 메뉴의 링크 복사 버튼을 맨 위로 옮기는 확장 프로그램.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-02",
+      "pushedAt": "2026-06-02T12:50:35Z",
+      "repoUrl": "https://github.com/JTech-CO/copy-link-first"
+    },
+    {
+      "id": "bwek-pro",
+      "name": "BWEK-Pro",
+      "shortDescription": "한·일·중·UTF-8 인코딩 깨짐을 양방향 변환하고 복원하는 서버리스 모지바케 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-01",
+      "pushedAt": "2026-05-31T23:18:33Z",
+      "repoUrl": "https://github.com/JTech-CO/BWEK-Pro"
+    },
+    {
+      "id": "jtech-extension-hub",
+      "name": "JTech-Extension-Hub",
+      "shortDescription": "JTech의 브라우저 확장 프로그램을 모아 소개하는 허브.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-05-16",
+      "pushedAt": "2026-05-15T18:36:05Z",
+      "repoUrl": "https://github.com/JTech-CO/JTech-Extension-Hub"
+    },
+    {
+      "id": "ezxsave",
+      "name": "ezXSave",
+      "shortDescription": "X 동영상을 우클릭 한 번으로 저장하는 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-05-13",
+      "pushedAt": "2026-05-13T03:31:38Z",
+      "repoUrl": "https://github.com/JTech-CO/ezXSave"
+    },
+    {
+      "id": "x-filter-pro",
+      "name": "X-Filter-Pro",
+      "shortDescription": "X 게시물을 여러 조건으로 필터링하는 확장 프로그램.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-29",
+      "pushedAt": "2026-03-29T06:51:25Z",
+      "repoUrl": "https://github.com/JTech-CO/X-Filter-Pro"
+    },
+    {
+      "id": "lounge-block",
+      "name": "lounge-block",
+      "shortDescription": "네이버 라운지의 사용자를 차단하는 브라우저 확장 프로그램.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-25",
+      "pushedAt": "2026-03-24T23:02:24Z",
+      "repoUrl": "https://github.com/JTech-CO/lounge-block"
+    },
+    {
+      "id": "lounge-profile-stats",
+      "name": "lounge-profile-stats",
+      "shortDescription": "네이버 라운지 프로필 통계를 추적하는 확장 프로그램.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-25",
+      "pushedAt": "2026-03-24T22:08:04Z",
+      "repoUrl": "https://github.com/JTech-CO/lounge-profile-stats"
+    },
+    {
+      "id": "devmemes",
+      "name": "DevMemes",
+      "shortDescription": "개발자 밈을 실제 동작으로 구현해 보는 실험 모음.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-15",
+      "pushedAt": "2026-03-14T23:48:14Z",
+      "repoUrl": "https://github.com/JTech-CO/DevMemes"
+    },
+    {
+      "id": "saju",
+      "name": "Saju",
+      "shortDescription": "Grok과 사주명리학을 연결한 웹 프로젝트.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-12",
+      "pushedAt": "2026-03-11T17:34:57Z",
+      "repoUrl": "https://github.com/JTech-CO/Saju"
+    },
+    {
+      "id": "shadowban-checker",
+      "name": "Shadowban-Checker",
+      "shortDescription": "X 계정의 섀도밴 여부를 확인하는 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-02-27",
+      "pushedAt": "2026-02-27T05:04:07Z",
+      "repoUrl": "https://github.com/JTech-CO/Shadowban-Checker"
+    },
+    {
+      "id": "ip-master",
+      "name": "IP-Master",
+      "shortDescription": "네트워크 분석, 주소 변환과 조회를 한곳에서 처리하는 웹 도구 모음.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-02-10",
+      "pushedAt": "2026-02-10T03:31:09Z",
+      "repoUrl": "https://github.com/JTech-CO/IP-Master"
+    },
+    {
+      "id": "friday13",
+      "name": "Friday13",
+      "shortDescription": "13일의 금요일이 있는 달을 찾는 계산기.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-02-03",
+      "pushedAt": "2026-02-03T04:38:12Z",
+      "repoUrl": "https://github.com/JTech-CO/Friday13"
+    },
+    {
+      "id": "easy-forensics-basic",
+      "name": "Easy-Forensics-Basic",
+      "shortDescription": "브라우저에서 이미지 포렌식을 수행하는 간단 버전 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-01-26",
+      "pushedAt": "2026-01-26T14:25:55Z",
+      "repoUrl": "https://github.com/JTech-CO/Easy-Forensics-Basic"
+    },
+    {
+      "id": "easy-forensics-pro",
+      "name": "Easy-Forensics-Pro",
+      "shortDescription": "여러 분석 기능을 연결한 웹 기반 이미지 포렌식 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-01-26",
+      "pushedAt": "2026-01-26T14:26:18Z",
+      "repoUrl": "https://github.com/JTech-CO/Easy-Forensics-Pro"
+    },
+    {
+      "id": "graph-searcher",
+      "name": "Graph-Searcher",
+      "shortDescription": "그래프와 표를 중심으로 Google 검색을 돕는 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-01-16",
+      "pushedAt": "2026-01-15T15:01:46Z",
+      "repoUrl": "https://github.com/JTech-CO/Graph-Searcher"
+    },
+    {
+      "id": "live-graph-crawler",
+      "name": "Live-Graph-Crawler",
+      "shortDescription": "Google에서 실시간 그래프 자료를 수집하는 웹 도구.",
+      "icon": "fas fa-cube",
+      "tags": [
+        "Utility"
+      ],
+      "status": "active",
+      "updatedAt": "2026-01-15",
+      "pushedAt": "2026-01-15T02:48:59Z",
+      "repoUrl": "https://github.com/JTech-CO/Live-Graph-Crawler"
     }
   ]
 }

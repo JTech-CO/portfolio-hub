@@ -21,7 +21,8 @@
         "형상 스케치·이미지 입력",
         "Cd·Cl·St 추세 시각화"
       ],
-      "shortDescriptionEn": "A browser aerodynamics workbench that connects sketches or image silhouettes to a D2Q9 LBM flow field and aerodynamic trends."
+      "shortDescriptionEn": "A browser aerodynamics workbench that connects sketches or image silhouettes to a D2Q9 LBM flow field and aerodynamic trends.",
+      "pushedAt": "2026-07-12T00:46:59Z"
     },
     {
       "id": "cnc-render",
@@ -35,7 +36,7 @@
         "WebGPU"
       ],
       "status": "beta",
-      "updatedAt": "2026-09-19",
+      "updatedAt": "2026-09-24",
       "featured": true,
       "repoUrl": "https://github.com/JTech-CO/CNC-Render",
       "features": [
@@ -43,58 +44,8 @@
         "Toolpath 시각화",
         "점진적 소재 제거 구조"
       ],
-      "shortDescriptionEn": "A browser-based CNC learning and simulation project connecting G-code interpretation, tool motion, and material removal."
-    },
-    {
-      "id": "smart-cart-autonomy-lab",
-      "name": "Smart-Cart-Autonomy-Lab",
-      "shortDescription": "UWB·LiDAR·ToF 관측과 주행 제어를 한 장면에서 시험하는 WebGL 2 기반 사용자 추종 스마트카트 시뮬레이터.",
-      "fullDescription": "UWB, LiDAR, ToF 관측, 점유 맵, 후륜 구동과 Ackermann 조향을 한 장면에서 시험하는 사용자 추종 스마트카트 시뮬레이터입니다.",
-      "icon": "fas fa-cart-shopping",
-      "tags": [
-        "WebGL2",
-        "Robotics",
-        "Sensor Fusion"
-      ],
-      "status": "active",
-      "version": "1.2.0",
-      "updatedAt": "2026-09-20",
-      "featured": true,
-      "repoUrl": "https://github.com/JTech-CO/Smart-Cart-Autonomy-Lab",
-      "liveUrl": "https://jtech-co.github.io/Smart-Cart-Autonomy-Lab/",
-      "actionLabel": "시뮬레이터",
-      "features": [
-        "UWB·LiDAR·ToF 관측",
-        "점유맵과 사용자 추종",
-        "후륜 구동·Ackermann 조향"
-      ],
-      "shortDescriptionEn": "A WebGL 2 user-following smart-cart simulator for testing UWB, LiDAR, ToF observations and driving control in one scene.",
-      "actionLabelEn": "Open Simulator"
-    },
-    {
-      "id": "smart-cart-autonomy-lab-jev",
-      "name": "Smart-Cart-Autonomy-Lab × Jev",
-      "shortDescription": "기존 센서 기반 시뮬레이터 위에 Jev 감독 계층을 추가한 indexed-action supervisor 실험.",
-      "fullDescription": "Jev를 센서나 노이즈 필터가 아니라 후보 행동을 선택하는 감독 계층으로 배치한 Smart-Cart-Autonomy-Lab 애드온입니다. 기존 제어기는 후보를 만들고, Jev는 제한된 연산과 인덱스를 선택하며 기존 rollout이 다시 검증합니다.",
-      "icon": "fas fa-brain",
-      "tags": [
-        "Jev",
-        "Supervisor",
-        "Robotics"
-      ],
-      "status": "beta",
-      "version": "0.1.0",
-      "updatedAt": "2026-09-20",
-      "repoUrl": "https://github.com/JTech-CO/Smart-Cart-Autonomy-Lab-Jev",
-      "liveUrl": "https://jtech-co.github.io/Smart-Cart-Autonomy-Lab-Jev/simulator/index.html",
-      "actionLabel": "데모",
-      "features": [
-        "Off·Shadow·Stub 감독 모드",
-        "최대 9개 후보 중 indexed action 선택",
-        "기존 제어기 재검증과 보수적 제동"
-      ],
-      "shortDescriptionEn": "An indexed-action supervisor experiment that adds a Jev supervisory layer on top of the existing sensor-driven simulator.",
-      "actionLabelEn": "Open Demo"
+      "shortDescriptionEn": "A browser-based CNC learning and simulation project connecting G-code interpretation, tool motion, and material removal.",
+      "pushedAt": "2026-09-24T00:14:34Z"
     },
     {
       "id": "ram-lab",
@@ -118,7 +69,8 @@
         "KR/EN 인터페이스"
       ],
       "shortDescriptionEn": "An interactive memory lab connecting the structure and operation of SRAM, DRAM, HBM, HBF, and 3D NAND through 3D and circuit views.",
-      "actionLabelEn": "Open Lab"
+      "actionLabelEn": "Open Lab",
+      "pushedAt": "2026-09-10T06:58:12Z"
     },
     {
       "id": "jev-simulink-supervisor",
@@ -139,7 +91,8 @@
         "솔버·허용오차 조정 정책",
         "Mock·App Designer·CSV/MAT 로그"
       ],
-      "shortDescriptionEn": "A supervisory tool that summarizes MATLAB numerical simulation state and decides solver, tolerance, or abort actions."
+      "shortDescriptionEn": "A supervisory tool that summarizes MATLAB numerical simulation state and decides solver, tolerance, or abort actions.",
+      "pushedAt": "2026-09-21T01:54:08Z"
     },
     {
       "id": "mini-jet-2",
@@ -160,7 +113,266 @@
         "ECU 제어 로직"
       ],
       "shortDescriptionEn": "A web simulator implementing startup, combustion, compression, turbine drive, exhaust, and ECU logic for a small jet engine.",
-      "actionLabelEn": "Open Simulator"
+      "actionLabelEn": "Open Simulator",
+      "repoUrl": "https://github.com/JTech-CO/Minijet-2",
+      "pushedAt": "2026-07-04T22:41:02Z",
+      "updatedAt": "2026-07-05"
+    },
+    {
+      "id": "asmlab",
+      "name": "ASMlab",
+      "shortDescription": "수식을 AST·실제 SSE2 어셈블리 명령·SIMD 레지스터 상태와 계산 결과로 연결하는 NASM 기반 네이티브 터미널 워크벤치.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Assembly",
+        "SSE2",
+        "Workbench"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-24",
+      "pushedAt": "2026-09-24T01:14:53Z",
+      "repoUrl": "https://github.com/JTech-CO/ASMlab",
+      "version": "0.5.0"
+    },
+    {
+      "id": "opentcad",
+      "name": "OpenTCAD",
+      "shortDescription": "반도체 공정 시뮬레이션과 소자 분석을 연결하는 한국어·영어 오픈소스 워크스페이스.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-12",
+      "pushedAt": "2026-09-12T12:51:08Z",
+      "repoUrl": "https://github.com/JTech-CO/OpenTCAD",
+      "liveUrl": "https://jtech-co.github.io/OpenTCAD/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "mold-press",
+      "name": "Mold-Press",
+      "shortDescription": "모델링부터 금형과 사출성형까지의 과정을 탐색하는 에뮬레이터.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-12",
+      "pushedAt": "2026-09-12T12:32:51Z",
+      "repoUrl": "https://github.com/JTech-CO/Mold-Press"
+    },
+    {
+      "id": "ev-battery-sim",
+      "name": "EV-Battery-Sim",
+      "shortDescription": "전기차 배터리를 주제로 구성한 시뮬레이션 프로젝트.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-11",
+      "pushedAt": "2026-09-10T19:27:19Z",
+      "repoUrl": "https://github.com/JTech-CO/EV-Battery-Sim"
+    },
+    {
+      "id": "superconductor-sim",
+      "name": "Superconductor-Sim",
+      "shortDescription": "초전도체를 주제로 구성한 시뮬레이션 프로젝트.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-11",
+      "pushedAt": "2026-09-10T15:47:17Z",
+      "repoUrl": "https://github.com/JTech-CO/Superconductor-Sim"
+    },
+    {
+      "id": "tupper-formula",
+      "name": "Tupper-Formula",
+      "shortDescription": "자기참조 수식인 Tupper 공식을 탐구하는 수학 프로젝트.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-09-06",
+      "pushedAt": "2026-09-06T09:39:39Z",
+      "repoUrl": "https://github.com/JTech-CO/Tupper-Formula"
+    },
+    {
+      "id": "tokenizer-structure",
+      "name": "Tokenizer-Structure",
+      "shortDescription": "LLM 토크나이저의 네 단계 동작을 실제 엔진과 설명으로 연결하는 웹 시뮬레이터.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-25",
+      "pushedAt": "2026-08-25T03:25:25Z",
+      "repoUrl": "https://github.com/JTech-CO/Tokenizer-Structure"
+    },
+    {
+      "id": "evolab",
+      "name": "Evolab",
+      "shortDescription": "브라우저에서 유전 알고리즘으로 보행 생물과 하중 구조물을 진화시키고 관찰·개입하는 물리 시뮬레이터.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-22",
+      "pushedAt": "2026-08-21T17:59:31Z",
+      "repoUrl": "https://github.com/JTech-CO/Evolab"
+    },
+    {
+      "id": "barycenter",
+      "name": "Barycenter",
+      "shortDescription": "브라우저에서 N-body 중력과 태양계의 운동을 탐색하는 샌드박스 시뮬레이터.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-26",
+      "pushedAt": "2026-07-26T10:33:32Z",
+      "repoUrl": "https://github.com/JTech-CO/Barycenter"
+    },
+    {
+      "id": "tlr-sim",
+      "name": "TLR-SIM",
+      "shortDescription": "삼각형 구조에서 레이저 반사를 탐색하는 시뮬레이터.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-01",
+      "pushedAt": "2026-06-30T20:35:41Z",
+      "repoUrl": "https://github.com/JTech-CO/TLR-SIM"
+    },
+    {
+      "id": "tessellated-reckoner",
+      "name": "Tessellated-Reckoner",
+      "shortDescription": "여러 수학 공식을 계산할 수 있는 웹 도구.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-06-18",
+      "pushedAt": "2026-06-18T02:36:56Z",
+      "repoUrl": "https://github.com/JTech-CO/Tessellated-Reckoner"
+    },
+    {
+      "id": "3d-moskstraumen",
+      "name": "3D-Moskstraumen",
+      "shortDescription": "해저 지형에 따른 유속과 와도 변화를 탐색하는 3D 유체 시뮬레이션.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-05-18",
+      "pushedAt": "2026-05-18T10:51:41Z",
+      "repoUrl": "https://github.com/JTech-CO/3D-Moskstraumen"
+    },
+    {
+      "id": "black-hole-benchmark",
+      "name": "Black-Hole-Benchmark",
+      "shortDescription": "블랙홀 장면을 WebGL로 렌더링하며 컴퓨터 성능을 측정하는 벤치마크.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-04-18",
+      "pushedAt": "2026-04-17T23:26:21Z",
+      "repoUrl": "https://github.com/JTech-CO/Black-Hole-Benchmark"
+    },
+    {
+      "id": "bts",
+      "name": "BTS",
+      "shortDescription": "국내 주요 공연장의 최대 수용 인원과 군중 분산을 비교하는 시뮬레이션.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-21",
+      "pushedAt": "2026-03-21T13:55:34Z",
+      "repoUrl": "https://github.com/JTech-CO/BTS"
+    },
+    {
+      "id": "mini-jet-engine-sim",
+      "name": "Mini-Jet-Engine-Sim",
+      "shortDescription": "RC 제트엔진의 작동을 탐색하는 시뮬레이터.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-01-05",
+      "pushedAt": "2026-01-04T23:07:17Z",
+      "repoUrl": "https://github.com/JTech-CO/Mini-Jet-Engine-Sim"
+    },
+    {
+      "id": "bottlenecksim",
+      "name": "BottleNeckSim",
+      "shortDescription": "CPU와 GPU의 병목현상을 시각화하는 3D 시뮬레이터.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2026-01-10",
+      "pushedAt": "2026-01-10T10:10:17Z",
+      "repoUrl": "https://github.com/JTech-CO/BottleNeckSim"
+    },
+    {
+      "id": "solarsystemsim",
+      "name": "SolarSystemSim",
+      "shortDescription": "태양계 천체의 운동을 탐색하는 시뮬레이터.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2025-12-26",
+      "pushedAt": "2025-12-25T18:22:57Z",
+      "repoUrl": "https://github.com/JTech-CO/SolarSystemSim"
+    },
+    {
+      "id": "bunkerbustersim",
+      "name": "BunkerBusterSim",
+      "shortDescription": "벙커버스터의 운동 에너지와 관통 역학을 탐색하는 시뮬레이션.",
+      "icon": "fas fa-gears",
+      "tags": [
+        "Engineering",
+        "Simulation"
+      ],
+      "status": "active",
+      "updatedAt": "2025-12-19",
+      "pushedAt": "2025-12-19T02:12:06Z",
+      "repoUrl": "https://github.com/JTech-CO/BunkerBusterSim"
     }
   ]
 }

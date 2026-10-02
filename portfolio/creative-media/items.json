@@ -22,7 +22,8 @@
         "8개 오리지널 셰이더",
         "Windows/macOS 네이티브 어댑터 소스"
       ],
-      "shortDescriptionEn": "A local-first GLSL playground for real-time editing, saving, and exporting, with Windows/macOS wallpaper adapter source."
+      "shortDescriptionEn": "A local-first GLSL playground for real-time editing, saving, and exporting, with Windows/macOS wallpaper adapter source.",
+      "pushedAt": "2026-09-21T02:31:26Z"
     },
     {
       "id": "real-moog-1960",
@@ -44,7 +45,8 @@
         "오실레이터·필터·엔벌로프",
         "1960s 모듈러 UI"
       ],
-      "shortDescriptionEn": "An educational 1960s modular Moog web synthesizer where patch cables alter the actual Web Audio graph."
+      "shortDescriptionEn": "An educational 1960s modular Moog web synthesizer where patch cables alter the actual Web Audio graph.",
+      "pushedAt": "2026-09-19T13:02:28Z"
     },
     {
       "id": "retro-video-effector",
@@ -59,7 +61,7 @@
       ],
       "status": "active",
       "version": "2.1.0",
-      "updatedAt": "2026-09-15",
+      "updatedAt": "2026-09-16",
       "repoUrl": "https://github.com/JTech-CO/Retro-Video-Effector",
       "liveUrl": "https://jtech-co.github.io/Retro-Video-Effector/",
       "actionLabel": "편집기",
@@ -69,7 +71,8 @@
         "EN/KR 및 반응형 UI"
       ],
       "shortDescriptionEn": "A Windows 95-style, local-first still-image editor for VHS and retro video effects.",
-      "actionLabelEn": "Open Editor"
+      "actionLabelEn": "Open Editor",
+      "pushedAt": "2026-09-15T16:29:48Z"
     },
     {
       "id": "infopic",
@@ -93,7 +96,198 @@
         "KR/EN·라이트/다크 대응"
       ],
       "shortDescriptionEn": "An informational carousel maker that edits in the browser and exports PNG/ZIP files without accounts, backends, or AI APIs.",
-      "actionLabelEn": "Open App"
+      "actionLabelEn": "Open App",
+      "pushedAt": "2026-09-09T08:39:19Z"
+    },
+    {
+      "id": "loopfield-studio",
+      "name": "Loopfield-Studio",
+      "shortDescription": "WebGL 2·GLSL 패턴과 최대 4개 레이어를 조합해 PNG와 고해상도 MP4 모션 루프를 만드는 브라우저 스튜디오.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2026-10-02",
+      "pushedAt": "2026-10-01T23:22:38Z",
+      "repoUrl": "https://github.com/JTech-CO/Loopfield-Studio",
+      "featured": true,
+      "liveUrl": "https://jtech-co.github.io/Loopfield-Studio/",
+      "actionLabel": "스튜디오 열기"
+    },
+    {
+      "id": "motiongraphic",
+      "name": "Motiongraphic",
+      "shortDescription": "SpaceX·Genesis·DJI·Loopfield Studio를 주제로 영상, HTML 재생 페이지, 코드와 제작 프롬프트를 함께 공개한 데이터 모션그래픽 모음.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2026-10-01",
+      "pushedAt": "2026-10-01T09:50:19Z",
+      "repoUrl": "https://github.com/JTech-CO/Motiongraphic",
+      "featured": true
+    },
+    {
+      "id": "css-design-atlas",
+      "name": "CSS-Design-Atlas",
+      "shortDescription": "12개 분류의 독립 CSS 디자인 템플릿 300개를 검색하고 실제 UI로 비교하는 모음집.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-10",
+      "pushedAt": "2026-08-09T16:49:37Z",
+      "repoUrl": "https://github.com/JTech-CO/CSS-Design-Atlas",
+      "liveUrl": "https://jtech-co.github.io/CSS-Design-Atlas/",
+      "actionLabel": "열기"
+    },
+    {
+      "id": "ssr-chatgpt",
+      "name": "SSR-ChatGPT",
+      "shortDescription": "ChatGPT 인터페이스의 효과를 화려하게 바꾸는 시각적 실험 프로젝트.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2026-07-12",
+      "pushedAt": "2026-07-11T22:08:26Z",
+      "repoUrl": "https://github.com/JTech-CO/SSR-ChatGPT"
+    },
+    {
+      "id": "wplace-pixel-blueprint",
+      "name": "Wplace-Pixel-Blueprint",
+      "shortDescription": "사진을 2D와 2.5D 픽셀 도안으로 바꾸는 제작 도구.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2026-05-29",
+      "pushedAt": "2026-05-28T18:17:30Z",
+      "repoUrl": "https://github.com/JTech-CO/Wplace-Pixel-Blueprint"
+    },
+    {
+      "id": "tteokguk",
+      "name": "tteokguk",
+      "shortDescription": "Picrew 스타일로 떡국 이미지를 구성하는 메이커.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-22",
+      "pushedAt": "2026-03-21T16:28:12Z",
+      "repoUrl": "https://github.com/JTech-CO/tteokguk"
+    },
+    {
+      "id": "moon-emoji-generator",
+      "name": "Moon-Emoji-Generator",
+      "shortDescription": "달 이모지를 조합해 문자 이미지를 만드는 생성기.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2026-03-13",
+      "pushedAt": "2026-03-13T08:51:00Z",
+      "repoUrl": "https://github.com/JTech-CO/Moon-Emoji-Generator"
+    },
+    {
+      "id": "retro-dither-cam",
+      "name": "Retro-Dither-Cam",
+      "shortDescription": "사진에 레트로 디더링 효과를 적용하는 편집기.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2026-01-10",
+      "pushedAt": "2026-01-10T10:17:24Z",
+      "repoUrl": "https://github.com/JTech-CO/Retro-Dither-Cam"
+    },
+    {
+      "id": "img2video",
+      "name": "img2video",
+      "shortDescription": "이미지를 붙여넣어 비디오로 변환하는 웹 도구.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2025-12-26",
+      "pushedAt": "2025-12-25T22:44:59Z",
+      "repoUrl": "https://github.com/JTech-CO/img2video"
+    },
+    {
+      "id": "uiux-toolbox",
+      "name": "UIUX-Toolbox",
+      "shortDescription": "웹사이트 제작에 필요한 UI·UX 사전과 도구를 모은 툴박스.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2025-12-18",
+      "pushedAt": "2025-12-17T23:53:28Z",
+      "repoUrl": "https://github.com/JTech-CO/UIUX-Toolbox"
+    },
+    {
+      "id": "gem3lab",
+      "name": "Gem3LAB",
+      "shortDescription": "Gemini 3.0으로 만든 실험적인 웹 인터페이스와 작은 앱 모음.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2025-11-19",
+      "pushedAt": "2025-11-19T02:28:42Z",
+      "repoUrl": "https://github.com/JTech-CO/Gem3LAB"
+    },
+    {
+      "id": "wplace-text-to-pixel",
+      "name": "Wplace-Text-to-Pixel",
+      "shortDescription": "Wplace 픽셀 작업에 사용할 텍스트를 픽셀 도안으로 바꾸는 변환기.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2025-11-02",
+      "pushedAt": "2025-11-02T10:47:32Z",
+      "repoUrl": "https://github.com/JTech-CO/Wplace-Text-to-Pixel"
+    },
+    {
+      "id": "audio-converter",
+      "name": "Audio-Converter",
+      "shortDescription": "MP3·M4A·WAV 음원에 Hardstyle·Techno·Trance·Hardbass·Lo-fi 장르 변환을 적용하는 도구.",
+      "icon": "fas fa-palette",
+      "tags": [
+        "Creative",
+        "Media"
+      ],
+      "status": "active",
+      "updatedAt": "2025-07-23",
+      "pushedAt": "2025-07-22T16:05:44Z",
+      "repoUrl": "https://github.com/JTech-CO/Audio-Converter",
+      "liveUrl": "https://jtech-co.github.io/Audio-Converter/index.html",
+      "actionLabel": "열기"
     }
   ]
 }
